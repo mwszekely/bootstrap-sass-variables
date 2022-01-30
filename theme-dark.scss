@@ -1,4 +1,4 @@
 @use "sass:meta";
 @forward "./variables-dark";
 @use "./variables" as *;
-@include meta.load-css("node_modules/bootstrap/scss/bootstrap", $with: $variables);
+@include meta.load-css("bootstrap/scss/bootstrap", $with: $variables);

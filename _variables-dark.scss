@@ -147,4 +147,3 @@ $popover-border-color: rgba($white, 0.2) !default;
 @forward "./btn-active-box-shadow" with ($btn-active-box-shadow: inset 0 3px 5px rgba($white, 0.125) !default);
 @forward "./btn-box-shadow" with ($btn-box-shadow: #{inset 0 1px 0 rgba($white, 0.15),0 1px 1px rgba($black, 0.075)} !default);
 @forward "./btn-link-disabled-color" with ($btn-link-disabled-color: $gray-600 !default);
-@forward "./variables";
