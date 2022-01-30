@@ -1,3 +1,3 @@
 @use "sass:meta";
 @use "./variables" as *;
-@include meta.load-css("bootstrap/scss/bootstrap", $with: $variables);
+@forward "./bootstrap";
