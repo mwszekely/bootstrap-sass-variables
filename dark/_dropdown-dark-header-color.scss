@@ -1,0 +1,2 @@
+@use "../gray-500" as *;
+@forward "../dropdown-dark-header-color" with ($dropdown-dark-header-color: $gray-500 !default);

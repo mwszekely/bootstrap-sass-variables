@@ -1,0 +1,2 @@
+@use "../black" as *;
+@forward "../list-group-bg" with ($list-group-bg: $black !default);

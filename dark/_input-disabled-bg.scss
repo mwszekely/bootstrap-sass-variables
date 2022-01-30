@@ -1,0 +1,2 @@
+@use "../gray-800" as *;
+@forward "../input-disabled-bg" with ($input-disabled-bg: $gray-800 !default);

@@ -1,0 +1,2 @@
+@use "../gray-300" as *;
+@forward "../nav-tabs-link-active-color" with ($nav-tabs-link-active-color: $gray-300 !default);

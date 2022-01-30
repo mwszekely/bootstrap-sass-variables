@@ -1,0 +1,3 @@
+@use "../nav-tabs-link-active-bg" as *;
+@use "../gray-700" as *;
+@forward "../nav-tabs-link-active-border-color" with ($nav-tabs-link-active-border-color: $gray-700 $gray-700 $nav-tabs-link-active-bg !default);

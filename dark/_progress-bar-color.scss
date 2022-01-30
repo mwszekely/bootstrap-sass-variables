@@ -1,0 +1,2 @@
+@use "../black" as *;
+@forward "../progress-bar-color" with ($progress-bar-color: $black !default);

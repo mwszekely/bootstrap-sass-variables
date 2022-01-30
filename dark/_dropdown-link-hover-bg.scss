@@ -1,0 +1,2 @@
+@use "../gray-800" as *;
+@forward "../dropdown-link-hover-bg" with ($dropdown-link-hover-bg: $gray-800 !default);

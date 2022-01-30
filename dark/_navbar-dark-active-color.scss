@@ -1,0 +1,2 @@
+@use "../black" as *;
+@forward "../navbar-dark-active-color" with ($navbar-dark-active-color: $black !default);

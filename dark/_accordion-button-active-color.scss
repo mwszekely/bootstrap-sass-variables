@@ -1,0 +1,3 @@
+@use "../functions/tint-color" as *;
+@use "../primary" as *;
+@forward "../accordion-button-active-color" with ($accordion-button-active-color: tint-color($primary, 10%) !default);

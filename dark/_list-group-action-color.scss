@@ -1,0 +1,2 @@
+@use "../gray-300" as *;
+@forward "../list-group-action-color" with ($list-group-action-color: $gray-300 !default);

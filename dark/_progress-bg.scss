@@ -1,0 +1,2 @@
+@use "../gray-800" as *;
+@forward "../progress-bg" with ($progress-bg: $gray-800 !default);

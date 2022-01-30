@@ -1,0 +1,2 @@
+@use "../white" as *;
+@forward "../toast-header-border-color" with ($toast-header-border-color: rgba($white, 0.05) !default);

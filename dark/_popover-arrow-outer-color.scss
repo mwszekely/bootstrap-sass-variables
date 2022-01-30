@@ -1,0 +1,2 @@
+@use "../popover-border-color" as *;
+@forward "../popover-arrow-outer-color" with ($popover-arrow-outer-color: fade-in($popover-border-color, 0.05) !default);

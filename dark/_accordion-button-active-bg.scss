@@ -1,0 +1,3 @@
+@use "../component-active-bg" as *;
+@use "../functions/shade-color" as *;
+@forward "../accordion-button-active-bg" with ($accordion-button-active-bg: shade-color($component-active-bg, 90%) !default);

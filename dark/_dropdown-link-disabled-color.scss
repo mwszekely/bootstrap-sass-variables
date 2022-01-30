@@ -1,0 +1,2 @@
+@use "../gray-500" as *;
+@forward "../dropdown-link-disabled-color" with ($dropdown-link-disabled-color: $gray-500 !default);

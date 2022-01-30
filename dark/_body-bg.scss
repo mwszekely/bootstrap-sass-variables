@@ -1,0 +1,2 @@
+@use "../gray-900" as *;
+@forward "../body-bg" with ($body-bg: $gray-900 !default);

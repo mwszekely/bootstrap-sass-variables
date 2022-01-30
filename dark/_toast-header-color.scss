@@ -1,0 +1,2 @@
+@use "../gray-400" as *;
+@forward "../toast-header-color" with ($toast-header-color: $gray-400 !default);

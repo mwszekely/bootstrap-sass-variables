@@ -1,0 +1,2 @@
+@use "../gray-400" as *;
+@forward "../breadcrumb-divider-color" with ($breadcrumb-divider-color: $gray-400 !default);

@@ -1,0 +1,2 @@
+@use "../black" as *;
+@forward "../card-bg" with ($card-bg: $black !default);

@@ -1,0 +1,2 @@
+@use "../white" as *;
+@forward "../navbar-light-disabled-color" with ($navbar-light-disabled-color: rgba($white, 0.3) !default);

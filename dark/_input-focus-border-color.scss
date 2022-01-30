@@ -1,0 +1,3 @@
+@use "../component-active-bg" as *;
+@use "../functions/shade-color" as *;
+@forward "../input-focus-border-color" with ($input-focus-border-color: shade-color($component-active-bg, 50%) !default);

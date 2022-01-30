@@ -1,0 +1,2 @@
+@use "../black" as *;
+@forward "../badge-color" with ($badge-color: $black !default);

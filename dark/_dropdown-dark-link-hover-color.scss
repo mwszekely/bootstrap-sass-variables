@@ -1,0 +1,2 @@
+@use "../black" as *;
+@forward "../dropdown-dark-link-hover-color" with ($dropdown-dark-link-hover-color: $black !default);

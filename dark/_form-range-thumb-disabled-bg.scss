@@ -1,0 +1,2 @@
+@use "../gray-500" as *;
+@forward "../form-range-thumb-disabled-bg" with ($form-range-thumb-disabled-bg: $gray-500 !default);

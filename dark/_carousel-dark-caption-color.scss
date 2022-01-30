@@ -1,0 +1,2 @@
+@use "../white" as *;
+@forward "../carousel-dark-caption-color" with ($carousel-dark-caption-color: $white !default);

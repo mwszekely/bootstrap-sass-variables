@@ -1,0 +1,2 @@
+@use "../gray-800" as *;
+@forward "../pagination-hover-bg" with ($pagination-hover-bg: $gray-800 !default);

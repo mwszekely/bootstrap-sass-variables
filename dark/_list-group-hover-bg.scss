@@ -1,0 +1,2 @@
+@use "../gray-900" as *;
+@forward "../list-group-hover-bg" with ($list-group-hover-bg: $gray-900 !default);

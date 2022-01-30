@@ -1,0 +1,2 @@
+@use "../gray-400" as *;
+@forward "../pagination-disabled-color" with ($pagination-disabled-color: $gray-400 !default);
