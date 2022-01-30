@@ -1,0 +1,2 @@
+@use "./dependencies/_popover-arrow-outer-color.scss" as *;
+$popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/_form-range-thumb-active-bg.scss" as *;
+$form-range-thumb-active-bg: tint-color($component-active-bg, 70%) !default;

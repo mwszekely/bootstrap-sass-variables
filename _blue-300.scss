@@ -1,0 +1,2 @@
+@use "./dependencies/_blue-300.scss" as *;
+$blue-300: tint-color($blue, 40%) !default;

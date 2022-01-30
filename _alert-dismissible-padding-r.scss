@@ -1,0 +1,2 @@
+@use "./dependencies/_alert-dismissible-padding-r.scss" as *;
+$alert-dismissible-padding-r: $alert-padding-x * 3 !default; // 3x covers width of x plus default padding on either side

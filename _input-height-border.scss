@@ -1,0 +1,2 @@
+@use "./dependencies/_input-height-border.scss" as *;
+$input-height-border: $input-border-width * 2 !default;

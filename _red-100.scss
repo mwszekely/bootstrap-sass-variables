@@ -1,0 +1,2 @@
+@use "./dependencies/_red-100.scss" as *;
+$red-100: tint-color($red, 80%) !default;

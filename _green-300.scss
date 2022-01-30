@@ -1,0 +1,2 @@
+@use "./dependencies/_green-300.scss" as *;
+$green-300: tint-color($green, 40%) !default;

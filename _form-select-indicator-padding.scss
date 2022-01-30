@@ -1,0 +1,2 @@
+@use "./dependencies/_form-select-indicator-padding.scss" as *;
+$form-select-indicator-padding: $form-select-padding-x * 3 !default; // Extra padding for background-image

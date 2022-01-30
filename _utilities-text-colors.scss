@@ -1,0 +1,2 @@
+@use "./dependencies/_utilities-text-colors.scss" as *;
+$utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text") !default;

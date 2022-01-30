@@ -1,0 +1,2 @@
+@use "./dependencies/_cyan-300.scss" as *;
+$cyan-300: tint-color($cyan, 40%) !default;

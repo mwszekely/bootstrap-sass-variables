@@ -1,0 +1,2 @@
+@use "./dependencies/_orange-600.scss" as *;
+$orange-600: shade-color($orange, 20%) !default;

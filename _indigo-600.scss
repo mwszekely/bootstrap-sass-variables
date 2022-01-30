@@ -1,0 +1,2 @@
+@use "./dependencies/_indigo-600.scss" as *;
+$indigo-600: shade-color($indigo, 20%) !default;

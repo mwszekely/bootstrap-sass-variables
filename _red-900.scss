@@ -1,0 +1,2 @@
+@use "./dependencies/_red-900.scss" as *;
+$red-900: shade-color($red, 80%) !default;

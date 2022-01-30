@@ -1,0 +1,1757 @@
+// @use all the Bootstrap variables
+// and put them into a map for use in meta.load-css
+@use "./white" as *;
+@use "./gray-100" as *;
+@use "./gray-200" as *;
+@use "./gray-300" as *;
+@use "./gray-400" as *;
+@use "./gray-500" as *;
+@use "./gray-600" as *;
+@use "./gray-700" as *;
+@use "./gray-800" as *;
+@use "./gray-900" as *;
+@use "./black" as *;
+@use "./grays" as *;
+@use "./blue" as *;
+@use "./indigo" as *;
+@use "./purple" as *;
+@use "./pink" as *;
+@use "./red" as *;
+@use "./orange" as *;
+@use "./yellow" as *;
+@use "./green" as *;
+@use "./teal" as *;
+@use "./cyan" as *;
+@use "./colors" as *;
+@use "./primary" as *;
+@use "./secondary" as *;
+@use "./success" as *;
+@use "./info" as *;
+@use "./warning" as *;
+@use "./danger" as *;
+@use "./light" as *;
+@use "./dark" as *;
+@use "./theme-colors" as *;
+@use "./theme-colors-rgb" as *;
+@use "./min-contrast-ratio" as *;
+@use "./color-contrast-dark" as *;
+@use "./color-contrast-light" as *;
+@use "./blue-100" as *;
+@use "./blue-200" as *;
+@use "./blue-300" as *;
+@use "./blue-400" as *;
+@use "./blue-500" as *;
+@use "./blue-600" as *;
+@use "./blue-700" as *;
+@use "./blue-800" as *;
+@use "./blue-900" as *;
+@use "./indigo-100" as *;
+@use "./indigo-200" as *;
+@use "./indigo-300" as *;
+@use "./indigo-400" as *;
+@use "./indigo-500" as *;
+@use "./indigo-600" as *;
+@use "./indigo-700" as *;
+@use "./indigo-800" as *;
+@use "./indigo-900" as *;
+@use "./purple-100" as *;
+@use "./purple-200" as *;
+@use "./purple-300" as *;
+@use "./purple-400" as *;
+@use "./purple-500" as *;
+@use "./purple-600" as *;
+@use "./purple-700" as *;
+@use "./purple-800" as *;
+@use "./purple-900" as *;
+@use "./pink-100" as *;
+@use "./pink-200" as *;
+@use "./pink-300" as *;
+@use "./pink-400" as *;
+@use "./pink-500" as *;
+@use "./pink-600" as *;
+@use "./pink-700" as *;
+@use "./pink-800" as *;
+@use "./pink-900" as *;
+@use "./red-100" as *;
+@use "./red-200" as *;
+@use "./red-300" as *;
+@use "./red-400" as *;
+@use "./red-500" as *;
+@use "./red-600" as *;
+@use "./red-700" as *;
+@use "./red-800" as *;
+@use "./red-900" as *;
+@use "./orange-100" as *;
+@use "./orange-200" as *;
+@use "./orange-300" as *;
+@use "./orange-400" as *;
+@use "./orange-500" as *;
+@use "./orange-600" as *;
+@use "./orange-700" as *;
+@use "./orange-800" as *;
+@use "./orange-900" as *;
+@use "./yellow-100" as *;
+@use "./yellow-200" as *;
+@use "./yellow-300" as *;
+@use "./yellow-400" as *;
+@use "./yellow-500" as *;
+@use "./yellow-600" as *;
+@use "./yellow-700" as *;
+@use "./yellow-800" as *;
+@use "./yellow-900" as *;
+@use "./green-100" as *;
+@use "./green-200" as *;
+@use "./green-300" as *;
+@use "./green-400" as *;
+@use "./green-500" as *;
+@use "./green-600" as *;
+@use "./green-700" as *;
+@use "./green-800" as *;
+@use "./green-900" as *;
+@use "./teal-100" as *;
+@use "./teal-200" as *;
+@use "./teal-300" as *;
+@use "./teal-400" as *;
+@use "./teal-500" as *;
+@use "./teal-600" as *;
+@use "./teal-700" as *;
+@use "./teal-800" as *;
+@use "./teal-900" as *;
+@use "./cyan-100" as *;
+@use "./cyan-200" as *;
+@use "./cyan-300" as *;
+@use "./cyan-400" as *;
+@use "./cyan-500" as *;
+@use "./cyan-600" as *;
+@use "./cyan-700" as *;
+@use "./cyan-800" as *;
+@use "./cyan-900" as *;
+@use "./blues" as *;
+@use "./indigos" as *;
+@use "./purples" as *;
+@use "./pinks" as *;
+@use "./reds" as *;
+@use "./oranges" as *;
+@use "./yellows" as *;
+@use "./greens" as *;
+@use "./teals" as *;
+@use "./cyans" as *;
+@use "./escaped-characters" as *;
+@use "./enable-caret" as *;
+@use "./enable-rounded" as *;
+@use "./enable-shadows" as *;
+@use "./enable-gradients" as *;
+@use "./enable-transitions" as *;
+@use "./enable-reduced-motion" as *;
+@use "./enable-smooth-scroll" as *;
+@use "./enable-grid-classes" as *;
+@use "./enable-cssgrid" as *;
+@use "./enable-button-pointers" as *;
+@use "./enable-rfs" as *;
+@use "./enable-validation-icons" as *;
+@use "./enable-negative-margins" as *;
+@use "./enable-deprecation-messages" as *;
+@use "./enable-important-utilities" as *;
+@use "./variable-prefix" as *;
+@use "./gradient" as *;
+@use "./spacer" as *;
+@use "./spacers" as *;
+@use "./negative-spacers" as *;
+@use "./position-values" as *;
+@use "./body-bg" as *;
+@use "./body-color" as *;
+@use "./body-text-align" as *;
+@use "./utilities-colors" as *;
+@use "./utilities-text" as *;
+@use "./utilities-text-colors" as *;
+@use "./utilities-bg" as *;
+@use "./utilities-bg-colors" as *;
+@use "./link-color" as *;
+@use "./link-decoration" as *;
+@use "./link-shade-percentage" as *;
+@use "./link-hover-color" as *;
+@use "./link-hover-decoration" as *;
+@use "./stretched-link-pseudo-element" as *;
+@use "./stretched-link-z-index" as *;
+@use "./paragraph-margin-bottom" as *;
+@use "./grid-breakpoints" as *;
+@use "./container-max-widths" as *;
+@use "./grid-columns" as *;
+@use "./grid-gutter-width" as *;
+@use "./grid-row-columns" as *;
+@use "./gutters" as *;
+@use "./container-padding-x" as *;
+@use "./border-width" as *;
+@use "./border-widths" as *;
+@use "./border-color" as *;
+@use "./border-radius" as *;
+@use "./border-radius-sm" as *;
+@use "./border-radius-lg" as *;
+@use "./border-radius-pill" as *;
+@use "./box-shadow" as *;
+@use "./box-shadow-sm" as *;
+@use "./box-shadow-lg" as *;
+@use "./box-shadow-inset" as *;
+@use "./component-active-color" as *;
+@use "./component-active-bg" as *;
+@use "./caret-width" as *;
+@use "./caret-vertical-align" as *;
+@use "./caret-spacing" as *;
+@use "./transition-base" as *;
+@use "./transition-fade" as *;
+@use "./transition-collapse" as *;
+@use "./transition-collapse-width" as *;
+@use "./aspect-ratios" as *;
+@use "./font-family-sans-serif" as *;
+@use "./font-family-monospace" as *;
+@use "./font-family-base" as *;
+@use "./font-family-code" as *;
+@use "./font-size-root" as *;
+@use "./font-size-base" as *;
+@use "./font-size-sm" as *;
+@use "./font-size-lg" as *;
+@use "./font-weight-lighter" as *;
+@use "./font-weight-light" as *;
+@use "./font-weight-normal" as *;
+@use "./font-weight-bold" as *;
+@use "./font-weight-bolder" as *;
+@use "./font-weight-base" as *;
+@use "./line-height-base" as *;
+@use "./line-height-sm" as *;
+@use "./line-height-lg" as *;
+@use "./h1-font-size" as *;
+@use "./h2-font-size" as *;
+@use "./h3-font-size" as *;
+@use "./h4-font-size" as *;
+@use "./h5-font-size" as *;
+@use "./h6-font-size" as *;
+@use "./font-sizes" as *;
+@use "./headings-margin-bottom" as *;
+@use "./headings-font-family" as *;
+@use "./headings-font-style" as *;
+@use "./headings-font-weight" as *;
+@use "./headings-line-height" as *;
+@use "./headings-color" as *;
+@use "./display-font-sizes" as *;
+@use "./display-font-weight" as *;
+@use "./display-line-height" as *;
+@use "./lead-font-size" as *;
+@use "./lead-font-weight" as *;
+@use "./small-font-size" as *;
+@use "./sub-sup-font-size" as *;
+@use "./text-muted" as *;
+@use "./initialism-font-size" as *;
+@use "./blockquote-margin-y" as *;
+@use "./blockquote-font-size" as *;
+@use "./blockquote-footer-color" as *;
+@use "./blockquote-footer-font-size" as *;
+@use "./hr-margin-y" as *;
+@use "./hr-color" as *;
+@use "./hr-height" as *;
+@use "./hr-opacity" as *;
+@use "./legend-margin-bottom" as *;
+@use "./legend-font-size" as *;
+@use "./legend-font-weight" as *;
+@use "./mark-padding" as *;
+@use "./dt-font-weight" as *;
+@use "./nested-kbd-font-weight" as *;
+@use "./list-inline-padding" as *;
+@use "./mark-bg" as *;
+@use "./table-cell-padding-y" as *;
+@use "./table-cell-padding-x" as *;
+@use "./table-cell-padding-y-sm" as *;
+@use "./table-cell-padding-x-sm" as *;
+@use "./table-cell-vertical-align" as *;
+@use "./table-color" as *;
+@use "./table-bg" as *;
+@use "./table-accent-bg" as *;
+@use "./table-th-font-weight" as *;
+@use "./table-striped-color" as *;
+@use "./table-striped-bg-factor" as *;
+@use "./table-striped-bg" as *;
+@use "./table-active-color" as *;
+@use "./table-active-bg-factor" as *;
+@use "./table-active-bg" as *;
+@use "./table-hover-color" as *;
+@use "./table-hover-bg-factor" as *;
+@use "./table-hover-bg" as *;
+@use "./table-border-factor" as *;
+@use "./table-border-width" as *;
+@use "./table-border-color" as *;
+@use "./table-striped-order" as *;
+@use "./table-group-separator-color" as *;
+@use "./table-caption-color" as *;
+@use "./table-bg-scale" as *;
+@use "./table-variants" as *;
+@use "./input-btn-padding-y" as *;
+@use "./input-btn-padding-x" as *;
+@use "./input-btn-font-family" as *;
+@use "./input-btn-font-size" as *;
+@use "./input-btn-line-height" as *;
+@use "./input-btn-focus-width" as *;
+@use "./input-btn-focus-color-opacity" as *;
+@use "./input-btn-focus-color" as *;
+@use "./input-btn-focus-blur" as *;
+@use "./input-btn-focus-box-shadow" as *;
+@use "./input-btn-padding-y-sm" as *;
+@use "./input-btn-padding-x-sm" as *;
+@use "./input-btn-font-size-sm" as *;
+@use "./input-btn-padding-y-lg" as *;
+@use "./input-btn-padding-x-lg" as *;
+@use "./input-btn-font-size-lg" as *;
+@use "./input-btn-border-width" as *;
+@use "./btn-padding-y" as *;
+@use "./btn-padding-x" as *;
+@use "./btn-font-family" as *;
+@use "./btn-font-size" as *;
+@use "./btn-line-height" as *;
+@use "./btn-white-space" as *;
+@use "./btn-padding-y-sm" as *;
+@use "./btn-padding-x-sm" as *;
+@use "./btn-font-size-sm" as *;
+@use "./btn-padding-y-lg" as *;
+@use "./btn-padding-x-lg" as *;
+@use "./btn-font-size-lg" as *;
+@use "./btn-border-width" as *;
+@use "./btn-font-weight" as *;
+@use "./btn-box-shadow" as *;
+@use "./btn-focus-width" as *;
+@use "./btn-focus-box-shadow" as *;
+@use "./btn-disabled-opacity" as *;
+@use "./btn-active-box-shadow" as *;
+@use "./btn-link-color" as *;
+@use "./btn-link-hover-color" as *;
+@use "./btn-link-disabled-color" as *;
+@use "./btn-border-radius" as *;
+@use "./btn-border-radius-sm" as *;
+@use "./btn-border-radius-lg" as *;
+@use "./btn-transition" as *;
+@use "./btn-hover-bg-shade-amount" as *;
+@use "./btn-hover-bg-tint-amount" as *;
+@use "./btn-hover-border-shade-amount" as *;
+@use "./btn-hover-border-tint-amount" as *;
+@use "./btn-active-bg-shade-amount" as *;
+@use "./btn-active-bg-tint-amount" as *;
+@use "./btn-active-border-shade-amount" as *;
+@use "./btn-active-border-tint-amount" as *;
+@use "./form-text-margin-top" as *;
+@use "./form-text-font-size" as *;
+@use "./form-text-font-style" as *;
+@use "./form-text-font-weight" as *;
+@use "./form-text-color" as *;
+@use "./form-label-margin-bottom" as *;
+@use "./form-label-font-size" as *;
+@use "./form-label-font-style" as *;
+@use "./form-label-font-weight" as *;
+@use "./form-label-color" as *;
+@use "./input-padding-y" as *;
+@use "./input-padding-x" as *;
+@use "./input-font-family" as *;
+@use "./input-font-size" as *;
+@use "./input-font-weight" as *;
+@use "./input-line-height" as *;
+@use "./input-padding-y-sm" as *;
+@use "./input-padding-x-sm" as *;
+@use "./input-font-size-sm" as *;
+@use "./input-padding-y-lg" as *;
+@use "./input-padding-x-lg" as *;
+@use "./input-font-size-lg" as *;
+@use "./input-bg" as *;
+@use "./input-disabled-bg" as *;
+@use "./input-disabled-border-color" as *;
+@use "./input-color" as *;
+@use "./input-border-color" as *;
+@use "./input-border-width" as *;
+@use "./input-box-shadow" as *;
+@use "./input-border-radius" as *;
+@use "./input-border-radius-sm" as *;
+@use "./input-border-radius-lg" as *;
+@use "./input-focus-bg" as *;
+@use "./input-focus-border-color" as *;
+@use "./input-focus-color" as *;
+@use "./input-focus-width" as *;
+@use "./input-focus-box-shadow" as *;
+@use "./input-placeholder-color" as *;
+@use "./input-plaintext-color" as *;
+@use "./input-height-border" as *;
+@use "./input-height-inner" as *;
+@use "./input-height-inner-half" as *;
+@use "./input-height-inner-quarter" as *;
+@use "./input-height" as *;
+@use "./input-height-sm" as *;
+@use "./input-height-lg" as *;
+@use "./input-transition" as *;
+@use "./form-color-width" as *;
+@use "./form-check-input-width" as *;
+@use "./form-check-min-height" as *;
+@use "./form-check-padding-start" as *;
+@use "./form-check-margin-bottom" as *;
+@use "./form-check-label-color" as *;
+@use "./form-check-label-cursor" as *;
+@use "./form-check-transition" as *;
+@use "./form-check-input-active-filter" as *;
+@use "./form-check-input-bg" as *;
+@use "./form-check-input-border" as *;
+@use "./form-check-input-border-radius" as *;
+@use "./form-check-radio-border-radius" as *;
+@use "./form-check-input-focus-border" as *;
+@use "./form-check-input-focus-box-shadow" as *;
+@use "./form-check-input-checked-color" as *;
+@use "./form-check-input-checked-bg-color" as *;
+@use "./form-check-input-checked-border-color" as *;
+@use "./form-check-input-checked-bg-image" as *;
+@use "./form-check-radio-checked-bg-image" as *;
+@use "./form-check-input-indeterminate-color" as *;
+@use "./form-check-input-indeterminate-bg-color" as *;
+@use "./form-check-input-indeterminate-border-color" as *;
+@use "./form-check-input-indeterminate-bg-image" as *;
+@use "./form-check-input-disabled-opacity" as *;
+@use "./form-check-label-disabled-opacity" as *;
+@use "./form-check-btn-check-disabled-opacity" as *;
+@use "./form-check-inline-margin-end" as *;
+@use "./form-switch-color" as *;
+@use "./form-switch-width" as *;
+@use "./form-switch-padding-start" as *;
+@use "./form-switch-bg-image" as *;
+@use "./form-switch-border-radius" as *;
+@use "./form-switch-transition" as *;
+@use "./form-switch-focus-color" as *;
+@use "./form-switch-focus-bg-image" as *;
+@use "./form-switch-checked-color" as *;
+@use "./form-switch-checked-bg-image" as *;
+@use "./form-switch-checked-bg-position" as *;
+@use "./input-group-addon-padding-y" as *;
+@use "./input-group-addon-padding-x" as *;
+@use "./input-group-addon-font-weight" as *;
+@use "./input-group-addon-color" as *;
+@use "./input-group-addon-bg" as *;
+@use "./input-group-addon-border-color" as *;
+@use "./form-select-padding-y" as *;
+@use "./form-select-padding-x" as *;
+@use "./form-select-font-family" as *;
+@use "./form-select-font-size" as *;
+@use "./form-select-indicator-padding" as *;
+@use "./form-select-font-weight" as *;
+@use "./form-select-line-height" as *;
+@use "./form-select-color" as *;
+@use "./form-select-bg" as *;
+@use "./form-select-disabled-color" as *;
+@use "./form-select-disabled-bg" as *;
+@use "./form-select-disabled-border-color" as *;
+@use "./form-select-bg-position" as *;
+@use "./form-select-bg-size" as *;
+@use "./form-select-indicator-color" as *;
+@use "./form-select-indicator" as *;
+@use "./form-select-feedback-icon-padding-end" as *;
+@use "./form-select-feedback-icon-position" as *;
+@use "./form-select-feedback-icon-size" as *;
+@use "./form-select-border-width" as *;
+@use "./form-select-border-color" as *;
+@use "./form-select-border-radius" as *;
+@use "./form-select-box-shadow" as *;
+@use "./form-select-focus-border-color" as *;
+@use "./form-select-focus-width" as *;
+@use "./form-select-focus-box-shadow" as *;
+@use "./form-select-padding-y-sm" as *;
+@use "./form-select-padding-x-sm" as *;
+@use "./form-select-font-size-sm" as *;
+@use "./form-select-border-radius-sm" as *;
+@use "./form-select-padding-y-lg" as *;
+@use "./form-select-padding-x-lg" as *;
+@use "./form-select-font-size-lg" as *;
+@use "./form-select-border-radius-lg" as *;
+@use "./form-select-transition" as *;
+@use "./form-range-track-width" as *;
+@use "./form-range-track-height" as *;
+@use "./form-range-track-cursor" as *;
+@use "./form-range-track-bg" as *;
+@use "./form-range-track-border-radius" as *;
+@use "./form-range-track-box-shadow" as *;
+@use "./form-range-thumb-width" as *;
+@use "./form-range-thumb-height" as *;
+@use "./form-range-thumb-bg" as *;
+@use "./form-range-thumb-border" as *;
+@use "./form-range-thumb-border-radius" as *;
+@use "./form-range-thumb-box-shadow" as *;
+@use "./form-range-thumb-focus-box-shadow" as *;
+@use "./form-range-thumb-focus-box-shadow-width" as *;
+@use "./form-range-thumb-active-bg" as *;
+@use "./form-range-thumb-disabled-bg" as *;
+@use "./form-range-thumb-transition" as *;
+@use "./form-file-button-color" as *;
+@use "./form-file-button-bg" as *;
+@use "./form-file-button-hover-bg" as *;
+@use "./form-floating-height" as *;
+@use "./form-floating-line-height" as *;
+@use "./form-floating-padding-x" as *;
+@use "./form-floating-padding-y" as *;
+@use "./form-floating-input-padding-t" as *;
+@use "./form-floating-input-padding-b" as *;
+@use "./form-floating-label-opacity" as *;
+@use "./form-floating-label-transform" as *;
+@use "./form-floating-transition" as *;
+@use "./form-feedback-margin-top" as *;
+@use "./form-feedback-font-size" as *;
+@use "./form-feedback-font-style" as *;
+@use "./form-feedback-valid-color" as *;
+@use "./form-feedback-invalid-color" as *;
+@use "./form-feedback-icon-valid-color" as *;
+@use "./form-feedback-icon-valid" as *;
+@use "./form-feedback-icon-invalid-color" as *;
+@use "./form-feedback-icon-invalid" as *;
+@use "./form-validation-states" as *;
+@use "./zindex-dropdown" as *;
+@use "./zindex-sticky" as *;
+@use "./zindex-fixed" as *;
+@use "./zindex-offcanvas-backdrop" as *;
+@use "./zindex-offcanvas" as *;
+@use "./zindex-modal-backdrop" as *;
+@use "./zindex-modal" as *;
+@use "./zindex-popover" as *;
+@use "./zindex-tooltip" as *;
+@use "./nav-link-padding-y" as *;
+@use "./nav-link-padding-x" as *;
+@use "./nav-link-font-size" as *;
+@use "./nav-link-font-weight" as *;
+@use "./nav-link-color" as *;
+@use "./nav-link-hover-color" as *;
+@use "./nav-link-transition" as *;
+@use "./nav-link-disabled-color" as *;
+@use "./nav-tabs-border-color" as *;
+@use "./nav-tabs-border-width" as *;
+@use "./nav-tabs-border-radius" as *;
+@use "./nav-tabs-link-hover-border-color" as *;
+@use "./nav-tabs-link-active-color" as *;
+@use "./nav-tabs-link-active-bg" as *;
+@use "./nav-tabs-link-active-border-color" as *;
+@use "./nav-pills-border-radius" as *;
+@use "./nav-pills-link-active-color" as *;
+@use "./nav-pills-link-active-bg" as *;
+@use "./navbar-padding-y" as *;
+@use "./navbar-padding-x" as *;
+@use "./navbar-nav-link-padding-x" as *;
+@use "./navbar-brand-font-size" as *;
+@use "./nav-link-height" as *;
+@use "./navbar-brand-height" as *;
+@use "./navbar-brand-padding-y" as *;
+@use "./navbar-brand-margin-end" as *;
+@use "./navbar-toggler-padding-y" as *;
+@use "./navbar-toggler-padding-x" as *;
+@use "./navbar-toggler-font-size" as *;
+@use "./navbar-toggler-border-radius" as *;
+@use "./navbar-toggler-focus-width" as *;
+@use "./navbar-toggler-transition" as *;
+@use "./navbar-dark-color" as *;
+@use "./navbar-dark-hover-color" as *;
+@use "./navbar-dark-active-color" as *;
+@use "./navbar-dark-disabled-color" as *;
+@use "./navbar-dark-toggler-icon-bg" as *;
+@use "./navbar-dark-toggler-border-color" as *;
+@use "./navbar-light-color" as *;
+@use "./navbar-light-hover-color" as *;
+@use "./navbar-light-active-color" as *;
+@use "./navbar-light-disabled-color" as *;
+@use "./navbar-light-toggler-icon-bg" as *;
+@use "./navbar-light-toggler-border-color" as *;
+@use "./navbar-light-brand-color" as *;
+@use "./navbar-light-brand-hover-color" as *;
+@use "./navbar-dark-brand-color" as *;
+@use "./navbar-dark-brand-hover-color" as *;
+@use "./dropdown-min-width" as *;
+@use "./dropdown-padding-x" as *;
+@use "./dropdown-padding-y" as *;
+@use "./dropdown-spacer" as *;
+@use "./dropdown-font-size" as *;
+@use "./dropdown-color" as *;
+@use "./dropdown-bg" as *;
+@use "./dropdown-border-color" as *;
+@use "./dropdown-border-radius" as *;
+@use "./dropdown-border-width" as *;
+@use "./dropdown-inner-border-radius" as *;
+@use "./dropdown-divider-bg" as *;
+@use "./dropdown-divider-margin-y" as *;
+@use "./dropdown-box-shadow" as *;
+@use "./dropdown-link-color" as *;
+@use "./dropdown-link-hover-color" as *;
+@use "./dropdown-link-hover-bg" as *;
+@use "./dropdown-link-active-color" as *;
+@use "./dropdown-link-active-bg" as *;
+@use "./dropdown-link-disabled-color" as *;
+@use "./dropdown-item-padding-y" as *;
+@use "./dropdown-item-padding-x" as *;
+@use "./dropdown-header-color" as *;
+@use "./dropdown-header-padding" as *;
+@use "./dropdown-dark-color" as *;
+@use "./dropdown-dark-bg" as *;
+@use "./dropdown-dark-border-color" as *;
+@use "./dropdown-dark-divider-bg" as *;
+@use "./dropdown-dark-box-shadow" as *;
+@use "./dropdown-dark-link-color" as *;
+@use "./dropdown-dark-link-hover-color" as *;
+@use "./dropdown-dark-link-hover-bg" as *;
+@use "./dropdown-dark-link-active-color" as *;
+@use "./dropdown-dark-link-active-bg" as *;
+@use "./dropdown-dark-link-disabled-color" as *;
+@use "./dropdown-dark-header-color" as *;
+@use "./pagination-padding-y" as *;
+@use "./pagination-padding-x" as *;
+@use "./pagination-padding-y-sm" as *;
+@use "./pagination-padding-x-sm" as *;
+@use "./pagination-padding-y-lg" as *;
+@use "./pagination-padding-x-lg" as *;
+@use "./pagination-color" as *;
+@use "./pagination-bg" as *;
+@use "./pagination-border-width" as *;
+@use "./pagination-border-radius" as *;
+@use "./pagination-margin-start" as *;
+@use "./pagination-border-color" as *;
+@use "./pagination-focus-color" as *;
+@use "./pagination-focus-bg" as *;
+@use "./pagination-focus-box-shadow" as *;
+@use "./pagination-focus-outline" as *;
+@use "./pagination-hover-color" as *;
+@use "./pagination-hover-bg" as *;
+@use "./pagination-hover-border-color" as *;
+@use "./pagination-active-color" as *;
+@use "./pagination-active-bg" as *;
+@use "./pagination-active-border-color" as *;
+@use "./pagination-disabled-color" as *;
+@use "./pagination-disabled-bg" as *;
+@use "./pagination-disabled-border-color" as *;
+@use "./pagination-transition" as *;
+@use "./pagination-border-radius-sm" as *;
+@use "./pagination-border-radius-lg" as *;
+@use "./placeholder-opacity-max" as *;
+@use "./placeholder-opacity-min" as *;
+@use "./card-spacer-y" as *;
+@use "./card-spacer-x" as *;
+@use "./card-title-spacer-y" as *;
+@use "./card-border-width" as *;
+@use "./card-border-color" as *;
+@use "./card-border-radius" as *;
+@use "./card-box-shadow" as *;
+@use "./card-inner-border-radius" as *;
+@use "./card-cap-padding-y" as *;
+@use "./card-cap-padding-x" as *;
+@use "./card-cap-bg" as *;
+@use "./card-cap-color" as *;
+@use "./card-height" as *;
+@use "./card-color" as *;
+@use "./card-bg" as *;
+@use "./card-img-overlay-padding" as *;
+@use "./card-group-margin" as *;
+@use "./accordion-padding-y" as *;
+@use "./accordion-padding-x" as *;
+@use "./accordion-color" as *;
+@use "./accordion-bg" as *;
+@use "./accordion-border-width" as *;
+@use "./accordion-border-color" as *;
+@use "./accordion-border-radius" as *;
+@use "./accordion-inner-border-radius" as *;
+@use "./accordion-body-padding-y" as *;
+@use "./accordion-body-padding-x" as *;
+@use "./accordion-button-padding-y" as *;
+@use "./accordion-button-padding-x" as *;
+@use "./accordion-button-color" as *;
+@use "./accordion-button-bg" as *;
+@use "./accordion-transition" as *;
+@use "./accordion-button-active-bg" as *;
+@use "./accordion-button-active-color" as *;
+@use "./accordion-button-focus-border-color" as *;
+@use "./accordion-button-focus-box-shadow" as *;
+@use "./accordion-icon-width" as *;
+@use "./accordion-icon-color" as *;
+@use "./accordion-icon-active-color" as *;
+@use "./accordion-icon-transition" as *;
+@use "./accordion-icon-transform" as *;
+@use "./accordion-button-icon" as *;
+@use "./accordion-button-active-icon" as *;
+@use "./tooltip-font-size" as *;
+@use "./tooltip-max-width" as *;
+@use "./tooltip-color" as *;
+@use "./tooltip-bg" as *;
+@use "./tooltip-border-radius" as *;
+@use "./tooltip-opacity" as *;
+@use "./tooltip-padding-y" as *;
+@use "./tooltip-padding-x" as *;
+@use "./tooltip-margin" as *;
+@use "./tooltip-arrow-width" as *;
+@use "./tooltip-arrow-height" as *;
+@use "./tooltip-arrow-color" as *;
+@use "./form-feedback-tooltip-padding-y" as *;
+@use "./form-feedback-tooltip-padding-x" as *;
+@use "./form-feedback-tooltip-font-size" as *;
+@use "./form-feedback-tooltip-line-height" as *;
+@use "./form-feedback-tooltip-opacity" as *;
+@use "./form-feedback-tooltip-border-radius" as *;
+@use "./popover-font-size" as *;
+@use "./popover-bg" as *;
+@use "./popover-max-width" as *;
+@use "./popover-border-width" as *;
+@use "./popover-border-color" as *;
+@use "./popover-border-radius" as *;
+@use "./popover-inner-border-radius" as *;
+@use "./popover-box-shadow" as *;
+@use "./popover-header-bg" as *;
+@use "./popover-header-color" as *;
+@use "./popover-header-padding-y" as *;
+@use "./popover-header-padding-x" as *;
+@use "./popover-body-color" as *;
+@use "./popover-body-padding-y" as *;
+@use "./popover-body-padding-x" as *;
+@use "./popover-arrow-width" as *;
+@use "./popover-arrow-height" as *;
+@use "./popover-arrow-color" as *;
+@use "./popover-arrow-outer-color" as *;
+@use "./toast-max-width" as *;
+@use "./toast-padding-x" as *;
+@use "./toast-padding-y" as *;
+@use "./toast-font-size" as *;
+@use "./toast-color" as *;
+@use "./toast-background-color" as *;
+@use "./toast-border-width" as *;
+@use "./toast-border-color" as *;
+@use "./toast-border-radius" as *;
+@use "./toast-box-shadow" as *;
+@use "./toast-spacing" as *;
+@use "./toast-header-color" as *;
+@use "./toast-header-background-color" as *;
+@use "./toast-header-border-color" as *;
+@use "./badge-font-size" as *;
+@use "./badge-font-weight" as *;
+@use "./badge-color" as *;
+@use "./badge-padding-y" as *;
+@use "./badge-padding-x" as *;
+@use "./badge-border-radius" as *;
+@use "./modal-inner-padding" as *;
+@use "./modal-footer-margin-between" as *;
+@use "./modal-dialog-margin" as *;
+@use "./modal-dialog-margin-y-sm-up" as *;
+@use "./modal-title-line-height" as *;
+@use "./modal-content-color" as *;
+@use "./modal-content-bg" as *;
+@use "./modal-content-border-color" as *;
+@use "./modal-content-border-width" as *;
+@use "./modal-content-border-radius" as *;
+@use "./modal-content-inner-border-radius" as *;
+@use "./modal-content-box-shadow-xs" as *;
+@use "./modal-content-box-shadow-sm-up" as *;
+@use "./modal-backdrop-bg" as *;
+@use "./modal-backdrop-opacity" as *;
+@use "./modal-header-border-color" as *;
+@use "./modal-footer-border-color" as *;
+@use "./modal-header-border-width" as *;
+@use "./modal-footer-border-width" as *;
+@use "./modal-header-padding-y" as *;
+@use "./modal-header-padding-x" as *;
+@use "./modal-header-padding" as *;
+@use "./modal-sm" as *;
+@use "./modal-md" as *;
+@use "./modal-lg" as *;
+@use "./modal-xl" as *;
+@use "./modal-fade-transform" as *;
+@use "./modal-show-transform" as *;
+@use "./modal-transition" as *;
+@use "./modal-scale-transform" as *;
+@use "./alert-padding-y" as *;
+@use "./alert-padding-x" as *;
+@use "./alert-margin-bottom" as *;
+@use "./alert-border-radius" as *;
+@use "./alert-link-font-weight" as *;
+@use "./alert-border-width" as *;
+@use "./alert-bg-scale" as *;
+@use "./alert-border-scale" as *;
+@use "./alert-color-scale" as *;
+@use "./alert-dismissible-padding-r" as *;
+@use "./progress-height" as *;
+@use "./progress-font-size" as *;
+@use "./progress-bg" as *;
+@use "./progress-border-radius" as *;
+@use "./progress-box-shadow" as *;
+@use "./progress-bar-color" as *;
+@use "./progress-bar-bg" as *;
+@use "./progress-bar-animation-timing" as *;
+@use "./progress-bar-transition" as *;
+@use "./list-group-color" as *;
+@use "./list-group-bg" as *;
+@use "./list-group-border-color" as *;
+@use "./list-group-border-width" as *;
+@use "./list-group-border-radius" as *;
+@use "./list-group-item-padding-y" as *;
+@use "./list-group-item-padding-x" as *;
+@use "./list-group-item-bg-scale" as *;
+@use "./list-group-item-color-scale" as *;
+@use "./list-group-hover-bg" as *;
+@use "./list-group-active-color" as *;
+@use "./list-group-active-bg" as *;
+@use "./list-group-active-border-color" as *;
+@use "./list-group-disabled-color" as *;
+@use "./list-group-disabled-bg" as *;
+@use "./list-group-action-color" as *;
+@use "./list-group-action-hover-color" as *;
+@use "./list-group-action-active-color" as *;
+@use "./list-group-action-active-bg" as *;
+@use "./thumbnail-padding" as *;
+@use "./thumbnail-bg" as *;
+@use "./thumbnail-border-width" as *;
+@use "./thumbnail-border-color" as *;
+@use "./thumbnail-border-radius" as *;
+@use "./thumbnail-box-shadow" as *;
+@use "./figure-caption-font-size" as *;
+@use "./figure-caption-color" as *;
+@use "./breadcrumb-font-size" as *;
+@use "./breadcrumb-padding-y" as *;
+@use "./breadcrumb-padding-x" as *;
+@use "./breadcrumb-item-padding-x" as *;
+@use "./breadcrumb-margin-bottom" as *;
+@use "./breadcrumb-bg" as *;
+@use "./breadcrumb-divider-color" as *;
+@use "./breadcrumb-active-color" as *;
+@use "./breadcrumb-divider" as *;
+@use "./breadcrumb-divider-flipped" as *;
+@use "./breadcrumb-border-radius" as *;
+@use "./carousel-control-color" as *;
+@use "./carousel-control-width" as *;
+@use "./carousel-control-opacity" as *;
+@use "./carousel-control-hover-opacity" as *;
+@use "./carousel-control-transition" as *;
+@use "./carousel-indicator-width" as *;
+@use "./carousel-indicator-height" as *;
+@use "./carousel-indicator-hit-area-height" as *;
+@use "./carousel-indicator-spacer" as *;
+@use "./carousel-indicator-opacity" as *;
+@use "./carousel-indicator-active-bg" as *;
+@use "./carousel-indicator-active-opacity" as *;
+@use "./carousel-indicator-transition" as *;
+@use "./carousel-caption-width" as *;
+@use "./carousel-caption-color" as *;
+@use "./carousel-caption-padding-y" as *;
+@use "./carousel-caption-spacer" as *;
+@use "./carousel-control-icon-width" as *;
+@use "./carousel-control-prev-icon-bg" as *;
+@use "./carousel-control-next-icon-bg" as *;
+@use "./carousel-transition-duration" as *;
+@use "./carousel-transition" as *;
+@use "./carousel-dark-indicator-active-bg" as *;
+@use "./carousel-dark-caption-color" as *;
+@use "./carousel-dark-control-icon-filter" as *;
+@use "./spinner-width" as *;
+@use "./spinner-height" as *;
+@use "./spinner-vertical-align" as *;
+@use "./spinner-border-width" as *;
+@use "./spinner-animation-speed" as *;
+@use "./spinner-width-sm" as *;
+@use "./spinner-height-sm" as *;
+@use "./spinner-border-width-sm" as *;
+@use "./btn-close-width" as *;
+@use "./btn-close-height" as *;
+@use "./btn-close-padding-x" as *;
+@use "./btn-close-padding-y" as *;
+@use "./btn-close-color" as *;
+@use "./btn-close-bg" as *;
+@use "./btn-close-focus-shadow" as *;
+@use "./btn-close-opacity" as *;
+@use "./btn-close-hover-opacity" as *;
+@use "./btn-close-focus-opacity" as *;
+@use "./btn-close-disabled-opacity" as *;
+@use "./btn-close-white-filter" as *;
+@use "./offcanvas-padding-y" as *;
+@use "./offcanvas-padding-x" as *;
+@use "./offcanvas-horizontal-width" as *;
+@use "./offcanvas-vertical-height" as *;
+@use "./offcanvas-transition-duration" as *;
+@use "./offcanvas-border-color" as *;
+@use "./offcanvas-border-width" as *;
+@use "./offcanvas-title-line-height" as *;
+@use "./offcanvas-bg-color" as *;
+@use "./offcanvas-color" as *;
+@use "./offcanvas-box-shadow" as *;
+@use "./offcanvas-backdrop-bg" as *;
+@use "./offcanvas-backdrop-opacity" as *;
+@use "./code-font-size" as *;
+@use "./code-color" as *;
+@use "./kbd-padding-y" as *;
+@use "./kbd-padding-x" as *;
+@use "./kbd-font-size" as *;
+@use "./kbd-color" as *;
+@use "./kbd-bg" as *;
+@use "./pre-color" as *;
+
+$variables: (
+    "white": $white,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+    "gray-500": $gray-500,
+    "gray-600": $gray-600,
+    "gray-700": $gray-700,
+    "gray-800": $gray-800,
+    "gray-900": $gray-900,
+    "black": $black,
+    "grays": $grays,
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "colors": $colors,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "theme-colors": $theme-colors,
+    "theme-colors-rgb": $theme-colors-rgb,
+    "min-contrast-ratio": $min-contrast-ratio,
+    "color-contrast-dark": $color-contrast-dark,
+    "color-contrast-light": $color-contrast-light,
+    "blue-100": $blue-100,
+    "blue-200": $blue-200,
+    "blue-300": $blue-300,
+    "blue-400": $blue-400,
+    "blue-500": $blue-500,
+    "blue-600": $blue-600,
+    "blue-700": $blue-700,
+    "blue-800": $blue-800,
+    "blue-900": $blue-900,
+    "indigo-100": $indigo-100,
+    "indigo-200": $indigo-200,
+    "indigo-300": $indigo-300,
+    "indigo-400": $indigo-400,
+    "indigo-500": $indigo-500,
+    "indigo-600": $indigo-600,
+    "indigo-700": $indigo-700,
+    "indigo-800": $indigo-800,
+    "indigo-900": $indigo-900,
+    "purple-100": $purple-100,
+    "purple-200": $purple-200,
+    "purple-300": $purple-300,
+    "purple-400": $purple-400,
+    "purple-500": $purple-500,
+    "purple-600": $purple-600,
+    "purple-700": $purple-700,
+    "purple-800": $purple-800,
+    "purple-900": $purple-900,
+    "pink-100": $pink-100,
+    "pink-200": $pink-200,
+    "pink-300": $pink-300,
+    "pink-400": $pink-400,
+    "pink-500": $pink-500,
+    "pink-600": $pink-600,
+    "pink-700": $pink-700,
+    "pink-800": $pink-800,
+    "pink-900": $pink-900,
+    "red-100": $red-100,
+    "red-200": $red-200,
+    "red-300": $red-300,
+    "red-400": $red-400,
+    "red-500": $red-500,
+    "red-600": $red-600,
+    "red-700": $red-700,
+    "red-800": $red-800,
+    "red-900": $red-900,
+    "orange-100": $orange-100,
+    "orange-200": $orange-200,
+    "orange-300": $orange-300,
+    "orange-400": $orange-400,
+    "orange-500": $orange-500,
+    "orange-600": $orange-600,
+    "orange-700": $orange-700,
+    "orange-800": $orange-800,
+    "orange-900": $orange-900,
+    "yellow-100": $yellow-100,
+    "yellow-200": $yellow-200,
+    "yellow-300": $yellow-300,
+    "yellow-400": $yellow-400,
+    "yellow-500": $yellow-500,
+    "yellow-600": $yellow-600,
+    "yellow-700": $yellow-700,
+    "yellow-800": $yellow-800,
+    "yellow-900": $yellow-900,
+    "green-100": $green-100,
+    "green-200": $green-200,
+    "green-300": $green-300,
+    "green-400": $green-400,
+    "green-500": $green-500,
+    "green-600": $green-600,
+    "green-700": $green-700,
+    "green-800": $green-800,
+    "green-900": $green-900,
+    "teal-100": $teal-100,
+    "teal-200": $teal-200,
+    "teal-300": $teal-300,
+    "teal-400": $teal-400,
+    "teal-500": $teal-500,
+    "teal-600": $teal-600,
+    "teal-700": $teal-700,
+    "teal-800": $teal-800,
+    "teal-900": $teal-900,
+    "cyan-100": $cyan-100,
+    "cyan-200": $cyan-200,
+    "cyan-300": $cyan-300,
+    "cyan-400": $cyan-400,
+    "cyan-500": $cyan-500,
+    "cyan-600": $cyan-600,
+    "cyan-700": $cyan-700,
+    "cyan-800": $cyan-800,
+    "cyan-900": $cyan-900,
+    "blues": $blues,
+    "indigos": $indigos,
+    "purples": $purples,
+    "pinks": $pinks,
+    "reds": $reds,
+    "oranges": $oranges,
+    "yellows": $yellows,
+    "greens": $greens,
+    "teals": $teals,
+    "cyans": $cyans,
+    "escaped-characters": $escaped-characters,
+    "enable-caret": $enable-caret,
+    "enable-rounded": $enable-rounded,
+    "enable-shadows": $enable-shadows,
+    "enable-gradients": $enable-gradients,
+    "enable-transitions": $enable-transitions,
+    "enable-reduced-motion": $enable-reduced-motion,
+    "enable-smooth-scroll": $enable-smooth-scroll,
+    "enable-grid-classes": $enable-grid-classes,
+    "enable-cssgrid": $enable-cssgrid,
+    "enable-button-pointers": $enable-button-pointers,
+    "enable-rfs": $enable-rfs,
+    "enable-validation-icons": $enable-validation-icons,
+    "enable-negative-margins": $enable-negative-margins,
+    "enable-deprecation-messages": $enable-deprecation-messages,
+    "enable-important-utilities": $enable-important-utilities,
+    "variable-prefix": $variable-prefix,
+    "gradient": $gradient,
+    "spacer": $spacer,
+    "spacers": $spacers,
+    "negative-spacers": $negative-spacers,
+    "position-values": $position-values,
+    "body-bg": $body-bg,
+    "body-color": $body-color,
+    "body-text-align": $body-text-align,
+    "utilities-colors": $utilities-colors,
+    "utilities-text": $utilities-text,
+    "utilities-text-colors": $utilities-text-colors,
+    "utilities-bg": $utilities-bg,
+    "utilities-bg-colors": $utilities-bg-colors,
+    "link-color": $link-color,
+    "link-decoration": $link-decoration,
+    "link-shade-percentage": $link-shade-percentage,
+    "link-hover-color": $link-hover-color,
+    "link-hover-decoration": $link-hover-decoration,
+    "stretched-link-pseudo-element": $stretched-link-pseudo-element,
+    "stretched-link-z-index": $stretched-link-z-index,
+    "paragraph-margin-bottom": $paragraph-margin-bottom,
+    "grid-breakpoints": $grid-breakpoints,
+    "container-max-widths": $container-max-widths,
+    "grid-columns": $grid-columns,
+    "grid-gutter-width": $grid-gutter-width,
+    "grid-row-columns": $grid-row-columns,
+    "gutters": $gutters,
+    "container-padding-x": $container-padding-x,
+    "border-width": $border-width,
+    "border-widths": $border-widths,
+    "border-color": $border-color,
+    "border-radius": $border-radius,
+    "border-radius-sm": $border-radius-sm,
+    "border-radius-lg": $border-radius-lg,
+    "border-radius-pill": $border-radius-pill,
+    "box-shadow": $box-shadow,
+    "box-shadow-sm": $box-shadow-sm,
+    "box-shadow-lg": $box-shadow-lg,
+    "box-shadow-inset": $box-shadow-inset,
+    "component-active-color": $component-active-color,
+    "component-active-bg": $component-active-bg,
+    "caret-width": $caret-width,
+    "caret-vertical-align": $caret-vertical-align,
+    "caret-spacing": $caret-spacing,
+    "transition-base": $transition-base,
+    "transition-fade": $transition-fade,
+    "transition-collapse": $transition-collapse,
+    "transition-collapse-width": $transition-collapse-width,
+    "aspect-ratios": $aspect-ratios,
+    "font-family-sans-serif": $font-family-sans-serif,
+    "font-family-monospace": $font-family-monospace,
+    "font-family-base": $font-family-base,
+    "font-family-code": $font-family-code,
+    "font-size-root": $font-size-root,
+    "font-size-base": $font-size-base,
+    "font-size-sm": $font-size-sm,
+    "font-size-lg": $font-size-lg,
+    "font-weight-lighter": $font-weight-lighter,
+    "font-weight-light": $font-weight-light,
+    "font-weight-normal": $font-weight-normal,
+    "font-weight-bold": $font-weight-bold,
+    "font-weight-bolder": $font-weight-bolder,
+    "font-weight-base": $font-weight-base,
+    "line-height-base": $line-height-base,
+    "line-height-sm": $line-height-sm,
+    "line-height-lg": $line-height-lg,
+    "h1-font-size": $h1-font-size,
+    "h2-font-size": $h2-font-size,
+    "h3-font-size": $h3-font-size,
+    "h4-font-size": $h4-font-size,
+    "h5-font-size": $h5-font-size,
+    "h6-font-size": $h6-font-size,
+    "font-sizes": $font-sizes,
+    "headings-margin-bottom": $headings-margin-bottom,
+    "headings-font-family": $headings-font-family,
+    "headings-font-style": $headings-font-style,
+    "headings-font-weight": $headings-font-weight,
+    "headings-line-height": $headings-line-height,
+    "headings-color": $headings-color,
+    "display-font-sizes": $display-font-sizes,
+    "display-font-weight": $display-font-weight,
+    "display-line-height": $display-line-height,
+    "lead-font-size": $lead-font-size,
+    "lead-font-weight": $lead-font-weight,
+    "small-font-size": $small-font-size,
+    "sub-sup-font-size": $sub-sup-font-size,
+    "text-muted": $text-muted,
+    "initialism-font-size": $initialism-font-size,
+    "blockquote-margin-y": $blockquote-margin-y,
+    "blockquote-font-size": $blockquote-font-size,
+    "blockquote-footer-color": $blockquote-footer-color,
+    "blockquote-footer-font-size": $blockquote-footer-font-size,
+    "hr-margin-y": $hr-margin-y,
+    "hr-color": $hr-color,
+    "hr-height": $hr-height,
+    "hr-opacity": $hr-opacity,
+    "legend-margin-bottom": $legend-margin-bottom,
+    "legend-font-size": $legend-font-size,
+    "legend-font-weight": $legend-font-weight,
+    "mark-padding": $mark-padding,
+    "dt-font-weight": $dt-font-weight,
+    "nested-kbd-font-weight": $nested-kbd-font-weight,
+    "list-inline-padding": $list-inline-padding,
+    "mark-bg": $mark-bg,
+    "table-cell-padding-y": $table-cell-padding-y,
+    "table-cell-padding-x": $table-cell-padding-x,
+    "table-cell-padding-y-sm": $table-cell-padding-y-sm,
+    "table-cell-padding-x-sm": $table-cell-padding-x-sm,
+    "table-cell-vertical-align": $table-cell-vertical-align,
+    "table-color": $table-color,
+    "table-bg": $table-bg,
+    "table-accent-bg": $table-accent-bg,
+    "table-th-font-weight": $table-th-font-weight,
+    "table-striped-color": $table-striped-color,
+    "table-striped-bg-factor": $table-striped-bg-factor,
+    "table-striped-bg": $table-striped-bg,
+    "table-active-color": $table-active-color,
+    "table-active-bg-factor": $table-active-bg-factor,
+    "table-active-bg": $table-active-bg,
+    "table-hover-color": $table-hover-color,
+    "table-hover-bg-factor": $table-hover-bg-factor,
+    "table-hover-bg": $table-hover-bg,
+    "table-border-factor": $table-border-factor,
+    "table-border-width": $table-border-width,
+    "table-border-color": $table-border-color,
+    "table-striped-order": $table-striped-order,
+    "table-group-separator-color": $table-group-separator-color,
+    "table-caption-color": $table-caption-color,
+    "table-bg-scale": $table-bg-scale,
+    "table-variants": $table-variants,
+    "input-btn-padding-y": $input-btn-padding-y,
+    "input-btn-padding-x": $input-btn-padding-x,
+    "input-btn-font-family": $input-btn-font-family,
+    "input-btn-font-size": $input-btn-font-size,
+    "input-btn-line-height": $input-btn-line-height,
+    "input-btn-focus-width": $input-btn-focus-width,
+    "input-btn-focus-color-opacity": $input-btn-focus-color-opacity,
+    "input-btn-focus-color": $input-btn-focus-color,
+    "input-btn-focus-blur": $input-btn-focus-blur,
+    "input-btn-focus-box-shadow": $input-btn-focus-box-shadow,
+    "input-btn-padding-y-sm": $input-btn-padding-y-sm,
+    "input-btn-padding-x-sm": $input-btn-padding-x-sm,
+    "input-btn-font-size-sm": $input-btn-font-size-sm,
+    "input-btn-padding-y-lg": $input-btn-padding-y-lg,
+    "input-btn-padding-x-lg": $input-btn-padding-x-lg,
+    "input-btn-font-size-lg": $input-btn-font-size-lg,
+    "input-btn-border-width": $input-btn-border-width,
+    "btn-padding-y": $btn-padding-y,
+    "btn-padding-x": $btn-padding-x,
+    "btn-font-family": $btn-font-family,
+    "btn-font-size": $btn-font-size,
+    "btn-line-height": $btn-line-height,
+    "btn-white-space": $btn-white-space,
+    "btn-padding-y-sm": $btn-padding-y-sm,
+    "btn-padding-x-sm": $btn-padding-x-sm,
+    "btn-font-size-sm": $btn-font-size-sm,
+    "btn-padding-y-lg": $btn-padding-y-lg,
+    "btn-padding-x-lg": $btn-padding-x-lg,
+    "btn-font-size-lg": $btn-font-size-lg,
+    "btn-border-width": $btn-border-width,
+    "btn-font-weight": $btn-font-weight,
+    "btn-box-shadow": $btn-box-shadow,
+    "btn-focus-width": $btn-focus-width,
+    "btn-focus-box-shadow": $btn-focus-box-shadow,
+    "btn-disabled-opacity": $btn-disabled-opacity,
+    "btn-active-box-shadow": $btn-active-box-shadow,
+    "btn-link-color": $btn-link-color,
+    "btn-link-hover-color": $btn-link-hover-color,
+    "btn-link-disabled-color": $btn-link-disabled-color,
+    "btn-border-radius": $btn-border-radius,
+    "btn-border-radius-sm": $btn-border-radius-sm,
+    "btn-border-radius-lg": $btn-border-radius-lg,
+    "btn-transition": $btn-transition,
+    "btn-hover-bg-shade-amount": $btn-hover-bg-shade-amount,
+    "btn-hover-bg-tint-amount": $btn-hover-bg-tint-amount,
+    "btn-hover-border-shade-amount": $btn-hover-border-shade-amount,
+    "btn-hover-border-tint-amount": $btn-hover-border-tint-amount,
+    "btn-active-bg-shade-amount": $btn-active-bg-shade-amount,
+    "btn-active-bg-tint-amount": $btn-active-bg-tint-amount,
+    "btn-active-border-shade-amount": $btn-active-border-shade-amount,
+    "btn-active-border-tint-amount": $btn-active-border-tint-amount,
+    "form-text-margin-top": $form-text-margin-top,
+    "form-text-font-size": $form-text-font-size,
+    "form-text-font-style": $form-text-font-style,
+    "form-text-font-weight": $form-text-font-weight,
+    "form-text-color": $form-text-color,
+    "form-label-margin-bottom": $form-label-margin-bottom,
+    "form-label-font-size": $form-label-font-size,
+    "form-label-font-style": $form-label-font-style,
+    "form-label-font-weight": $form-label-font-weight,
+    "form-label-color": $form-label-color,
+    "input-padding-y": $input-padding-y,
+    "input-padding-x": $input-padding-x,
+    "input-font-family": $input-font-family,
+    "input-font-size": $input-font-size,
+    "input-font-weight": $input-font-weight,
+    "input-line-height": $input-line-height,
+    "input-padding-y-sm": $input-padding-y-sm,
+    "input-padding-x-sm": $input-padding-x-sm,
+    "input-font-size-sm": $input-font-size-sm,
+    "input-padding-y-lg": $input-padding-y-lg,
+    "input-padding-x-lg": $input-padding-x-lg,
+    "input-font-size-lg": $input-font-size-lg,
+    "input-bg": $input-bg,
+    "input-disabled-bg": $input-disabled-bg,
+    "input-disabled-border-color": $input-disabled-border-color,
+    "input-color": $input-color,
+    "input-border-color": $input-border-color,
+    "input-border-width": $input-border-width,
+    "input-box-shadow": $input-box-shadow,
+    "input-border-radius": $input-border-radius,
+    "input-border-radius-sm": $input-border-radius-sm,
+    "input-border-radius-lg": $input-border-radius-lg,
+    "input-focus-bg": $input-focus-bg,
+    "input-focus-border-color": $input-focus-border-color,
+    "input-focus-color": $input-focus-color,
+    "input-focus-width": $input-focus-width,
+    "input-focus-box-shadow": $input-focus-box-shadow,
+    "input-placeholder-color": $input-placeholder-color,
+    "input-plaintext-color": $input-plaintext-color,
+    "input-height-border": $input-height-border,
+    "input-height-inner": $input-height-inner,
+    "input-height-inner-half": $input-height-inner-half,
+    "input-height-inner-quarter": $input-height-inner-quarter,
+    "input-height": $input-height,
+    "input-height-sm": $input-height-sm,
+    "input-height-lg": $input-height-lg,
+    "input-transition": $input-transition,
+    "form-color-width": $form-color-width,
+    "form-check-input-width": $form-check-input-width,
+    "form-check-min-height": $form-check-min-height,
+    "form-check-padding-start": $form-check-padding-start,
+    "form-check-margin-bottom": $form-check-margin-bottom,
+    "form-check-label-color": $form-check-label-color,
+    "form-check-label-cursor": $form-check-label-cursor,
+    "form-check-transition": $form-check-transition,
+    "form-check-input-active-filter": $form-check-input-active-filter,
+    "form-check-input-bg": $form-check-input-bg,
+    "form-check-input-border": $form-check-input-border,
+    "form-check-input-border-radius": $form-check-input-border-radius,
+    "form-check-radio-border-radius": $form-check-radio-border-radius,
+    "form-check-input-focus-border": $form-check-input-focus-border,
+    "form-check-input-focus-box-shadow": $form-check-input-focus-box-shadow,
+    "form-check-input-checked-color": $form-check-input-checked-color,
+    "form-check-input-checked-bg-color": $form-check-input-checked-bg-color,
+    "form-check-input-checked-border-color": $form-check-input-checked-border-color,
+    "form-check-input-checked-bg-image": $form-check-input-checked-bg-image,
+    "form-check-radio-checked-bg-image": $form-check-radio-checked-bg-image,
+    "form-check-input-indeterminate-color": $form-check-input-indeterminate-color,
+    "form-check-input-indeterminate-bg-color": $form-check-input-indeterminate-bg-color,
+    "form-check-input-indeterminate-border-color": $form-check-input-indeterminate-border-color,
+    "form-check-input-indeterminate-bg-image": $form-check-input-indeterminate-bg-image,
+    "form-check-input-disabled-opacity": $form-check-input-disabled-opacity,
+    "form-check-label-disabled-opacity": $form-check-label-disabled-opacity,
+    "form-check-btn-check-disabled-opacity": $form-check-btn-check-disabled-opacity,
+    "form-check-inline-margin-end": $form-check-inline-margin-end,
+    "form-switch-color": $form-switch-color,
+    "form-switch-width": $form-switch-width,
+    "form-switch-padding-start": $form-switch-padding-start,
+    "form-switch-bg-image": $form-switch-bg-image,
+    "form-switch-border-radius": $form-switch-border-radius,
+    "form-switch-transition": $form-switch-transition,
+    "form-switch-focus-color": $form-switch-focus-color,
+    "form-switch-focus-bg-image": $form-switch-focus-bg-image,
+    "form-switch-checked-color": $form-switch-checked-color,
+    "form-switch-checked-bg-image": $form-switch-checked-bg-image,
+    "form-switch-checked-bg-position": $form-switch-checked-bg-position,
+    "input-group-addon-padding-y": $input-group-addon-padding-y,
+    "input-group-addon-padding-x": $input-group-addon-padding-x,
+    "input-group-addon-font-weight": $input-group-addon-font-weight,
+    "input-group-addon-color": $input-group-addon-color,
+    "input-group-addon-bg": $input-group-addon-bg,
+    "input-group-addon-border-color": $input-group-addon-border-color,
+    "form-select-padding-y": $form-select-padding-y,
+    "form-select-padding-x": $form-select-padding-x,
+    "form-select-font-family": $form-select-font-family,
+    "form-select-font-size": $form-select-font-size,
+    "form-select-indicator-padding": $form-select-indicator-padding,
+    "form-select-font-weight": $form-select-font-weight,
+    "form-select-line-height": $form-select-line-height,
+    "form-select-color": $form-select-color,
+    "form-select-bg": $form-select-bg,
+    "form-select-disabled-color": $form-select-disabled-color,
+    "form-select-disabled-bg": $form-select-disabled-bg,
+    "form-select-disabled-border-color": $form-select-disabled-border-color,
+    "form-select-bg-position": $form-select-bg-position,
+    "form-select-bg-size": $form-select-bg-size,
+    "form-select-indicator-color": $form-select-indicator-color,
+    "form-select-indicator": $form-select-indicator,
+    "form-select-feedback-icon-padding-end": $form-select-feedback-icon-padding-end,
+    "form-select-feedback-icon-position": $form-select-feedback-icon-position,
+    "form-select-feedback-icon-size": $form-select-feedback-icon-size,
+    "form-select-border-width": $form-select-border-width,
+    "form-select-border-color": $form-select-border-color,
+    "form-select-border-radius": $form-select-border-radius,
+    "form-select-box-shadow": $form-select-box-shadow,
+    "form-select-focus-border-color": $form-select-focus-border-color,
+    "form-select-focus-width": $form-select-focus-width,
+    "form-select-focus-box-shadow": $form-select-focus-box-shadow,
+    "form-select-padding-y-sm": $form-select-padding-y-sm,
+    "form-select-padding-x-sm": $form-select-padding-x-sm,
+    "form-select-font-size-sm": $form-select-font-size-sm,
+    "form-select-border-radius-sm": $form-select-border-radius-sm,
+    "form-select-padding-y-lg": $form-select-padding-y-lg,
+    "form-select-padding-x-lg": $form-select-padding-x-lg,
+    "form-select-font-size-lg": $form-select-font-size-lg,
+    "form-select-border-radius-lg": $form-select-border-radius-lg,
+    "form-select-transition": $form-select-transition,
+    "form-range-track-width": $form-range-track-width,
+    "form-range-track-height": $form-range-track-height,
+    "form-range-track-cursor": $form-range-track-cursor,
+    "form-range-track-bg": $form-range-track-bg,
+    "form-range-track-border-radius": $form-range-track-border-radius,
+    "form-range-track-box-shadow": $form-range-track-box-shadow,
+    "form-range-thumb-width": $form-range-thumb-width,
+    "form-range-thumb-height": $form-range-thumb-height,
+    "form-range-thumb-bg": $form-range-thumb-bg,
+    "form-range-thumb-border": $form-range-thumb-border,
+    "form-range-thumb-border-radius": $form-range-thumb-border-radius,
+    "form-range-thumb-box-shadow": $form-range-thumb-box-shadow,
+    "form-range-thumb-focus-box-shadow": $form-range-thumb-focus-box-shadow,
+    "form-range-thumb-focus-box-shadow-width": $form-range-thumb-focus-box-shadow-width,
+    "form-range-thumb-active-bg": $form-range-thumb-active-bg,
+    "form-range-thumb-disabled-bg": $form-range-thumb-disabled-bg,
+    "form-range-thumb-transition": $form-range-thumb-transition,
+    "form-file-button-color": $form-file-button-color,
+    "form-file-button-bg": $form-file-button-bg,
+    "form-file-button-hover-bg": $form-file-button-hover-bg,
+    "form-floating-height": $form-floating-height,
+    "form-floating-line-height": $form-floating-line-height,
+    "form-floating-padding-x": $form-floating-padding-x,
+    "form-floating-padding-y": $form-floating-padding-y,
+    "form-floating-input-padding-t": $form-floating-input-padding-t,
+    "form-floating-input-padding-b": $form-floating-input-padding-b,
+    "form-floating-label-opacity": $form-floating-label-opacity,
+    "form-floating-label-transform": $form-floating-label-transform,
+    "form-floating-transition": $form-floating-transition,
+    "form-feedback-margin-top": $form-feedback-margin-top,
+    "form-feedback-font-size": $form-feedback-font-size,
+    "form-feedback-font-style": $form-feedback-font-style,
+    "form-feedback-valid-color": $form-feedback-valid-color,
+    "form-feedback-invalid-color": $form-feedback-invalid-color,
+    "form-feedback-icon-valid-color": $form-feedback-icon-valid-color,
+    "form-feedback-icon-valid": $form-feedback-icon-valid,
+    "form-feedback-icon-invalid-color": $form-feedback-icon-invalid-color,
+    "form-feedback-icon-invalid": $form-feedback-icon-invalid,
+    "form-validation-states": $form-validation-states,
+    "zindex-dropdown": $zindex-dropdown,
+    "zindex-sticky": $zindex-sticky,
+    "zindex-fixed": $zindex-fixed,
+    "zindex-offcanvas-backdrop": $zindex-offcanvas-backdrop,
+    "zindex-offcanvas": $zindex-offcanvas,
+    "zindex-modal-backdrop": $zindex-modal-backdrop,
+    "zindex-modal": $zindex-modal,
+    "zindex-popover": $zindex-popover,
+    "zindex-tooltip": $zindex-tooltip,
+    "nav-link-padding-y": $nav-link-padding-y,
+    "nav-link-padding-x": $nav-link-padding-x,
+    "nav-link-font-size": $nav-link-font-size,
+    "nav-link-font-weight": $nav-link-font-weight,
+    "nav-link-color": $nav-link-color,
+    "nav-link-hover-color": $nav-link-hover-color,
+    "nav-link-transition": $nav-link-transition,
+    "nav-link-disabled-color": $nav-link-disabled-color,
+    "nav-tabs-border-color": $nav-tabs-border-color,
+    "nav-tabs-border-width": $nav-tabs-border-width,
+    "nav-tabs-border-radius": $nav-tabs-border-radius,
+    "nav-tabs-link-hover-border-color": $nav-tabs-link-hover-border-color,
+    "nav-tabs-link-active-color": $nav-tabs-link-active-color,
+    "nav-tabs-link-active-bg": $nav-tabs-link-active-bg,
+    "nav-tabs-link-active-border-color": $nav-tabs-link-active-border-color,
+    "nav-pills-border-radius": $nav-pills-border-radius,
+    "nav-pills-link-active-color": $nav-pills-link-active-color,
+    "nav-pills-link-active-bg": $nav-pills-link-active-bg,
+    "navbar-padding-y": $navbar-padding-y,
+    "navbar-padding-x": $navbar-padding-x,
+    "navbar-nav-link-padding-x": $navbar-nav-link-padding-x,
+    "navbar-brand-font-size": $navbar-brand-font-size,
+    "nav-link-height": $nav-link-height,
+    "navbar-brand-height": $navbar-brand-height,
+    "navbar-brand-padding-y": $navbar-brand-padding-y,
+    "navbar-brand-margin-end": $navbar-brand-margin-end,
+    "navbar-toggler-padding-y": $navbar-toggler-padding-y,
+    "navbar-toggler-padding-x": $navbar-toggler-padding-x,
+    "navbar-toggler-font-size": $navbar-toggler-font-size,
+    "navbar-toggler-border-radius": $navbar-toggler-border-radius,
+    "navbar-toggler-focus-width": $navbar-toggler-focus-width,
+    "navbar-toggler-transition": $navbar-toggler-transition,
+    "navbar-dark-color": $navbar-dark-color,
+    "navbar-dark-hover-color": $navbar-dark-hover-color,
+    "navbar-dark-active-color": $navbar-dark-active-color,
+    "navbar-dark-disabled-color": $navbar-dark-disabled-color,
+    "navbar-dark-toggler-icon-bg": $navbar-dark-toggler-icon-bg,
+    "navbar-dark-toggler-border-color": $navbar-dark-toggler-border-color,
+    "navbar-light-color": $navbar-light-color,
+    "navbar-light-hover-color": $navbar-light-hover-color,
+    "navbar-light-active-color": $navbar-light-active-color,
+    "navbar-light-disabled-color": $navbar-light-disabled-color,
+    "navbar-light-toggler-icon-bg": $navbar-light-toggler-icon-bg,
+    "navbar-light-toggler-border-color": $navbar-light-toggler-border-color,
+    "navbar-light-brand-color": $navbar-light-brand-color,
+    "navbar-light-brand-hover-color": $navbar-light-brand-hover-color,
+    "navbar-dark-brand-color": $navbar-dark-brand-color,
+    "navbar-dark-brand-hover-color": $navbar-dark-brand-hover-color,
+    "dropdown-min-width": $dropdown-min-width,
+    "dropdown-padding-x": $dropdown-padding-x,
+    "dropdown-padding-y": $dropdown-padding-y,
+    "dropdown-spacer": $dropdown-spacer,
+    "dropdown-font-size": $dropdown-font-size,
+    "dropdown-color": $dropdown-color,
+    "dropdown-bg": $dropdown-bg,
+    "dropdown-border-color": $dropdown-border-color,
+    "dropdown-border-radius": $dropdown-border-radius,
+    "dropdown-border-width": $dropdown-border-width,
+    "dropdown-inner-border-radius": $dropdown-inner-border-radius,
+    "dropdown-divider-bg": $dropdown-divider-bg,
+    "dropdown-divider-margin-y": $dropdown-divider-margin-y,
+    "dropdown-box-shadow": $dropdown-box-shadow,
+    "dropdown-link-color": $dropdown-link-color,
+    "dropdown-link-hover-color": $dropdown-link-hover-color,
+    "dropdown-link-hover-bg": $dropdown-link-hover-bg,
+    "dropdown-link-active-color": $dropdown-link-active-color,
+    "dropdown-link-active-bg": $dropdown-link-active-bg,
+    "dropdown-link-disabled-color": $dropdown-link-disabled-color,
+    "dropdown-item-padding-y": $dropdown-item-padding-y,
+    "dropdown-item-padding-x": $dropdown-item-padding-x,
+    "dropdown-header-color": $dropdown-header-color,
+    "dropdown-header-padding": $dropdown-header-padding,
+    "dropdown-dark-color": $dropdown-dark-color,
+    "dropdown-dark-bg": $dropdown-dark-bg,
+    "dropdown-dark-border-color": $dropdown-dark-border-color,
+    "dropdown-dark-divider-bg": $dropdown-dark-divider-bg,
+    "dropdown-dark-box-shadow": $dropdown-dark-box-shadow,
+    "dropdown-dark-link-color": $dropdown-dark-link-color,
+    "dropdown-dark-link-hover-color": $dropdown-dark-link-hover-color,
+    "dropdown-dark-link-hover-bg": $dropdown-dark-link-hover-bg,
+    "dropdown-dark-link-active-color": $dropdown-dark-link-active-color,
+    "dropdown-dark-link-active-bg": $dropdown-dark-link-active-bg,
+    "dropdown-dark-link-disabled-color": $dropdown-dark-link-disabled-color,
+    "dropdown-dark-header-color": $dropdown-dark-header-color,
+    "pagination-padding-y": $pagination-padding-y,
+    "pagination-padding-x": $pagination-padding-x,
+    "pagination-padding-y-sm": $pagination-padding-y-sm,
+    "pagination-padding-x-sm": $pagination-padding-x-sm,
+    "pagination-padding-y-lg": $pagination-padding-y-lg,
+    "pagination-padding-x-lg": $pagination-padding-x-lg,
+    "pagination-color": $pagination-color,
+    "pagination-bg": $pagination-bg,
+    "pagination-border-width": $pagination-border-width,
+    "pagination-border-radius": $pagination-border-radius,
+    "pagination-margin-start": $pagination-margin-start,
+    "pagination-border-color": $pagination-border-color,
+    "pagination-focus-color": $pagination-focus-color,
+    "pagination-focus-bg": $pagination-focus-bg,
+    "pagination-focus-box-shadow": $pagination-focus-box-shadow,
+    "pagination-focus-outline": $pagination-focus-outline,
+    "pagination-hover-color": $pagination-hover-color,
+    "pagination-hover-bg": $pagination-hover-bg,
+    "pagination-hover-border-color": $pagination-hover-border-color,
+    "pagination-active-color": $pagination-active-color,
+    "pagination-active-bg": $pagination-active-bg,
+    "pagination-active-border-color": $pagination-active-border-color,
+    "pagination-disabled-color": $pagination-disabled-color,
+    "pagination-disabled-bg": $pagination-disabled-bg,
+    "pagination-disabled-border-color": $pagination-disabled-border-color,
+    "pagination-transition": $pagination-transition,
+    "pagination-border-radius-sm": $pagination-border-radius-sm,
+    "pagination-border-radius-lg": $pagination-border-radius-lg,
+    "placeholder-opacity-max": $placeholder-opacity-max,
+    "placeholder-opacity-min": $placeholder-opacity-min,
+    "card-spacer-y": $card-spacer-y,
+    "card-spacer-x": $card-spacer-x,
+    "card-title-spacer-y": $card-title-spacer-y,
+    "card-border-width": $card-border-width,
+    "card-border-color": $card-border-color,
+    "card-border-radius": $card-border-radius,
+    "card-box-shadow": $card-box-shadow,
+    "card-inner-border-radius": $card-inner-border-radius,
+    "card-cap-padding-y": $card-cap-padding-y,
+    "card-cap-padding-x": $card-cap-padding-x,
+    "card-cap-bg": $card-cap-bg,
+    "card-cap-color": $card-cap-color,
+    "card-height": $card-height,
+    "card-color": $card-color,
+    "card-bg": $card-bg,
+    "card-img-overlay-padding": $card-img-overlay-padding,
+    "card-group-margin": $card-group-margin,
+    "accordion-padding-y": $accordion-padding-y,
+    "accordion-padding-x": $accordion-padding-x,
+    "accordion-color": $accordion-color,
+    "accordion-bg": $accordion-bg,
+    "accordion-border-width": $accordion-border-width,
+    "accordion-border-color": $accordion-border-color,
+    "accordion-border-radius": $accordion-border-radius,
+    "accordion-inner-border-radius": $accordion-inner-border-radius,
+    "accordion-body-padding-y": $accordion-body-padding-y,
+    "accordion-body-padding-x": $accordion-body-padding-x,
+    "accordion-button-padding-y": $accordion-button-padding-y,
+    "accordion-button-padding-x": $accordion-button-padding-x,
+    "accordion-button-color": $accordion-button-color,
+    "accordion-button-bg": $accordion-button-bg,
+    "accordion-transition": $accordion-transition,
+    "accordion-button-active-bg": $accordion-button-active-bg,
+    "accordion-button-active-color": $accordion-button-active-color,
+    "accordion-button-focus-border-color": $accordion-button-focus-border-color,
+    "accordion-button-focus-box-shadow": $accordion-button-focus-box-shadow,
+    "accordion-icon-width": $accordion-icon-width,
+    "accordion-icon-color": $accordion-icon-color,
+    "accordion-icon-active-color": $accordion-icon-active-color,
+    "accordion-icon-transition": $accordion-icon-transition,
+    "accordion-icon-transform": $accordion-icon-transform,
+    "accordion-button-icon": $accordion-button-icon,
+    "accordion-button-active-icon": $accordion-button-active-icon,
+    "tooltip-font-size": $tooltip-font-size,
+    "tooltip-max-width": $tooltip-max-width,
+    "tooltip-color": $tooltip-color,
+    "tooltip-bg": $tooltip-bg,
+    "tooltip-border-radius": $tooltip-border-radius,
+    "tooltip-opacity": $tooltip-opacity,
+    "tooltip-padding-y": $tooltip-padding-y,
+    "tooltip-padding-x": $tooltip-padding-x,
+    "tooltip-margin": $tooltip-margin,
+    "tooltip-arrow-width": $tooltip-arrow-width,
+    "tooltip-arrow-height": $tooltip-arrow-height,
+    "tooltip-arrow-color": $tooltip-arrow-color,
+    "form-feedback-tooltip-padding-y": $form-feedback-tooltip-padding-y,
+    "form-feedback-tooltip-padding-x": $form-feedback-tooltip-padding-x,
+    "form-feedback-tooltip-font-size": $form-feedback-tooltip-font-size,
+    "form-feedback-tooltip-line-height": $form-feedback-tooltip-line-height,
+    "form-feedback-tooltip-opacity": $form-feedback-tooltip-opacity,
+    "form-feedback-tooltip-border-radius": $form-feedback-tooltip-border-radius,
+    "popover-font-size": $popover-font-size,
+    "popover-bg": $popover-bg,
+    "popover-max-width": $popover-max-width,
+    "popover-border-width": $popover-border-width,
+    "popover-border-color": $popover-border-color,
+    "popover-border-radius": $popover-border-radius,
+    "popover-inner-border-radius": $popover-inner-border-radius,
+    "popover-box-shadow": $popover-box-shadow,
+    "popover-header-bg": $popover-header-bg,
+    "popover-header-color": $popover-header-color,
+    "popover-header-padding-y": $popover-header-padding-y,
+    "popover-header-padding-x": $popover-header-padding-x,
+    "popover-body-color": $popover-body-color,
+    "popover-body-padding-y": $popover-body-padding-y,
+    "popover-body-padding-x": $popover-body-padding-x,
+    "popover-arrow-width": $popover-arrow-width,
+    "popover-arrow-height": $popover-arrow-height,
+    "popover-arrow-color": $popover-arrow-color,
+    "popover-arrow-outer-color": $popover-arrow-outer-color,
+    "toast-max-width": $toast-max-width,
+    "toast-padding-x": $toast-padding-x,
+    "toast-padding-y": $toast-padding-y,
+    "toast-font-size": $toast-font-size,
+    "toast-color": $toast-color,
+    "toast-background-color": $toast-background-color,
+    "toast-border-width": $toast-border-width,
+    "toast-border-color": $toast-border-color,
+    "toast-border-radius": $toast-border-radius,
+    "toast-box-shadow": $toast-box-shadow,
+    "toast-spacing": $toast-spacing,
+    "toast-header-color": $toast-header-color,
+    "toast-header-background-color": $toast-header-background-color,
+    "toast-header-border-color": $toast-header-border-color,
+    "badge-font-size": $badge-font-size,
+    "badge-font-weight": $badge-font-weight,
+    "badge-color": $badge-color,
+    "badge-padding-y": $badge-padding-y,
+    "badge-padding-x": $badge-padding-x,
+    "badge-border-radius": $badge-border-radius,
+    "modal-inner-padding": $modal-inner-padding,
+    "modal-footer-margin-between": $modal-footer-margin-between,
+    "modal-dialog-margin": $modal-dialog-margin,
+    "modal-dialog-margin-y-sm-up": $modal-dialog-margin-y-sm-up,
+    "modal-title-line-height": $modal-title-line-height,
+    "modal-content-color": $modal-content-color,
+    "modal-content-bg": $modal-content-bg,
+    "modal-content-border-color": $modal-content-border-color,
+    "modal-content-border-width": $modal-content-border-width,
+    "modal-content-border-radius": $modal-content-border-radius,
+    "modal-content-inner-border-radius": $modal-content-inner-border-radius,
+    "modal-content-box-shadow-xs": $modal-content-box-shadow-xs,
+    "modal-content-box-shadow-sm-up": $modal-content-box-shadow-sm-up,
+    "modal-backdrop-bg": $modal-backdrop-bg,
+    "modal-backdrop-opacity": $modal-backdrop-opacity,
+    "modal-header-border-color": $modal-header-border-color,
+    "modal-footer-border-color": $modal-footer-border-color,
+    "modal-header-border-width": $modal-header-border-width,
+    "modal-footer-border-width": $modal-footer-border-width,
+    "modal-header-padding-y": $modal-header-padding-y,
+    "modal-header-padding-x": $modal-header-padding-x,
+    "modal-header-padding": $modal-header-padding,
+    "modal-sm": $modal-sm,
+    "modal-md": $modal-md,
+    "modal-lg": $modal-lg,
+    "modal-xl": $modal-xl,
+    "modal-fade-transform": $modal-fade-transform,
+    "modal-show-transform": $modal-show-transform,
+    "modal-transition": $modal-transition,
+    "modal-scale-transform": $modal-scale-transform,
+    "alert-padding-y": $alert-padding-y,
+    "alert-padding-x": $alert-padding-x,
+    "alert-margin-bottom": $alert-margin-bottom,
+    "alert-border-radius": $alert-border-radius,
+    "alert-link-font-weight": $alert-link-font-weight,
+    "alert-border-width": $alert-border-width,
+    "alert-bg-scale": $alert-bg-scale,
+    "alert-border-scale": $alert-border-scale,
+    "alert-color-scale": $alert-color-scale,
+    "alert-dismissible-padding-r": $alert-dismissible-padding-r,
+    "progress-height": $progress-height,
+    "progress-font-size": $progress-font-size,
+    "progress-bg": $progress-bg,
+    "progress-border-radius": $progress-border-radius,
+    "progress-box-shadow": $progress-box-shadow,
+    "progress-bar-color": $progress-bar-color,
+    "progress-bar-bg": $progress-bar-bg,
+    "progress-bar-animation-timing": $progress-bar-animation-timing,
+    "progress-bar-transition": $progress-bar-transition,
+    "list-group-color": $list-group-color,
+    "list-group-bg": $list-group-bg,
+    "list-group-border-color": $list-group-border-color,
+    "list-group-border-width": $list-group-border-width,
+    "list-group-border-radius": $list-group-border-radius,
+    "list-group-item-padding-y": $list-group-item-padding-y,
+    "list-group-item-padding-x": $list-group-item-padding-x,
+    "list-group-item-bg-scale": $list-group-item-bg-scale,
+    "list-group-item-color-scale": $list-group-item-color-scale,
+    "list-group-hover-bg": $list-group-hover-bg,
+    "list-group-active-color": $list-group-active-color,
+    "list-group-active-bg": $list-group-active-bg,
+    "list-group-active-border-color": $list-group-active-border-color,
+    "list-group-disabled-color": $list-group-disabled-color,
+    "list-group-disabled-bg": $list-group-disabled-bg,
+    "list-group-action-color": $list-group-action-color,
+    "list-group-action-hover-color": $list-group-action-hover-color,
+    "list-group-action-active-color": $list-group-action-active-color,
+    "list-group-action-active-bg": $list-group-action-active-bg,
+    "thumbnail-padding": $thumbnail-padding,
+    "thumbnail-bg": $thumbnail-bg,
+    "thumbnail-border-width": $thumbnail-border-width,
+    "thumbnail-border-color": $thumbnail-border-color,
+    "thumbnail-border-radius": $thumbnail-border-radius,
+    "thumbnail-box-shadow": $thumbnail-box-shadow,
+    "figure-caption-font-size": $figure-caption-font-size,
+    "figure-caption-color": $figure-caption-color,
+    "breadcrumb-font-size": $breadcrumb-font-size,
+    "breadcrumb-padding-y": $breadcrumb-padding-y,
+    "breadcrumb-padding-x": $breadcrumb-padding-x,
+    "breadcrumb-item-padding-x": $breadcrumb-item-padding-x,
+    "breadcrumb-margin-bottom": $breadcrumb-margin-bottom,
+    "breadcrumb-bg": $breadcrumb-bg,
+    "breadcrumb-divider-color": $breadcrumb-divider-color,
+    "breadcrumb-active-color": $breadcrumb-active-color,
+    "breadcrumb-divider": $breadcrumb-divider,
+    "breadcrumb-divider-flipped": $breadcrumb-divider-flipped,
+    "breadcrumb-border-radius": $breadcrumb-border-radius,
+    "carousel-control-color": $carousel-control-color,
+    "carousel-control-width": $carousel-control-width,
+    "carousel-control-opacity": $carousel-control-opacity,
+    "carousel-control-hover-opacity": $carousel-control-hover-opacity,
+    "carousel-control-transition": $carousel-control-transition,
+    "carousel-indicator-width": $carousel-indicator-width,
+    "carousel-indicator-height": $carousel-indicator-height,
+    "carousel-indicator-hit-area-height": $carousel-indicator-hit-area-height,
+    "carousel-indicator-spacer": $carousel-indicator-spacer,
+    "carousel-indicator-opacity": $carousel-indicator-opacity,
+    "carousel-indicator-active-bg": $carousel-indicator-active-bg,
+    "carousel-indicator-active-opacity": $carousel-indicator-active-opacity,
+    "carousel-indicator-transition": $carousel-indicator-transition,
+    "carousel-caption-width": $carousel-caption-width,
+    "carousel-caption-color": $carousel-caption-color,
+    "carousel-caption-padding-y": $carousel-caption-padding-y,
+    "carousel-caption-spacer": $carousel-caption-spacer,
+    "carousel-control-icon-width": $carousel-control-icon-width,
+    "carousel-control-prev-icon-bg": $carousel-control-prev-icon-bg,
+    "carousel-control-next-icon-bg": $carousel-control-next-icon-bg,
+    "carousel-transition-duration": $carousel-transition-duration,
+    "carousel-transition": $carousel-transition,
+    "carousel-dark-indicator-active-bg": $carousel-dark-indicator-active-bg,
+    "carousel-dark-caption-color": $carousel-dark-caption-color,
+    "carousel-dark-control-icon-filter": $carousel-dark-control-icon-filter,
+    "spinner-width": $spinner-width,
+    "spinner-height": $spinner-height,
+    "spinner-vertical-align": $spinner-vertical-align,
+    "spinner-border-width": $spinner-border-width,
+    "spinner-animation-speed": $spinner-animation-speed,
+    "spinner-width-sm": $spinner-width-sm,
+    "spinner-height-sm": $spinner-height-sm,
+    "spinner-border-width-sm": $spinner-border-width-sm,
+    "btn-close-width": $btn-close-width,
+    "btn-close-height": $btn-close-height,
+    "btn-close-padding-x": $btn-close-padding-x,
+    "btn-close-padding-y": $btn-close-padding-y,
+    "btn-close-color": $btn-close-color,
+    "btn-close-bg": $btn-close-bg,
+    "btn-close-focus-shadow": $btn-close-focus-shadow,
+    "btn-close-opacity": $btn-close-opacity,
+    "btn-close-hover-opacity": $btn-close-hover-opacity,
+    "btn-close-focus-opacity": $btn-close-focus-opacity,
+    "btn-close-disabled-opacity": $btn-close-disabled-opacity,
+    "btn-close-white-filter": $btn-close-white-filter,
+    "offcanvas-padding-y": $offcanvas-padding-y,
+    "offcanvas-padding-x": $offcanvas-padding-x,
+    "offcanvas-horizontal-width": $offcanvas-horizontal-width,
+    "offcanvas-vertical-height": $offcanvas-vertical-height,
+    "offcanvas-transition-duration": $offcanvas-transition-duration,
+    "offcanvas-border-color": $offcanvas-border-color,
+    "offcanvas-border-width": $offcanvas-border-width,
+    "offcanvas-title-line-height": $offcanvas-title-line-height,
+    "offcanvas-bg-color": $offcanvas-bg-color,
+    "offcanvas-color": $offcanvas-color,
+    "offcanvas-box-shadow": $offcanvas-box-shadow,
+    "offcanvas-backdrop-bg": $offcanvas-backdrop-bg,
+    "offcanvas-backdrop-opacity": $offcanvas-backdrop-opacity,
+    "code-font-size": $code-font-size,
+    "code-color": $code-color,
+    "kbd-padding-y": $kbd-padding-y,
+    "kbd-padding-x": $kbd-padding-x,
+    "kbd-font-size": $kbd-font-size,
+    "kbd-color": $kbd-color,
+    "kbd-bg": $kbd-bg,
+    "pre-color": $pre-color,
+);

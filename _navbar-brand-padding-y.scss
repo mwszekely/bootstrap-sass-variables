@@ -1,0 +1,2 @@
+@use "./dependencies/_navbar-brand-padding-y.scss" as *;
+$navbar-brand-padding-y: ($nav-link-height - $navbar-brand-height) * .5 !default;

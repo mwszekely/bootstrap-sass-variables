@@ -1,0 +1,2 @@
+@use "./dependencies/_form-validation-states.scss" as *;
+$form-validation-states: (  "valid": (    "color": $form-feedback-valid-color,    "icon": $form-feedback-icon-valid  ),  "invalid": (    "color": $form-feedback-invalid-color,    "icon": $form-feedback-icon-invalid  )) !default;

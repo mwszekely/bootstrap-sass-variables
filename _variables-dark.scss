@@ -1,0 +1,150 @@
+// An example of variables that could create a 
+// "default" dark theme for Bootstrap.
+// It simply inverts all grays, replaces shade/tint
+// functions, and inverts shade/tint percentage variables.
+//
+// Serves as a good starting point, and you can further
+// customize any variables this file uses.
+
+@use "./functions/shade-color" as *;
+@use "./functions/tint-color" as *;
+@use "./functions/shift-color" as *;
+@use "./black" as *;
+@use "./white" as *;
+@use "./green" as *;
+@use "./gray-100" as *;
+@use "./gray-200" as *;
+@use "./gray-300" as *;
+@use "./gray-400" as *;
+@use "./gray-500" as *;
+@use "./gray-600" as *;
+@use "./gray-700" as *;
+@use "./gray-800" as *;
+@use "./gray-900" as *;
+@use "./primary" as *;
+@use "./dropdown-border-color" as *;
+
+// Basically all of these are opposites of their light theme versions.
+// E.G. $white is $black, $gray-300 is $gray-700, etc.
+// Exceptions are for box shadows, which are always black;
+// dark mode surfaces need some other method to effectively
+// convey elevation, such as a lighter color.
+
+// These variables are separate for dependency reasons.
+// (They can still be customized)
+$dropdown-link-color: $gray-100 !default;
+$nav-tabs-border-color: $gray-700 !default;
+$popover-bg: $black !default;
+$popover-border-color: rgba($white, 0.2) !default;
+
+@forward "./body-bg" with ($body-bg: $gray-900 !default);
+@forward "./body-color" with ($body-color: $gray-100 !default);
+@forward "./border-color" with ($border-color: $gray-700 !default);
+@use "./component-active-bg" as *;
+@forward "./component-active-color" with ($component-active-color: $black !default);
+@forward "./form-check-input-border" with ($form-check-input-border: 1px solid rgba($white, 0.25) !default);
+@forward "./input-group-addon-bg" with ($input-group-addon-bg: $gray-800 !default);
+@forward "./input-border-color" with ($input-border-color: $gray-600 !default);
+@forward "./input-disabled-bg" with ($input-disabled-bg: $gray-800 !default);
+@forward "./input-focus-border-color" with ($input-focus-border-color: shade-color($component-active-bg, 50%) !default);
+@forward "./input-placeholder-color" with ($input-placeholder-color: $gray-400 !default);
+@forward "./form-switch-color" with ($form-switch-color: rgba($white, 0.25) !default);
+@forward "./form-range-track-bg" with ($form-range-track-bg: $gray-700 !default);
+@forward "./form-range-thumb-box-shadow" with ($form-range-thumb-box-shadow: 0 0.1rem 0.25rem rgba($black, 0.1) !default);
+@forward "./form-range-thumb-active-bg" with ($form-range-thumb-active-bg: shade-color($component-active-bg, 70%) !default);
+@forward "./form-range-thumb-disabled-bg" with ($form-range-thumb-disabled-bg: $gray-500 !default);
+@forward "./form-select-disabled-bg" with ($form-select-disabled-bg: $gray-800 !default);
+@forward "./form-select-indicator-color" with ($form-select-indicator-color: $gray-200 !default);
+@forward "./accordion-border-color" with ($accordion-border-color: rgba($white, 0.125) !default);
+@forward "./accordion-button-active-bg" with ($accordion-button-active-bg: shade-color($component-active-bg, 90%) !default);
+@forward "./accordion-button-active-color" with ($accordion-button-active-color: tint-color($primary, 10%) !default);
+@forward "./alert-bg-scale" with ($alert-bg-scale: 80% !default);
+@forward "./alert-border-scale" with ($alert-border-scale: 70% !default);
+@forward "./alert-color-scale" with ($alert-color-scale: -40% !default);
+@forward "./badge-color" with ($badge-color: $black !default);
+@forward "./breadcrumb-divider-color" with ($breadcrumb-divider-color: $gray-400 !default);
+@forward "./breadcrumb-active-color" with ($breadcrumb-active-color: $gray-600 !default);
+@forward "./btn-close-color" with ($btn-close-color: $white !default);
+@forward "./card-border-color" with ($card-border-color: rgba($white, 0.125) !default);
+@forward "./card-cap-bg" with ($card-cap-bg: rgba($white, 0.03) !default);
+@forward "./card-bg" with ($card-bg: $black !default);
+@forward "./carousel-control-color" with ($carousel-control-color: $black !default);
+@forward "./carousel-indicator-active-bg" with ($carousel-indicator-active-bg: $black !default);
+@forward "./carousel-caption-color" with ($carousel-caption-color: $black !default);
+@forward "./carousel-dark-indicator-active-bg" with ($carousel-dark-indicator-active-bg: $white !default);
+@forward "./carousel-dark-caption-color" with ($carousel-dark-caption-color: $white !default);
+@forward "./code-color" with ($code-color: $green !default);
+@forward "./kbd-color" with ($kbd-color: $white !default);
+@forward "./kbd-bg" with ($kbd-bg: $gray-100 !default);
+@forward "./dropdown-bg" with ($dropdown-bg: $black !default);
+@forward "./dropdown-divider-bg" with ($dropdown-divider-bg: $dropdown-border-color !default);
+@use "./dropdown-link-color" with ($dropdown-link-color: $dropdown-link-color);
+@forward "./dropdown-link-hover-color" with ($dropdown-link-hover-color: tint-color($dropdown-link-color, 10%) !default);
+@forward "./dropdown-link-hover-bg" with ($dropdown-link-hover-bg: $gray-800 !default);
+@forward "./dropdown-link-disabled-color" with ($dropdown-link-disabled-color: $gray-500 !default);
+@forward "./dropdown-header-color" with ($dropdown-header-color: $gray-400 !default);
+@forward "./dropdown-dark-color" with ($dropdown-dark-color: $gray-300 !default);
+@forward "./dropdown-dark-bg" with ($dropdown-dark-bg: $gray-800 !default);
+@forward "./dropdown-dark-link-hover-color" with ($dropdown-dark-link-hover-color: $black !default);
+@forward "./dropdown-dark-link-hover-bg" with ($dropdown-dark-link-hover-bg: rgba($black, 0.15) !default);
+@forward "./dropdown-dark-link-disabled-color" with ($dropdown-dark-link-disabled-color: $gray-500 !default);
+@forward "./dropdown-dark-header-color" with ($dropdown-dark-header-color: $gray-500 !default);
+@forward "./figure-caption-color" with ($figure-caption-color: $gray-400 !default);
+@forward "./list-group-item-bg-scale" with ($list-group-item-bg-scale: 80% !default);
+@forward "./list-group-item-color-scale" with ($list-group-item-color-scale: -40% !default);
+@forward "./list-group-color" with ($list-group-color: $gray-100 !default);
+@forward "./list-group-bg" with ($list-group-bg: $black !default);
+@forward "./list-group-border-color" with ($list-group-border-color: rgba($white, 0.125) !default);
+@forward "./list-group-hover-bg" with ($list-group-hover-bg: $gray-900 !default);
+@forward "./list-group-disabled-color" with ($list-group-disabled-color: $gray-400 !default);
+@forward "./list-group-action-color" with ($list-group-action-color: $gray-300 !default);
+@forward "./list-group-action-active-bg" with ($list-group-action-active-bg: $gray-800 !default);
+@forward "./modal-content-bg" with ($modal-content-bg: $black !default);
+@forward "./modal-content-border-color" with ($modal-content-border-color: rgba($white, 0.2) !default);
+@forward "./modal-backdrop-bg" with ($modal-backdrop-bg: $white !default);
+@forward "./nav-link-disabled-color" with ($nav-link-disabled-color: $gray-400 !default);
+@use "./nav-tabs-border-color" with ($nav-tabs-border-color: $nav-tabs-border-color);
+@forward "./nav-tabs-link-hover-border-color" with ($nav-tabs-link-hover-border-color:  $gray-800 $gray-800 $nav-tabs-border-color !default);
+@forward "./nav-tabs-link-active-color" with ($nav-tabs-link-active-color: $gray-300 !default);
+@use "./nav-tabs-link-active-bg" as *;
+@forward "./nav-tabs-link-active-border-color" with ($nav-tabs-link-active-border-color: $gray-700 $gray-700 $nav-tabs-link-active-bg !default);
+@forward "./navbar-dark-color" with ($navbar-dark-color: rgba($black, 0.55) !default);
+@forward "./navbar-dark-hover-color" with ($navbar-dark-hover-color: rgba($black, 0.75) !default);
+@forward "./navbar-dark-active-color" with ($navbar-dark-active-color: $black !default);
+@forward "./navbar-dark-disabled-color" with ($navbar-dark-disabled-color: rgba($black, 0.25) !default);
+@forward "./navbar-dark-toggler-border-color" with ($navbar-dark-toggler-border-color: rgba($black, 0.1) !default);
+@forward "./navbar-light-color" with ($navbar-light-color: rgba($white, 0.55) !default);
+@forward "./navbar-light-hover-color" with ($navbar-light-hover-color: rgba($white, 0.7) !default);
+@forward "./navbar-light-active-color" with ($navbar-light-active-color: rgba($white, 0.9) !default);
+@forward "./navbar-light-disabled-color" with ($navbar-light-disabled-color: rgba($white, 0.3) !default);
+@forward "./navbar-light-toggler-border-color" with ($navbar-light-toggler-border-color: rgba($white, 0.1) !default);
+@forward "./pagination-bg" with ($pagination-bg: $black !default);
+@forward "./pagination-border-color" with ($pagination-border-color: $gray-700 !default);
+@forward "./pagination-focus-bg" with ($pagination-focus-bg: $gray-800 !default);
+@forward "./pagination-hover-bg" with ($pagination-hover-bg: $gray-800 !default);
+@forward "./pagination-hover-border-color" with ($pagination-hover-border-color: $gray-700 !default);
+@forward "./pagination-disabled-color" with ($pagination-disabled-color: $gray-400 !default);
+@forward "./pagination-disabled-bg" with ($pagination-disabled-bg: $black !default);
+@forward "./pagination-disabled-border-color" with ($pagination-disabled-border-color: $gray-700 !default);
+@use "./popover-bg" with ($popover-bg: $popover-bg);
+@use "./popover-border-color" with ($popover-border-color: $popover-border-color);
+@forward "./popover-header-bg" with ($popover-header-bg: tint-color($popover-bg, 6%) !default);
+@forward "./popover-arrow-outer-color" with ($popover-arrow-outer-color: fade-in($popover-border-color, 0.05) !default);
+@forward "./progress-bg" with ($progress-bg: $gray-800 !default);
+@forward "./progress-bar-color" with ($progress-bar-color: $black !default);
+@forward "./table-bg-scale" with ($table-bg-scale: 80% !default);
+@use "./table-hover-bg-factor" as *;
+@forward "./table-hover-bg" with ($table-hover-bg: rgba($white, $table-hover-bg-factor) !default);
+@forward "./thumbnail-border-color" with ($thumbnail-border-color: $gray-700 !default);
+@forward "./toast-background-color" with ($toast-background-color: rgba($black, 0.85) !default);
+@forward "./toast-border-color" with ($toast-border-color: rgba($white, 0.1) !default);
+@forward "./toast-header-color" with ($toast-header-color: $gray-400 !default);
+@forward "./toast-header-background-color" with ($toast-header-background-color: rgba($black, 0.85) !default);
+@forward "./toast-header-border-color" with ($toast-header-border-color: rgba($white, 0.05) !default);
+@forward "./tooltip-color" with ($tooltip-color: $white !default);
+@forward "./tooltip-bg" with ($tooltip-bg: $black !default);
+@forward "./gradient" with ($gradient: linear-gradient(180deg, rgba($black, 0.15), rgba($black, 0)) !default);
+@forward "./btn-active-box-shadow" with ($btn-active-box-shadow: inset 0 3px 5px rgba($white, 0.125) !default);
+@forward "./btn-box-shadow" with ($btn-box-shadow: #{inset 0 1px 0 rgba($white, 0.15),0 1px 1px rgba($black, 0.075)} !default);
+@forward "./btn-link-disabled-color" with ($btn-link-disabled-color: $gray-600 !default);
+@forward "./variables";

@@ -1,0 +1,2 @@
+@use "./dependencies/_accordion-inner-border-radius.scss" as *;
+$accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;

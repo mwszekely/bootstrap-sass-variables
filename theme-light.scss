@@ -1,0 +1,3 @@
+@use "sass:meta";
+@use "./variables" as *;
+@include meta.load-css("node_modules/bootstrap/scss/bootstrap", $with: $variables);

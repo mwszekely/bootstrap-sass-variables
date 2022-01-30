@@ -1,0 +1,2 @@
+@use "./dependencies/_form-range-thumb-focus-box-shadow-width.scss" as *;
+$form-range-thumb-focus-box-shadow-width: $input-focus-width !default; // For focus box shadow issue in Edge

@@ -1,0 +1,2 @@
+@use "./dependencies/_form-floating-height.scss" as *;
+$form-floating-height: add(3.5rem, $input-height-border) !default;

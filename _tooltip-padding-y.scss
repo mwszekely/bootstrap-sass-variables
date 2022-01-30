@@ -1,0 +1,2 @@
+@use "./dependencies/_tooltip-padding-y.scss" as *;
+$tooltip-padding-y: $spacer * .25 !default;

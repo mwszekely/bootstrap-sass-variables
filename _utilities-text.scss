@@ -1,0 +1,2 @@
+@use "./dependencies/_utilities-text.scss" as *;
+$utilities-text: map-merge(  $utilities-colors,  (    "black": to-rgb($black),    "white": to-rgb($white),    "body": to-rgb($body-color)  )) !default;

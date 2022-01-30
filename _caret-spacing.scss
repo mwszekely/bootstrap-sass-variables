@@ -1,0 +1,2 @@
+@use "./dependencies/_caret-spacing.scss" as *;
+$caret-spacing: $caret-width * .85 !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/_form-check-padding-start.scss" as *;
+$form-check-padding-start: $form-check-input-width + .5em !default;

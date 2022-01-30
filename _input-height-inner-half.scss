@@ -1,0 +1,2 @@
+@use "./dependencies/_input-height-inner-half.scss" as *;
+$input-height-inner-half: add($input-line-height * .5em, $input-padding-y) !default;

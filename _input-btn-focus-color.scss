@@ -1,0 +1,2 @@
+@use "./dependencies/_input-btn-focus-color.scss" as *;
+$input-btn-focus-color: rgba($component-active-bg, $input-btn-focus-color-opacity) !default;

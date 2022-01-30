@@ -1,0 +1,2 @@
+@use "./dependencies/_nav-link-height.scss" as *;
+$nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;

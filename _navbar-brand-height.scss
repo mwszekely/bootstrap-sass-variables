@@ -1,0 +1,2 @@
+@use "./dependencies/_navbar-brand-height.scss" as *;
+$navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;

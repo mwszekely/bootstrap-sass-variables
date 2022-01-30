@@ -1,0 +1,2 @@
+@use "./dependencies/_popover-inner-border-radius.scss" as *;
+$popover-inner-border-radius: subtract($popover-border-radius, $popover-border-width) !default;

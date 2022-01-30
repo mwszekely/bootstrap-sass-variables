@@ -1,0 +1,2 @@
+@use "./dependencies/_accordion-button-active-color.scss" as *;
+$accordion-button-active-color: shade-color($primary, 10%) !default;

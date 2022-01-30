@@ -1,0 +1,2 @@
+@use "./dependencies/_table-hover-bg.scss" as *;
+$table-hover-bg: rgba($black, $table-hover-bg-factor) !default;

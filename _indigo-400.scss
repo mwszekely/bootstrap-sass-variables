@@ -1,0 +1,2 @@
+@use "./dependencies/_indigo-400.scss" as *;
+$indigo-400: tint-color($indigo, 20%) !default;

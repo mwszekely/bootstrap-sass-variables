@@ -1,0 +1,2 @@
+@use "./dependencies/_accordion-button-active-bg.scss" as *;
+$accordion-button-active-bg: tint-color($component-active-bg, 90%) !default;

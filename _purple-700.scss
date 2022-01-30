@@ -1,0 +1,2 @@
+@use "./dependencies/_purple-700.scss" as *;
+$purple-700: shade-color($purple, 40%) !default;

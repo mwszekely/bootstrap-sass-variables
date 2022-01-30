@@ -1,0 +1,2 @@
+@use "./dependencies/_card-group-margin.scss" as *;
+$card-group-margin: $grid-gutter-width * .5 !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/_form-range-thumb-transition.scss" as *;
+$form-range-thumb-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;

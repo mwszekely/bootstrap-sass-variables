@@ -1,0 +1,2 @@
+@use "./dependencies/_form-select-feedback-icon-padding-end.scss" as *;
+$form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 + $form-select-indicator-padding !default;
