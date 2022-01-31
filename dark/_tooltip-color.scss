@@ -1,2 +1,2 @@
-@use "../white" as *;
-@forward "../tooltip-color" with ($tooltip-color: $white !default);
+@use "../black" as *;
+@forward "../tooltip-color" with ($tooltip-color: $black !default);

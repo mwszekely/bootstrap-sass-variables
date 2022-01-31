@@ -1,2 +1,2 @@
-@use "../gray-600" as *;
-@forward "../btn-link-disabled-color" with ($btn-link-disabled-color: $gray-600 !default);
+@use "../gray-400" as *;
+@forward "../btn-link-disabled-color" with ($btn-link-disabled-color: $gray-400 !default);

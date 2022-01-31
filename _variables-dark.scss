@@ -37,7 +37,9 @@
 @forward "./dark/kbd-color";
 @forward "./dark/kbd-bg";
 @forward "./dark/dropdown-bg";
+@forward "./dark/dropdown-border-color";
 @forward "./dark/dropdown-divider-bg";
+@forward "./dark/dropdown-link-color";
 @forward "./dark/dropdown-link-hover-color";
 @forward "./dark/dropdown-link-hover-bg";
 @forward "./dark/dropdown-link-disabled-color";
@@ -49,6 +51,7 @@
 @forward "./dark/dropdown-dark-link-disabled-color";
 @forward "./dark/dropdown-dark-header-color";
 @forward "./dark/figure-caption-color";
+@forward "./dark/blockquote-footer-color";
 @forward "./dark/list-group-item-bg-scale";
 @forward "./dark/list-group-item-color-scale";
 @forward "./dark/list-group-color";
@@ -62,6 +65,7 @@
 @forward "./dark/modal-content-border-color";
 @forward "./dark/modal-backdrop-bg";
 @forward "./dark/nav-link-disabled-color";
+@forward "./dark/nav-tabs-border-color";
 @forward "./dark/nav-tabs-link-hover-border-color";
 @forward "./dark/nav-tabs-link-active-color";
 @forward "./dark/nav-tabs-link-active-border-color";
@@ -83,12 +87,16 @@
 @forward "./dark/pagination-disabled-color";
 @forward "./dark/pagination-disabled-bg";
 @forward "./dark/pagination-disabled-border-color";
+@forward "./dark/popover-bg";
+@forward "./dark/popover-border-color";
+@forward "./dark/popover-color";
 @forward "./dark/popover-header-bg";
 @forward "./dark/popover-arrow-outer-color";
 @forward "./dark/progress-bg";
 @forward "./dark/progress-bar-color";
 @forward "./dark/table-bg-scale";
 @forward "./dark/table-hover-bg";
+@forward "./dark/text-muted";
 @forward "./dark/thumbnail-border-color";
 @forward "./dark/toast-background-color";
 @forward "./dark/toast-border-color";
