@@ -1,82 +1,109 @@
- 
-Bootstrap isn't currently designed around the newer system of SASS modules, making it difficult in some ways to use, especially in regards to customizing `_variables.scss` (which is already a little bit tricky to customize with its intricate system of dependencies).
+## About
 
-This library makes it much easier to `@use "bootstrap"` with a specific set of customizations, without making it impossible for further customizations down the line (normally, SASS will only allow a `.scss` file to be customized once, which doesn't change here--it's just worked around).
+Bootstrap isn't currently designed around the newer system of Sass modules, making it difficult in some ways to use, especially in regards to customizing `_variables.scss` (which is already a little bit tricky to customize with its intricate system of dependencies).
 
+This library makes it much easier to `@use "bootstrap"` with a specific set of customizations, without making it impossible for users further down the line to continue customizing (normally, SASS will only allow a `.scss` file to be customized once, which doesn't change here&mdash;it's just worked around).
+
+### Step 1. Customize Bootstrap's variables
 ````scss
-// _variables-dark.scss
-
 // Make a rudimentary dark theme
 // (just setting the body BG and color)
 
-// We need these two variables, so we load them normally.
-// Anyone who uses this file can still customize these
-// by @use-ing them before this @use-ing this file.
-@use "bootstrap-sass-variables/gray-100" as *;
-@use "bootstrap-sass-variables/gray-900" as *;
+// We reference the $black and $white variables,
+// so we need to @use them here.
+// If anyone who uses this file needs to customize
+// $black and $white, they can still do that by
+// using these files with those customizations
+// before using this file.
+@use "bootstrap-sass-variables/white" as *;
+@use "bootstrap-sass-variables/black" as *;
 
 // Adjust these default colors before we actually load Bootstrap
 // These can also still be customized via `@use with` on this file.
-@forward "bootstrap-sass-variables/body-bg" with ($body-bg: $gray-900 !default);
-@forward "bootstrap-sass-variables/body-color" with ($body-color: $gray-100 !default);
+@forward "bootstrap-sass-variables/body-bg" with ($body-bg: $black !default);
+@forward "bootstrap-sass-variables/body-color" with ($body-color: $white !default);
+
+// (...continued below...)
 ````
-
+### Step 2. Load Bootstrap itself
 ````scss
-// theme-dark.scss
+// (...continued from the same file above...)
 
-// Configure the variables
-// (@use or @forward are both fine here)
-@forward "./variables-dark";
+// Load Bootstrap itself, configured to use our custom variables.
+// Pick ONE of the two;
+// 1. the former loads the CSS and makes all mixins and other things available, and
+// 2. the latter just loads the CSS, but lets you specify your own Bootstrap file.
 
-// Load a map called $variables containing them all:
-@use "bootstrap-sass-variables/variables" as *;
+// Option 1:
+@forward "bootstrap-sass-variables/bootstrap";
 
-// Load Bootstrap itself, configured to use our custom variables:
-@include meta.load-css("node_modules/bootstrap/scss/bootstrap", $with: $variables);
-
-// -----------------------
-
-// Or, maybe customize another variable first before using it:
-@use "bootstrap-sass-variables/primary" with ($primary: fuchsia);
-@use "./variables-dark" with ($body-bg: black);         // Change from dark gray to black
-@use "bootstrap-sass-variables/variables" as *;
+// OR Option 2:
+@use "bootstrap-sass-variables/variables" as *; // Gives us $variables
 @include meta.load-css("node_modules/bootstrap/scss/bootstrap", $with: $variables);
 ````
 
 ----
-
+## Default themes
 A full dark theme of the default Bootstrap theme is provided as an example. You can use it like this:
 
 ````scss
 // your-theme.scss
 
 // $primary isn't modified by the dark theme, so you can change it normally here.
-@use "bootstrap-sass-variables/primary" with ($primary: fuchsia);
+@forward "bootstrap-sass-variables/primary" with ($primary: fuchsia);
 
 // Now load the rest of the dark theme variables. 
-// You can still customize any of the defaults.
-@use "bootstrap-sass-variables/variables-dark" with ($body-bg: black);
-
-// And the rest:
-@use "bootstrap-sass-variables/variables" as *;
-@include meta.load-css("node_modules/bootstrap/scss/bootstrap", $with: $variables);
+// $body-bg is modified by the dark theme, but it can
+// still be further customized to be anything here:
+@forward "bootstrap-sass-variables/theme-dark" with ($body-bg: yellow);
 ````
 
-If you just need a completed example to start with, `theme-light.scss` and `theme-dark.scss` are also provided, which just load Bootstrap with the default variables or dark mode variables, respectively:
-
+Or, for a little more control,
 ````scss
-// Load dark mode variables and Bootstrap's CSS
-@use "bootstrap-sass-variables/theme-dark";
+// your-theme.scss
 
-// --------
+// Modify variables used by variables-dark 
+// (but not *modified* by variables-dark) here.
+@forward "boostrap-sass-variables/black" with ($black: #010101);
 
-// Or customize first:
-@use "bootstrap-sass-variables/primary" with ($primary: fuchsia);
-@use "bootstrap-sass-variables/variables-dark" with ($body-bg: black);
-@use "bootstrap-sass-variables/theme-dark";
+// Actually modify the variables modified by variables-dark
+// (This is where you can *modify* variables modified by variables-dark)
+@forward "bootstrap-sass-variables/variables-dark";
+
+// Modify all other variables that aren't related
+// to the dark theme whatsoever here.
+// (You can also put some of them above, but if they
+// end up using some variable that the dark theme
+// customizes, you'll get an error from Sass,
+// because dependencies are fun)
+@forward "bootstrap-sass-variables/enable-cssgrid" with ($enable-cssgrid: true);
+
+// Actually load Bootstrap
+@forward "bootstrap-sass-variables/bootstrap";
+
 ````
 
-----
-Each variable gets its own file because, given the complex set of dependencies all the Bootstrap variables have on each other, there doesn't appear to be a good way to customize a set of variables more finely than at the level of an entire file beyond maybe the basic colors (any time you group variables together, you need to re-define all their defaults because a file can't be `@use`d twice, for example, and creating a map and then e.g. modifying its `$primary` value wouldn't retroactively update all the buttons backgrounds, say).
+## Caveats
+Watch your `@use` order! Any customization always needs to come **before any other use** of `@use` or `@forward` (don't worry, Sass will let you know if/where/how you get it wrong). Because customizations could themselves `@use` other variables (a lot rely on `$primary` or `$black`, for example), this web can become tangled quickly, and the more variables you put into one file the faster you'll find an unmanageable knot. This is why each variable is placed into its own file (see howto.md for their maintenance when Bootstrap adds/changes variables; it's not fully automated because hopefully Bootstrap gets better module support in version 6?).
 
-Each variable file is created with a small set of regexes used on the original `_variables.scss`. See howto.md for the exact method; it's not fully automated because hopefully Bootstrap gets better module support in version 6?
+## Files structure
+````
+(NAME := the name of any given Bootstrap variable in _variables.scss)
+
+/dark/_<NAME>.scss
+/dependencies/_<NAME>.scss
+/_<NAME>.scss
+/_variables.scss
+/_variables-dark.scss
+/bootstrap.scss
+/theme-dark.scss
+/theme-light.scss
+````
+
+* `theme-(light-dark).scss`: Loads Bootstrap with all CSS, mixins, and functions, using any variables you've already customized. The final step.
+* `bootstrap.scss`: `@forward`s the actual Bootstrap Sass file with all your customized variable values, if any. Used by `theme-(light|dark).scss`. Use if you're making your own theme as the final step.
+* `_variables.scss`: Provides a map named `$variables` containing the value of every Bootstrap variable. After `@use`ing this, you can no longer customize any variables. Used by `bootstrap.scss`. You would only need to use this if you're manually loading Bootstrap, and also specifically with `load-css` instead of `@use`.
+* `_variables-dark.scss`: `@use`s all dark theme versions of the default Bootstrap variables, replacing some of the defaults that `_variables.scss` uses. Used by `theme-dark.scss`. Use this if you want to create a new theme based off of a dark Bootstrap theme.
+* `_<boostrap variable name>.scss`: Customize a Bootstrap variable with these files.  E.G. `@use "var-name" with ($var: value);`. Used by `_variables.scss`. Use these to customize an individual Bootstrap variable.
+* `dark/_<boostrap variable name>.scss`: A dark theme version of a given Bootstrap variable (only colors and related variables). Use these to customize the variables that `variables-dark.scss` and `theme-dark.scss` use.
+* `/dependencies/_<boostrap variable name>.scss`: *Not intended to be used directly.* `@forward`s the dependencies any given variable has. These exist for maintenance purposes; for new Bootstrap versions the variable files are programatically overwritten but the dependency files are left alone.
