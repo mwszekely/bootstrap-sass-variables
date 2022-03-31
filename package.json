@@ -1,10 +1,10 @@
 {
   "name": "bootstrap-sass-variables",
   "version": "0.0.1",
-  "description": "Makes it easier to @use customized Bootstrap variables",
+  "description": "Makes it easier to @use customized Bootstrap variables with no redundancies",
   "scripts": {
-    "build": "sass -I='./node_modules' ./theme-light.scss:./theme-light.css ./theme-dark.scss:./theme-dark.css",
-    "watch": "sass -I='./node_modules' ./theme-light.scss:./theme-light.css ./theme-dark.scss:./theme-dark.css -w"
+    "build": "sass -I='./node_modules' ./demo-dark.scss ./demo-dark.css",
+    "watch": "sass -I='./node_modules' ./demo-dark.scss ./demo-dark.css -w"
   },
   "peerDependencies": {
     "bootstrap": "^5.1.3"
