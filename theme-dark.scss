@@ -1,6 +1,7 @@
 @forward "./dark/body-bg";
 @forward "./dark/body-color";
 @forward "./dark/border-color";
+@forward "./dark/border-color-translucent";
 @forward "./dark/component-active-color";
 @forward "./dark/form-check-input-border";
 @forward "./dark/input-group-addon-bg";
@@ -15,7 +16,6 @@
 @forward "./dark/form-range-thumb-disabled-bg";
 @forward "./dark/form-select-disabled-bg";
 @forward "./dark/form-select-indicator-color";
-@forward "./dark/accordion-border-color";
 @forward "./dark/accordion-button-active-bg";
 @forward "./dark/accordion-button-active-color";
 @forward "./dark/alert-bg-scale";
@@ -25,7 +25,6 @@
 @forward "./dark/breadcrumb-divider-color";
 @forward "./dark/breadcrumb-active-color";
 @forward "./dark/btn-close-color";
-@forward "./dark/card-border-color";
 @forward "./dark/card-cap-bg";
 @forward "./dark/card-bg";
 @forward "./dark/carousel-control-color";
@@ -37,7 +36,6 @@
 @forward "./dark/kbd-color";
 @forward "./dark/kbd-bg";
 @forward "./dark/dropdown-bg";
-@forward "./dark/dropdown-border-color";
 @forward "./dark/dropdown-divider-bg";
 @forward "./dark/dropdown-link-color";
 @forward "./dark/dropdown-link-hover-color";
@@ -62,7 +60,6 @@
 @forward "./dark/list-group-action-color";
 @forward "./dark/list-group-action-active-bg";
 @forward "./dark/modal-content-bg";
-@forward "./dark/modal-content-border-color";
 @forward "./dark/modal-backdrop-bg";
 @forward "./dark/nav-link-disabled-color";
 @forward "./dark/nav-tabs-border-color";
@@ -88,17 +85,12 @@
 @forward "./dark/pagination-disabled-bg";
 @forward "./dark/pagination-disabled-border-color";
 @forward "./dark/popover-bg";
-@forward "./dark/popover-border-color";
 @forward "./dark/popover-header-bg";
-@forward "./dark/popover-arrow-outer-color";
 @forward "./dark/progress-bg";
 @forward "./dark/progress-bar-color";
 @forward "./dark/table-bg-scale";
 @forward "./dark/table-hover-bg";
-@forward "./dark/text-muted";
-@forward "./dark/thumbnail-border-color";
 @forward "./dark/toast-background-color";
-@forward "./dark/toast-border-color";
 @forward "./dark/toast-header-color";
 @forward "./dark/toast-header-background-color";
 @forward "./dark/toast-header-border-color";

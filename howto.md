@@ -1,4 +1,4 @@
-This file contains instructions for recreating the hundreds of _VARIABLE.scss files.
+This file contains instructions for recreating the hundreds of _[VARIABLE].scss files.
 
 First, take Bootstrap's `_variables.scss` file and remove all blank and comment/only lines (e.g. with the regex `^(//.*)?$\n`). Also, fix the various map properties so that they fit on one line (replace `^((\$.+: \()|(\s+.*))$\n` with `$1` multiple times).
 
@@ -8,7 +8,7 @@ You should now have a list of properties, one property per line.  Transform it i
 
 1. To generate the shell command to create all the files in root, replace with this:
 
-   `echo $'@use "./dependencies/_$1.scss" as *;\n$$$1: $2' > './_$1.scss' && touch './dependencies/_$1.scss' &&`
+   `echo $'@use "./dependencies/_$1.scss" as *;\n$$$1: $2 !default;' > './_$1.scss' && touch './dependencies/_$1.scss' &&`
    
    (It obviously can't put the dependencies in the dependency files, it just ensures they exist.)
 

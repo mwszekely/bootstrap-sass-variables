@@ -1,2 +1,2 @@
 @use "./dependencies/_kbd-color.scss" as *;
-$kbd-color: $white !default;
+$kbd-color: var(--#{$prefix}body-bg) !default;

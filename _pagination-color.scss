@@ -1,2 +1,2 @@
 @use "./dependencies/_pagination-color.scss" as *;
-$pagination-color: $link-color !default;
+$pagination-color: var(--#{$prefix}link-color) !default;

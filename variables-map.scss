@@ -23,16 +23,6 @@
 @use "./teal" as *;
 @use "./cyan" as *;
 @use "./colors" as *;
-@use "./primary" as *;
-@use "./secondary" as *;
-@use "./success" as *;
-@use "./info" as *;
-@use "./warning" as *;
-@use "./danger" as *;
-@use "./light" as *;
-@use "./dark" as *;
-@use "./theme-colors" as *;
-@use "./theme-colors-rgb" as *;
 @use "./min-contrast-ratio" as *;
 @use "./color-contrast-dark" as *;
 @use "./color-contrast-light" as *;
@@ -136,6 +126,15 @@
 @use "./greens" as *;
 @use "./teals" as *;
 @use "./cyans" as *;
+@use "./primary" as *;
+@use "./secondary" as *;
+@use "./success" as *;
+@use "./info" as *;
+@use "./warning" as *;
+@use "./danger" as *;
+@use "./light" as *;
+@use "./dark" as *;
+@use "./theme-colors" as *;
 @use "./escaped-characters" as *;
 @use "./enable-caret" as *;
 @use "./enable-rounded" as *;
@@ -145,6 +144,7 @@
 @use "./enable-reduced-motion" as *;
 @use "./enable-smooth-scroll" as *;
 @use "./enable-grid-classes" as *;
+@use "./enable-container-classes" as *;
 @use "./enable-cssgrid" as *;
 @use "./enable-button-pointers" as *;
 @use "./enable-rfs" as *;
@@ -153,19 +153,14 @@
 @use "./enable-deprecation-messages" as *;
 @use "./enable-important-utilities" as *;
 @use "./variable-prefix" as *;
+@use "./prefix" as *;
 @use "./gradient" as *;
 @use "./spacer" as *;
 @use "./spacers" as *;
-@use "./negative-spacers" as *;
 @use "./position-values" as *;
 @use "./body-bg" as *;
 @use "./body-color" as *;
 @use "./body-text-align" as *;
-@use "./utilities-colors" as *;
-@use "./utilities-text" as *;
-@use "./utilities-text-colors" as *;
-@use "./utilities-bg" as *;
-@use "./utilities-bg-colors" as *;
 @use "./link-color" as *;
 @use "./link-decoration" as *;
 @use "./link-shade-percentage" as *;
@@ -179,14 +174,17 @@
 @use "./grid-columns" as *;
 @use "./grid-gutter-width" as *;
 @use "./grid-row-columns" as *;
-@use "./gutters" as *;
 @use "./container-padding-x" as *;
 @use "./border-width" as *;
 @use "./border-widths" as *;
+@use "./border-style" as *;
 @use "./border-color" as *;
+@use "./border-color-translucent" as *;
 @use "./border-radius" as *;
 @use "./border-radius-sm" as *;
 @use "./border-radius-lg" as *;
+@use "./border-radius-xl" as *;
+@use "./border-radius-2xl" as *;
 @use "./border-radius-pill" as *;
 @use "./box-shadow" as *;
 @use "./box-shadow-sm" as *;
@@ -213,6 +211,7 @@
 @use "./font-weight-lighter" as *;
 @use "./font-weight-light" as *;
 @use "./font-weight-normal" as *;
+@use "./font-weight-semibold" as *;
 @use "./font-weight-bold" as *;
 @use "./font-weight-bolder" as *;
 @use "./font-weight-base" as *;
@@ -247,15 +246,17 @@
 @use "./blockquote-footer-font-size" as *;
 @use "./hr-margin-y" as *;
 @use "./hr-color" as *;
+@use "./hr-bg-color" as *;
 @use "./hr-height" as *;
+@use "./hr-border-color" as *;
+@use "./hr-border-width" as *;
 @use "./hr-opacity" as *;
 @use "./legend-margin-bottom" as *;
 @use "./legend-font-size" as *;
 @use "./legend-font-weight" as *;
-@use "./mark-padding" as *;
 @use "./dt-font-weight" as *;
-@use "./nested-kbd-font-weight" as *;
 @use "./list-inline-padding" as *;
+@use "./mark-padding" as *;
 @use "./mark-bg" as *;
 @use "./table-cell-padding-y" as *;
 @use "./table-cell-padding-x" as *;
@@ -279,6 +280,7 @@
 @use "./table-border-width" as *;
 @use "./table-border-color" as *;
 @use "./table-striped-order" as *;
+@use "./table-striped-columns-order" as *;
 @use "./table-group-separator-color" as *;
 @use "./table-caption-color" as *;
 @use "./table-bg-scale" as *;
@@ -357,6 +359,7 @@
 @use "./input-padding-x-lg" as *;
 @use "./input-font-size-lg" as *;
 @use "./input-bg" as *;
+@use "./input-disabled-color" as *;
 @use "./input-disabled-bg" as *;
 @use "./input-disabled-border-color" as *;
 @use "./input-color" as *;
@@ -509,6 +512,7 @@
 @use "./zindex-modal" as *;
 @use "./zindex-popover" as *;
 @use "./zindex-tooltip" as *;
+@use "./zindex-toast" as *;
 @use "./nav-link-padding-y" as *;
 @use "./nav-link-padding-x" as *;
 @use "./nav-link-font-size" as *;
@@ -580,6 +584,8 @@
 @use "./dropdown-item-padding-y" as *;
 @use "./dropdown-item-padding-x" as *;
 @use "./dropdown-header-color" as *;
+@use "./dropdown-header-padding-x" as *;
+@use "./dropdown-header-padding-y" as *;
 @use "./dropdown-header-padding" as *;
 @use "./dropdown-dark-color" as *;
 @use "./dropdown-dark-bg" as *;
@@ -599,10 +605,11 @@
 @use "./pagination-padding-x-sm" as *;
 @use "./pagination-padding-y-lg" as *;
 @use "./pagination-padding-x-lg" as *;
+@use "./pagination-font-size" as *;
 @use "./pagination-color" as *;
 @use "./pagination-bg" as *;
-@use "./pagination-border-width" as *;
 @use "./pagination-border-radius" as *;
+@use "./pagination-border-width" as *;
 @use "./pagination-margin-start" as *;
 @use "./pagination-border-color" as *;
 @use "./pagination-focus-color" as *;
@@ -692,6 +699,7 @@
 @use "./popover-border-radius" as *;
 @use "./popover-inner-border-radius" as *;
 @use "./popover-box-shadow" as *;
+@use "./popover-header-font-size" as *;
 @use "./popover-header-bg" as *;
 @use "./popover-header-color" as *;
 @use "./popover-header-padding-y" as *;
@@ -739,12 +747,13 @@
 @use "./modal-backdrop-bg" as *;
 @use "./modal-backdrop-opacity" as *;
 @use "./modal-header-border-color" as *;
-@use "./modal-footer-border-color" as *;
 @use "./modal-header-border-width" as *;
-@use "./modal-footer-border-width" as *;
 @use "./modal-header-padding-y" as *;
 @use "./modal-header-padding-x" as *;
 @use "./modal-header-padding" as *;
+@use "./modal-footer-bg" as *;
+@use "./modal-footer-border-color" as *;
+@use "./modal-footer-border-width" as *;
 @use "./modal-sm" as *;
 @use "./modal-md" as *;
 @use "./modal-lg" as *;
@@ -875,6 +884,7 @@
 @use "./kbd-font-size" as *;
 @use "./kbd-color" as *;
 @use "./kbd-bg" as *;
+@use "./nested-kbd-font-weight" as *;
 @use "./pre-color" as *;
 
 $variables: (
@@ -901,16 +911,6 @@ $variables: (
     "teal": $teal,
     "cyan": $cyan,
     "colors": $colors,
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
-    "theme-colors": $theme-colors,
-    "theme-colors-rgb": $theme-colors-rgb,
     "min-contrast-ratio": $min-contrast-ratio,
     "color-contrast-dark": $color-contrast-dark,
     "color-contrast-light": $color-contrast-light,
@@ -1014,6 +1014,15 @@ $variables: (
     "greens": $greens,
     "teals": $teals,
     "cyans": $cyans,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "theme-colors": $theme-colors,
     "escaped-characters": $escaped-characters,
     "enable-caret": $enable-caret,
     "enable-rounded": $enable-rounded,
@@ -1023,6 +1032,7 @@ $variables: (
     "enable-reduced-motion": $enable-reduced-motion,
     "enable-smooth-scroll": $enable-smooth-scroll,
     "enable-grid-classes": $enable-grid-classes,
+    "enable-container-classes": $enable-container-classes,
     "enable-cssgrid": $enable-cssgrid,
     "enable-button-pointers": $enable-button-pointers,
     "enable-rfs": $enable-rfs,
@@ -1031,19 +1041,14 @@ $variables: (
     "enable-deprecation-messages": $enable-deprecation-messages,
     "enable-important-utilities": $enable-important-utilities,
     "variable-prefix": $variable-prefix,
+    "prefix": $prefix,
     "gradient": $gradient,
     "spacer": $spacer,
     "spacers": $spacers,
-    "negative-spacers": $negative-spacers,
     "position-values": $position-values,
     "body-bg": $body-bg,
     "body-color": $body-color,
     "body-text-align": $body-text-align,
-    "utilities-colors": $utilities-colors,
-    "utilities-text": $utilities-text,
-    "utilities-text-colors": $utilities-text-colors,
-    "utilities-bg": $utilities-bg,
-    "utilities-bg-colors": $utilities-bg-colors,
     "link-color": $link-color,
     "link-decoration": $link-decoration,
     "link-shade-percentage": $link-shade-percentage,
@@ -1057,14 +1062,17 @@ $variables: (
     "grid-columns": $grid-columns,
     "grid-gutter-width": $grid-gutter-width,
     "grid-row-columns": $grid-row-columns,
-    "gutters": $gutters,
     "container-padding-x": $container-padding-x,
     "border-width": $border-width,
     "border-widths": $border-widths,
+    "border-style": $border-style,
     "border-color": $border-color,
+    "border-color-translucent": $border-color-translucent,
     "border-radius": $border-radius,
     "border-radius-sm": $border-radius-sm,
     "border-radius-lg": $border-radius-lg,
+    "border-radius-xl": $border-radius-xl,
+    "border-radius-2xl": $border-radius-2xl,
     "border-radius-pill": $border-radius-pill,
     "box-shadow": $box-shadow,
     "box-shadow-sm": $box-shadow-sm,
@@ -1091,6 +1099,7 @@ $variables: (
     "font-weight-lighter": $font-weight-lighter,
     "font-weight-light": $font-weight-light,
     "font-weight-normal": $font-weight-normal,
+    "font-weight-semibold": $font-weight-semibold,
     "font-weight-bold": $font-weight-bold,
     "font-weight-bolder": $font-weight-bolder,
     "font-weight-base": $font-weight-base,
@@ -1125,15 +1134,17 @@ $variables: (
     "blockquote-footer-font-size": $blockquote-footer-font-size,
     "hr-margin-y": $hr-margin-y,
     "hr-color": $hr-color,
+    "hr-bg-color": $hr-bg-color,
     "hr-height": $hr-height,
+    "hr-border-color": $hr-border-color,
+    "hr-border-width": $hr-border-width,
     "hr-opacity": $hr-opacity,
     "legend-margin-bottom": $legend-margin-bottom,
     "legend-font-size": $legend-font-size,
     "legend-font-weight": $legend-font-weight,
-    "mark-padding": $mark-padding,
     "dt-font-weight": $dt-font-weight,
-    "nested-kbd-font-weight": $nested-kbd-font-weight,
     "list-inline-padding": $list-inline-padding,
+    "mark-padding": $mark-padding,
     "mark-bg": $mark-bg,
     "table-cell-padding-y": $table-cell-padding-y,
     "table-cell-padding-x": $table-cell-padding-x,
@@ -1157,6 +1168,7 @@ $variables: (
     "table-border-width": $table-border-width,
     "table-border-color": $table-border-color,
     "table-striped-order": $table-striped-order,
+    "table-striped-columns-order": $table-striped-columns-order,
     "table-group-separator-color": $table-group-separator-color,
     "table-caption-color": $table-caption-color,
     "table-bg-scale": $table-bg-scale,
@@ -1235,6 +1247,7 @@ $variables: (
     "input-padding-x-lg": $input-padding-x-lg,
     "input-font-size-lg": $input-font-size-lg,
     "input-bg": $input-bg,
+    "input-disabled-color": $input-disabled-color,
     "input-disabled-bg": $input-disabled-bg,
     "input-disabled-border-color": $input-disabled-border-color,
     "input-color": $input-color,
@@ -1387,6 +1400,7 @@ $variables: (
     "zindex-modal": $zindex-modal,
     "zindex-popover": $zindex-popover,
     "zindex-tooltip": $zindex-tooltip,
+    "zindex-toast": $zindex-toast,
     "nav-link-padding-y": $nav-link-padding-y,
     "nav-link-padding-x": $nav-link-padding-x,
     "nav-link-font-size": $nav-link-font-size,
@@ -1458,6 +1472,8 @@ $variables: (
     "dropdown-item-padding-y": $dropdown-item-padding-y,
     "dropdown-item-padding-x": $dropdown-item-padding-x,
     "dropdown-header-color": $dropdown-header-color,
+    "dropdown-header-padding-x": $dropdown-header-padding-x,
+    "dropdown-header-padding-y": $dropdown-header-padding-y,
     "dropdown-header-padding": $dropdown-header-padding,
     "dropdown-dark-color": $dropdown-dark-color,
     "dropdown-dark-bg": $dropdown-dark-bg,
@@ -1477,10 +1493,11 @@ $variables: (
     "pagination-padding-x-sm": $pagination-padding-x-sm,
     "pagination-padding-y-lg": $pagination-padding-y-lg,
     "pagination-padding-x-lg": $pagination-padding-x-lg,
+    "pagination-font-size": $pagination-font-size,
     "pagination-color": $pagination-color,
     "pagination-bg": $pagination-bg,
-    "pagination-border-width": $pagination-border-width,
     "pagination-border-radius": $pagination-border-radius,
+    "pagination-border-width": $pagination-border-width,
     "pagination-margin-start": $pagination-margin-start,
     "pagination-border-color": $pagination-border-color,
     "pagination-focus-color": $pagination-focus-color,
@@ -1570,6 +1587,7 @@ $variables: (
     "popover-border-radius": $popover-border-radius,
     "popover-inner-border-radius": $popover-inner-border-radius,
     "popover-box-shadow": $popover-box-shadow,
+    "popover-header-font-size": $popover-header-font-size,
     "popover-header-bg": $popover-header-bg,
     "popover-header-color": $popover-header-color,
     "popover-header-padding-y": $popover-header-padding-y,
@@ -1617,12 +1635,13 @@ $variables: (
     "modal-backdrop-bg": $modal-backdrop-bg,
     "modal-backdrop-opacity": $modal-backdrop-opacity,
     "modal-header-border-color": $modal-header-border-color,
-    "modal-footer-border-color": $modal-footer-border-color,
     "modal-header-border-width": $modal-header-border-width,
-    "modal-footer-border-width": $modal-footer-border-width,
     "modal-header-padding-y": $modal-header-padding-y,
     "modal-header-padding-x": $modal-header-padding-x,
     "modal-header-padding": $modal-header-padding,
+    "modal-footer-bg": $modal-footer-bg,
+    "modal-footer-border-color": $modal-footer-border-color,
+    "modal-footer-border-width": $modal-footer-border-width,
     "modal-sm": $modal-sm,
     "modal-md": $modal-md,
     "modal-lg": $modal-lg,
@@ -1753,5 +1772,6 @@ $variables: (
     "kbd-font-size": $kbd-font-size,
     "kbd-color": $kbd-color,
     "kbd-bg": $kbd-bg,
-    "pre-color": $pre-color,
+    "nested-kbd-font-weight": $nested-kbd-font-weight,
+    "pre-color": $pre-color
 );

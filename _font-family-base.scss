@@ -1,2 +1,2 @@
 @use "./dependencies/_font-family-base.scss" as *;
-$font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
+$font-family-base: var(--#{$prefix}font-sans-serif) !default;

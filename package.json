@@ -7,7 +7,7 @@
     "watch": "sass -I='./node_modules' ./demo-dark.scss ./demo-dark.css -w"
   },
   "peerDependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.2.0-beta1"
   },
   "devDependencies": {
     "sass": "^1.49.0"

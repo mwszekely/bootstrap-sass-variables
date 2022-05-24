@@ -1,2 +1,2 @@
 @use "./dependencies/_popover-border-color.scss" as *;
-$popover-border-color: rgba($black, .2) !default;
+$popover-border-color: var(--#{$prefix}border-color-translucent) !default;
