@@ -1,2 +1,2 @@
 @use "../black" as *;
-$popover-bg: $black !default;
+@forward "../popover-bg" with ($popover-bg: $black !default);

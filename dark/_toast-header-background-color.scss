@@ -1,2 +1,2 @@
 @use "../black" as *;
-@forward "../toast-header-background-color" with ($toast-header-background-color: rgba($black, 0.85) !default);
+@forward "../toast-header-background-color" with ($toast-header-background-color: rgba($black, .85) !default);

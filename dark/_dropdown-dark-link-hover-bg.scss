@@ -1,2 +1,2 @@
 @use "../black" as *;
-@forward "../dropdown-dark-link-hover-bg" with ($dropdown-dark-link-hover-bg: rgba($black, 0.15) !default);
+@forward "../dropdown-dark-link-hover-bg" with ($dropdown-dark-link-hover-bg: rgba($black, .15) !default);

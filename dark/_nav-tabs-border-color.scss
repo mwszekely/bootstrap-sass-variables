@@ -1,2 +1,2 @@
 @use "../gray-700" as *;
-$nav-tabs-border-color: $gray-700 !default;
+@forward "../nav-tabs-border-color" with ($nav-tabs-border-color: $gray-700 !default);

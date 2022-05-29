@@ -1,2 +1,2 @@
 @use "../gray-400" as *;
-$blockquote-footer-color: $gray-400 !default;
+@forward "../blockquote-footer-color" with ($blockquote-footer-color: $gray-400 !default);

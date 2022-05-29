@@ -1,3 +1,2 @@
 @use "../black" as *;
-@use "../component-active-bg" as *;
 @forward "../component-active-color" with ($component-active-color: $black !default);

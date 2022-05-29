@@ -1,2 +1,2 @@
 @use "../black" as *;
-@forward "../navbar-dark-hover-color" with ($navbar-dark-hover-color: rgba($black, 0.75) !default);
+@forward "../navbar-dark-hover-color" with ($navbar-dark-hover-color: rgba($black, .75) !default);
