@@ -1,2 +1,2 @@
 @use "./dependencies/_carousel-transition.scss" as *;
-$carousel-transition: transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+$carousel-transition: transform $carousel-transition-duration ease-in-out !default;

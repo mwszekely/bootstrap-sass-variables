@@ -24,15 +24,6 @@
 @use "./teal" as *;
 @use "./cyan" as *;
 @use "./colors" as *;
-@use "./primary" as *;
-@use "./secondary" as *;
-@use "./success" as *;
-@use "./info" as *;
-@use "./warning" as *;
-@use "./danger" as *;
-@use "./light" as *;
-@use "./dark" as *;
-@use "./theme-colors" as *;
 @use "./min-contrast-ratio" as *;
 @use "./color-contrast-dark" as *;
 @use "./color-contrast-light" as *;
@@ -136,6 +127,15 @@
 @use "./greens" as *;
 @use "./teals" as *;
 @use "./cyans" as *;
+@use "./primary" as *;
+@use "./secondary" as *;
+@use "./success" as *;
+@use "./info" as *;
+@use "./warning" as *;
+@use "./danger" as *;
+@use "./light" as *;
+@use "./dark" as *;
+@use "./theme-colors" as *;
 @use "./escaped-characters" as *;
 @use "./enable-caret" as *;
 @use "./enable-rounded" as *;
@@ -171,7 +171,10 @@
 @use "./stretched-link-z-index" as *;
 @use "./paragraph-margin-bottom" as *;
 @use "./grid-breakpoints" as *;
+
+
 @use "./container-max-widths" as *;
+
 @use "./grid-columns" as *;
 @use "./grid-gutter-width" as *;
 @use "./grid-row-columns" as *;
@@ -233,6 +236,8 @@
 @use "./headings-line-height" as *;
 @use "./headings-color" as *;
 @use "./display-font-sizes" as *;
+@use "./display-font-family" as *;
+@use "./display-font-style" as *;
 @use "./display-font-weight" as *;
 @use "./display-line-height" as *;
 @use "./lead-font-size" as *;
@@ -546,12 +551,6 @@
 @use "./navbar-toggler-border-radius" as *;
 @use "./navbar-toggler-focus-width" as *;
 @use "./navbar-toggler-transition" as *;
-@use "./navbar-dark-color" as *;
-@use "./navbar-dark-hover-color" as *;
-@use "./navbar-dark-active-color" as *;
-@use "./navbar-dark-disabled-color" as *;
-@use "./navbar-dark-toggler-icon-bg" as *;
-@use "./navbar-dark-toggler-border-color" as *;
 @use "./navbar-light-color" as *;
 @use "./navbar-light-hover-color" as *;
 @use "./navbar-light-active-color" as *;
@@ -560,6 +559,12 @@
 @use "./navbar-light-toggler-border-color" as *;
 @use "./navbar-light-brand-color" as *;
 @use "./navbar-light-brand-hover-color" as *;
+@use "./navbar-dark-color" as *;
+@use "./navbar-dark-hover-color" as *;
+@use "./navbar-dark-active-color" as *;
+@use "./navbar-dark-disabled-color" as *;
+@use "./navbar-dark-toggler-icon-bg" as *;
+@use "./navbar-dark-toggler-border-color" as *;
 @use "./navbar-dark-brand-color" as *;
 @use "./navbar-dark-brand-hover-color" as *;
 @use "./dropdown-min-width" as *;
@@ -1121,6 +1126,8 @@
     $headings-line-height: $headings-line-height !default,
     $headings-color: $headings-color !default,
     $display-font-sizes: $display-font-sizes !default,
+    $display-font-family: $display-font-family !default,
+    $display-font-style: $display-font-style !default,
     $display-font-weight: $display-font-weight !default,
     $display-line-height: $display-line-height !default,
     $lead-font-size: $lead-font-size !default,
@@ -1434,12 +1441,6 @@
     $navbar-toggler-border-radius: $navbar-toggler-border-radius !default,
     $navbar-toggler-focus-width: $navbar-toggler-focus-width !default,
     $navbar-toggler-transition: $navbar-toggler-transition !default,
-    $navbar-dark-color: $navbar-dark-color !default,
-    $navbar-dark-hover-color: $navbar-dark-hover-color !default,
-    $navbar-dark-active-color: $navbar-dark-active-color !default,
-    $navbar-dark-disabled-color: $navbar-dark-disabled-color !default,
-    $navbar-dark-toggler-icon-bg: $navbar-dark-toggler-icon-bg !default,
-    $navbar-dark-toggler-border-color: $navbar-dark-toggler-border-color !default,
     $navbar-light-color: $navbar-light-color !default,
     $navbar-light-hover-color: $navbar-light-hover-color !default,
     $navbar-light-active-color: $navbar-light-active-color !default,
@@ -1448,6 +1449,12 @@
     $navbar-light-toggler-border-color: $navbar-light-toggler-border-color !default,
     $navbar-light-brand-color: $navbar-light-brand-color !default,
     $navbar-light-brand-hover-color: $navbar-light-brand-hover-color !default,
+    $navbar-dark-color: $navbar-dark-color !default,
+    $navbar-dark-hover-color: $navbar-dark-hover-color !default,
+    $navbar-dark-active-color: $navbar-dark-active-color !default,
+    $navbar-dark-disabled-color: $navbar-dark-disabled-color !default,
+    $navbar-dark-toggler-icon-bg: $navbar-dark-toggler-icon-bg !default,
+    $navbar-dark-toggler-border-color: $navbar-dark-toggler-border-color !default,
     $navbar-dark-brand-color: $navbar-dark-brand-color !default,
     $navbar-dark-brand-hover-color: $navbar-dark-brand-hover-color !default,
     $dropdown-min-width: $dropdown-min-width !default,

@@ -1,2 +1,2 @@
 @use "./dependencies/_popover-header-color.scss" as *;
-$popover-header-color: var(--#{$prefix}heading-color) !default;
+$popover-header-color: $headings-color !default;

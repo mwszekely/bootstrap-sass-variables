@@ -170,7 +170,10 @@
 @use "./stretched-link-z-index" as *;
 @use "./paragraph-margin-bottom" as *;
 @use "./grid-breakpoints" as *;
+
+
 @use "./container-max-widths" as *;
+
 @use "./grid-columns" as *;
 @use "./grid-gutter-width" as *;
 @use "./grid-row-columns" as *;
@@ -232,6 +235,8 @@
 @use "./headings-line-height" as *;
 @use "./headings-color" as *;
 @use "./display-font-sizes" as *;
+@use "./display-font-family" as *;
+@use "./display-font-style" as *;
 @use "./display-font-weight" as *;
 @use "./display-line-height" as *;
 @use "./lead-font-size" as *;
@@ -545,12 +550,6 @@
 @use "./navbar-toggler-border-radius" as *;
 @use "./navbar-toggler-focus-width" as *;
 @use "./navbar-toggler-transition" as *;
-@use "./navbar-dark-color" as *;
-@use "./navbar-dark-hover-color" as *;
-@use "./navbar-dark-active-color" as *;
-@use "./navbar-dark-disabled-color" as *;
-@use "./navbar-dark-toggler-icon-bg" as *;
-@use "./navbar-dark-toggler-border-color" as *;
 @use "./navbar-light-color" as *;
 @use "./navbar-light-hover-color" as *;
 @use "./navbar-light-active-color" as *;
@@ -559,6 +558,12 @@
 @use "./navbar-light-toggler-border-color" as *;
 @use "./navbar-light-brand-color" as *;
 @use "./navbar-light-brand-hover-color" as *;
+@use "./navbar-dark-color" as *;
+@use "./navbar-dark-hover-color" as *;
+@use "./navbar-dark-active-color" as *;
+@use "./navbar-dark-disabled-color" as *;
+@use "./navbar-dark-toggler-icon-bg" as *;
+@use "./navbar-dark-toggler-border-color" as *;
 @use "./navbar-dark-brand-color" as *;
 @use "./navbar-dark-brand-hover-color" as *;
 @use "./dropdown-min-width" as *;
@@ -1120,6 +1125,8 @@ $variables: (
     "headings-line-height": $headings-line-height,
     "headings-color": $headings-color,
     "display-font-sizes": $display-font-sizes,
+    "display-font-family": $display-font-family,
+    "display-font-style": $display-font-style,
     "display-font-weight": $display-font-weight,
     "display-line-height": $display-line-height,
     "lead-font-size": $lead-font-size,
@@ -1433,12 +1440,6 @@ $variables: (
     "navbar-toggler-border-radius": $navbar-toggler-border-radius,
     "navbar-toggler-focus-width": $navbar-toggler-focus-width,
     "navbar-toggler-transition": $navbar-toggler-transition,
-    "navbar-dark-color": $navbar-dark-color,
-    "navbar-dark-hover-color": $navbar-dark-hover-color,
-    "navbar-dark-active-color": $navbar-dark-active-color,
-    "navbar-dark-disabled-color": $navbar-dark-disabled-color,
-    "navbar-dark-toggler-icon-bg": $navbar-dark-toggler-icon-bg,
-    "navbar-dark-toggler-border-color": $navbar-dark-toggler-border-color,
     "navbar-light-color": $navbar-light-color,
     "navbar-light-hover-color": $navbar-light-hover-color,
     "navbar-light-active-color": $navbar-light-active-color,
@@ -1447,6 +1448,12 @@ $variables: (
     "navbar-light-toggler-border-color": $navbar-light-toggler-border-color,
     "navbar-light-brand-color": $navbar-light-brand-color,
     "navbar-light-brand-hover-color": $navbar-light-brand-hover-color,
+    "navbar-dark-color": $navbar-dark-color,
+    "navbar-dark-hover-color": $navbar-dark-hover-color,
+    "navbar-dark-active-color": $navbar-dark-active-color,
+    "navbar-dark-disabled-color": $navbar-dark-disabled-color,
+    "navbar-dark-toggler-icon-bg": $navbar-dark-toggler-icon-bg,
+    "navbar-dark-toggler-border-color": $navbar-dark-toggler-border-color,
     "navbar-dark-brand-color": $navbar-dark-brand-color,
     "navbar-dark-brand-hover-color": $navbar-dark-brand-hover-color,
     "dropdown-min-width": $dropdown-min-width,

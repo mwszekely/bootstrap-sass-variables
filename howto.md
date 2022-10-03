@@ -1,6 +1,6 @@
 This file contains instructions for recreating the hundreds of _[VARIABLE].scss files.
 
-First, take Bootstrap's `_variables.scss` file and remove all blank and comment/only lines (e.g. with the regex `^(//.*)?$\n`). Also, fix the various map properties so that they fit on one line (replace `^((\$.+: \()|(\s+.*))$\n` with `$1` multiple times).
+First, take Bootstrap's `_variables.scss` file and remove all blank lines, commends, and @include statements (e.g. with the regexes `^(//.*)?$\n` and `(((^| )//)|(@include)).*`). Also, fix the various map properties so that they fit on one line (replace `^((\$.+: \()|(\s+.*))$\n` with `$1` multiple times).
 
 Then, find and replace all apostrophes to escape them for use in the terminal by replacing `'` with `\'` (`_variables.scss` only contains apostrophes within quoted strings, so this is safe).
 

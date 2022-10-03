@@ -1,2 +1,2 @@
 @use "./dependencies/_text-muted.scss" as *;
-$text-muted: rgba(var(--#{$prefix}body-color-rgb), .75) !default;
+$text-muted: $gray-600 !default;
