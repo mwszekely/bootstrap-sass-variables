@@ -1,0 +1,2 @@
+@use "./dependencies/_light-bg-subtle.scss" as *;
+$light-bg-subtle: mix($gray-100, $white) !default;

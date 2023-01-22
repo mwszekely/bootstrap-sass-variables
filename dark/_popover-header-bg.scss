@@ -1,3 +1,0 @@
-@use "../functions/tint-color" as *;
-@use "../popover-bg" as *;
-@forward "../popover-header-bg" with ($popover-header-bg: tint-color($popover-bg, 6%) !default);

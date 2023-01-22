@@ -1,2 +1,2 @@
 @use "./dependencies/_popover-header-bg.scss" as *;
-$popover-header-bg: shade-color($popover-bg, 6%) !default;
+$popover-header-bg: var(--#{$prefix}secondary-bg) !default;

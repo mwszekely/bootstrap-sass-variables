@@ -1,2 +1,2 @@
 @use "./dependencies/_input-disabled-bg.scss" as *;
-$input-disabled-bg: $gray-200 !default;
+$input-disabled-bg: var(--#{$prefix}form-control-disabled-bg) !default;

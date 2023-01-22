@@ -9,19 +9,27 @@ You should now have a list of properties, one property per line.  Transform it i
 1. To generate the shell command to create all the files in root, replace with this:
 
    `echo $'@use "./dependencies/_$1.scss" as *;\n$$$1: $2 !default;' > './_$1.scss' && touch './dependencies/_$1.scss' &&`
+
+   and
+
+   `echo $'@use "./dependencies/_$1.scss" as *;\n$$$1: $2 !default;' > './dark/_$1.scss' && touch './dark/dependencies/_$1.scss' &&` for dark mode
    
    (It obviously can't put the dependencies in the dependency files, it just ensures they exist.)
 
 
 2. To create the list of `@use`/`@forward` rules in the files that use them, replace with these:
 
-   `@use "./$1" as *;`
+   `@use "./_$1" as *;` and `@use "./dark/_$1" as *;`
    
-   `@forward "./$1";`
+   `@forward "./_$1";` and `@forward "./dark/_$1";`
 
 3. Replace with this to create the `with` part of the `@use`/`@forward` rule:
 
    `$$$1: $$$1 !default,`
+
+4. And for the map file,
+
+   `"$1": $$$1,`
 
 
 Also yes, there's absolutely a non-hack way to do this that doesn't involve regex'd shell commands, but I have confidence that Bootstrap will get proper module support before enough new versions release that having re-done it "proper" would save time.

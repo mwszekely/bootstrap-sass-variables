@@ -1,2 +1,2 @@
 @use "./dependencies/_nav-link-disabled-color.scss" as *;
-$nav-link-disabled-color: $gray-600 !default;
+$nav-link-disabled-color: var(--#{$prefix}secondary-color) !default;

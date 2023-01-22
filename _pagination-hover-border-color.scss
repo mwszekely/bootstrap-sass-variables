@@ -1,2 +1,2 @@
 @use "./dependencies/_pagination-hover-border-color.scss" as *;
-$pagination-hover-border-color: $gray-300 !default;
+$pagination-hover-border-color: var(--#{$prefix}border-color) !default;

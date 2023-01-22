@@ -1,3 +1,0 @@
-@use "../functions/shade-color" as *;
-@use "../component-active-bg" as *;
-@forward "../form-range-thumb-active-bg" with ($form-range-thumb-active-bg: shade-color($component-active-bg, 70%) !default);

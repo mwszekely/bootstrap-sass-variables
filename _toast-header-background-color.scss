@@ -1,2 +1,2 @@
 @use "./dependencies/_toast-header-background-color.scss" as *;
-$toast-header-background-color: rgba($white, .85) !default;
+$toast-header-background-color: rgba(var(--#{$prefix}body-bg-rgb), .85) !default;

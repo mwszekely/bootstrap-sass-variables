@@ -1,2 +1,2 @@
 @use "./dependencies/_tooltip-color.scss" as *;
-$tooltip-color: $white !default;
+$tooltip-color: var(--#{$prefix}body-bg) !default;

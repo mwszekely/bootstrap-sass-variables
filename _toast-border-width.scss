@@ -1,2 +1,2 @@
 @use "./dependencies/_toast-border-width.scss" as *;
-$toast-border-width: $border-width !default;
+$toast-border-width: var(--#{$prefix}border-width) !default;

@@ -1,2 +1,2 @@
 @use "./dependencies/_thumbnail-border-width.scss" as *;
-$thumbnail-border-width: $border-width !default;
+$thumbnail-border-width: var(--#{$prefix}border-width) !default;

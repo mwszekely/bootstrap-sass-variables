@@ -1,2 +1,2 @@
 @use "./dependencies/_progress-border-radius.scss" as *;
-$progress-border-radius: $border-radius !default;
+$progress-border-radius: var(--#{$prefix}border-radius) !default;
