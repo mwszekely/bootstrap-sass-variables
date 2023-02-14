@@ -1,6 +1,6 @@
 This file contains instructions for recreating the hundreds of _[VARIABLE].scss files.
 
-First, take Bootstrap's `_variables.scss` file and remove all blank lines, commends, and @include statements (e.g. with the regexes `^(//.*)?$\n` and `(((^| )//)|(@include)).*`). Also, fix the various map properties so that they fit on one line (replace `^((\$.+: \()|(\s+.*))$\n` with `$1` multiple times).
+First, take Bootstrap's `_variables.scss` file and remove all blank lines, commends, and @include statements (e.g. with the regexes `(((^| )//)|(@include)).*` for comments, then `^(//.*)?$\n` for empty lines). Also, fix the various map properties so that they fit on one line (replace `\n((?:\))|(?:\s+.*(?:,|(?:\n\)))))` with `$1` multiple times), and fix `form-validation-states` manually.
 
 Then, find and replace all apostrophes to escape them for use in the terminal by replacing `'` with `\'` (`_variables.scss` only contains apostrophes within quoted strings, so this is safe).
 
@@ -17,13 +17,11 @@ You should now have a list of properties, one property per line.  Transform it i
    (It obviously can't put the dependencies in the dependency files, it just ensures they exist.)
 
 
-2. To create the list of `@use`/`@forward` rules in the files that use them, replace with these:
+2. To create the list of `@use` rules in the files that use them, replace with these:
 
    `@use "./_$1" as *;` and `@use "./dark/_$1" as *;`
-   
-   `@forward "./_$1";` and `@forward "./dark/_$1";`
 
-3. Replace with this to create the `with` part of the `@use`/`@forward` rule:
+3. Replace with this to create the `with` part of the `@forward` rule:
 
    `$$$1: $$$1 !default,`
 

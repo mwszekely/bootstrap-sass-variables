@@ -204,6 +204,57 @@
 @use "./_paragraph-margin-bottom" as *;
 @use "./_grid-breakpoints" as *;
 @use "./_container-max-widths" as *;
+@use "./_grid-columns" as *;
+@use "./_grid-gutter-width" as *;
+@use "./_grid-row-columns" as *;
+@use "./_container-padding-x" as *;
+@use "./_border-width" as *;
+@use "./_border-widths" as *;
+@use "./_border-style" as *;
+@use "./_border-color" as *;
+@use "./_border-color-translucent" as *;
+@use "./_border-radius" as *;
+@use "./_border-radius-sm" as *;
+@use "./_border-radius-lg" as *;
+@use "./_border-radius-xl" as *;
+@use "./_border-radius-2xl" as *;
+@use "./_border-radius-pill" as *;
+@use "./_box-shadow" as *;
+@use "./_box-shadow-sm" as *;
+@use "./_box-shadow-lg" as *;
+@use "./_box-shadow-inset" as *;
+@use "./_component-active-color" as *;
+@use "./_component-active-bg" as *;
+@use "./_caret-width" as *;
+@use "./_caret-vertical-align" as *;
+@use "./_caret-spacing" as *;
+@use "./_transition-base" as *;
+@use "./_transition-fade" as *;
+@use "./_transition-collapse" as *;
+@use "./_transition-collapse-width" as *;
+@use "./_aspect-ratios" as *;
+@use "./_font-family-sans-serif" as *;
+@use "./_font-family-monospace" as *;
+@use "./_font-family-base" as *;
+@use "./_font-family-code" as *;
+@use "./_font-size-root" as *;
+@use "./_font-size-base" as *;
+@use "./_font-size-sm" as *;
+@use "./_font-size-lg" as *;
+@use "./_font-weight-lighter" as *;
+@use "./_font-weight-light" as *;
+@use "./_font-weight-normal" as *;
+@use "./_font-weight-medium" as *;
+@use "./_font-weight-semibold" as *;
+@use "./_font-weight-bold" as *;
+@use "./_font-weight-bolder" as *;
+@use "./_font-weight-base" as *;
+@use "./_line-height-base" as *;
+@use "./_line-height-sm" as *;
+@use "./_line-height-lg" as *;
+@use "./_h1-font-size" as *;
+@use "./_h2-font-size" as *;
+@use "./_h3-font-size" as *;
 @use "./_h4-font-size" as *;
 @use "./_h5-font-size" as *;
 @use "./_h6-font-size" as *;
@@ -1129,6 +1180,57 @@
     $paragraph-margin-bottom: $paragraph-margin-bottom !default,
     $grid-breakpoints: $grid-breakpoints !default,
     $container-max-widths: $container-max-widths !default,
+    $grid-columns: $grid-columns !default,
+    $grid-gutter-width: $grid-gutter-width !default,
+    $grid-row-columns: $grid-row-columns !default,
+    $container-padding-x: $container-padding-x !default,
+    $border-width: $border-width !default,
+    $border-widths: $border-widths !default,
+    $border-style: $border-style !default,
+    $border-color: $border-color !default,
+    $border-color-translucent: $border-color-translucent !default,
+    $border-radius: $border-radius !default,
+    $border-radius-sm: $border-radius-sm !default,
+    $border-radius-lg: $border-radius-lg !default,
+    $border-radius-xl: $border-radius-xl !default,
+    $border-radius-2xl: $border-radius-2xl !default,
+    $border-radius-pill: $border-radius-pill !default,
+    $box-shadow: $box-shadow !default,
+    $box-shadow-sm: $box-shadow-sm !default,
+    $box-shadow-lg: $box-shadow-lg !default,
+    $box-shadow-inset: $box-shadow-inset !default,
+    $component-active-color: $component-active-color !default,
+    $component-active-bg: $component-active-bg !default,
+    $caret-width: $caret-width !default,
+    $caret-vertical-align: $caret-vertical-align !default,
+    $caret-spacing: $caret-spacing !default,
+    $transition-base: $transition-base !default,
+    $transition-fade: $transition-fade !default,
+    $transition-collapse: $transition-collapse !default,
+    $transition-collapse-width: $transition-collapse-width !default,
+    $aspect-ratios: $aspect-ratios !default,
+    $font-family-sans-serif: $font-family-sans-serif !default,
+    $font-family-monospace: $font-family-monospace !default,
+    $font-family-base: $font-family-base !default,
+    $font-family-code: $font-family-code !default,
+    $font-size-root: $font-size-root !default,
+    $font-size-base: $font-size-base !default,
+    $font-size-sm: $font-size-sm !default,
+    $font-size-lg: $font-size-lg !default,
+    $font-weight-lighter: $font-weight-lighter !default,
+    $font-weight-light: $font-weight-light !default,
+    $font-weight-normal: $font-weight-normal !default,
+    $font-weight-medium: $font-weight-medium !default,
+    $font-weight-semibold: $font-weight-semibold !default,
+    $font-weight-bold: $font-weight-bold !default,
+    $font-weight-bolder: $font-weight-bolder !default,
+    $font-weight-base: $font-weight-base !default,
+    $line-height-base: $line-height-base !default,
+    $line-height-sm: $line-height-sm !default,
+    $line-height-lg: $line-height-lg !default,
+    $h1-font-size: $h1-font-size !default,
+    $h2-font-size: $h2-font-size !default,
+    $h3-font-size: $h3-font-size !default,
     $h4-font-size: $h4-font-size !default,
     $h5-font-size: $h5-font-size !default,
     $h6-font-size: $h6-font-size !default,
@@ -1683,10 +1785,10 @@
     $alert-border-radius: $alert-border-radius !default,
     $alert-link-font-weight: $alert-link-font-weight !default,
     $alert-border-width: $alert-border-width !default,
+    $alert-dismissible-padding-r: $alert-dismissible-padding-r !default,
     $alert-bg-scale: $alert-bg-scale !default,
     $alert-border-scale: $alert-border-scale !default,
     $alert-color-scale: $alert-color-scale !default,
-    $alert-dismissible-padding-r: $alert-dismissible-padding-r !default,
     $progress-height: $progress-height !default,
     $progress-font-size: $progress-font-size !default,
     $progress-bg: $progress-bg !default,

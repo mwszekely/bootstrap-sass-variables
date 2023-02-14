@@ -135,6 +135,30 @@
 @use "./_light" as *;
 @use "./_dark" as *;
 @use "./_theme-colors" as *;
+@use "./_primary-text" as *;
+@use "./_secondary-text" as *;
+@use "./_success-text" as *;
+@use "./_info-text" as *;
+@use "./_warning-text" as *;
+@use "./_danger-text" as *;
+@use "./_light-text" as *;
+@use "./_dark-text" as *;
+@use "./_primary-bg-subtle" as *;
+@use "./_secondary-bg-subtle" as *;
+@use "./_success-bg-subtle" as *;
+@use "./_info-bg-subtle" as *;
+@use "./_warning-bg-subtle" as *;
+@use "./_danger-bg-subtle" as *;
+@use "./_light-bg-subtle" as *;
+@use "./_dark-bg-subtle" as *;
+@use "./_primary-border-subtle" as *;
+@use "./_secondary-border-subtle" as *;
+@use "./_success-border-subtle" as *;
+@use "./_info-border-subtle" as *;
+@use "./_warning-border-subtle" as *;
+@use "./_danger-border-subtle" as *;
+@use "./_light-border-subtle" as *;
+@use "./_dark-border-subtle" as *;
 @use "./_escaped-characters" as *;
 @use "./_enable-caret" as *;
 @use "./_enable-rounded" as *;
@@ -152,15 +176,23 @@
 @use "./_enable-negative-margins" as *;
 @use "./_enable-deprecation-messages" as *;
 @use "./_enable-important-utilities" as *;
+@use "./_enable-dark-mode" as *;
+@use "./_color-mode-type" as *;
 @use "./_variable-prefix" as *;
 @use "./_prefix" as *;
 @use "./_gradient" as *;
 @use "./_spacer" as *;
 @use "./_spacers" as *;
 @use "./_position-values" as *;
-@use "./_body-bg" as *;
-@use "./_body-color" as *;
 @use "./_body-text-align" as *;
+@use "./_body-color" as *;
+@use "./_body-bg" as *;
+@use "./_body-emphasis-color" as *;
+@use "./_body-secondary-color" as *;
+@use "./_body-secondary-bg" as *;
+@use "./_body-tertiary-color" as *;
+@use "./_body-tertiary-bg" as *;
+@use "./_emphasis-color" as *;
 @use "./_link-color" as *;
 @use "./_link-decoration" as *;
 @use "./_link-shade-percentage" as *;
@@ -211,6 +243,7 @@
 @use "./_font-weight-lighter" as *;
 @use "./_font-weight-light" as *;
 @use "./_font-weight-normal" as *;
+@use "./_font-weight-medium" as *;
 @use "./_font-weight-semibold" as *;
 @use "./_font-weight-bold" as *;
 @use "./_font-weight-bolder" as *;
@@ -492,8 +525,10 @@
 @use "./_form-floating-padding-y" as *;
 @use "./_form-floating-input-padding-t" as *;
 @use "./_form-floating-input-padding-b" as *;
+@use "./_form-floating-label-height" as *;
 @use "./_form-floating-label-opacity" as *;
 @use "./_form-floating-label-transform" as *;
+@use "./_form-floating-label-disabled-color" as *;
 @use "./_form-floating-transition" as *;
 @use "./_form-feedback-margin-top" as *;
 @use "./_form-feedback-font-size" as *;
@@ -515,6 +550,7 @@
 @use "./_zindex-popover" as *;
 @use "./_zindex-tooltip" as *;
 @use "./_zindex-toast" as *;
+@use "./_zindex-levels" as *;
 @use "./_nav-link-padding-y" as *;
 @use "./_nav-link-padding-x" as *;
 @use "./_nav-link-font-size" as *;
@@ -635,6 +671,8 @@
 @use "./_card-spacer-y" as *;
 @use "./_card-spacer-x" as *;
 @use "./_card-title-spacer-y" as *;
+@use "./_card-title-color" as *;
+@use "./_card-subtitle-color" as *;
 @use "./_card-border-width" as *;
 @use "./_card-border-color" as *;
 @use "./_card-border-radius" as *;
@@ -774,6 +812,9 @@
 @use "./_alert-border-scale" as *;
 @use "./_alert-color-scale" as *;
 @use "./_alert-dismissible-padding-r" as *;
+@use "./_alert-bg-scale" as *;
+@use "./_alert-border-scale" as *;
+@use "./_alert-color-scale" as *;
 @use "./_progress-height" as *;
 @use "./_progress-font-size" as *;
 @use "./_progress-bg" as *;
@@ -1138,6 +1179,57 @@ $variables: (
     "paragraph-margin-bottom": $paragraph-margin-bottom,
     "grid-breakpoints": $grid-breakpoints,
     "container-max-widths": $container-max-widths,
+    "grid-columns": $grid-columns,
+    "grid-gutter-width": $grid-gutter-width,
+    "grid-row-columns": $grid-row-columns,
+    "container-padding-x": $container-padding-x,
+    "border-width": $border-width,
+    "border-widths": $border-widths,
+    "border-style": $border-style,
+    "border-color": $border-color,
+    "border-color-translucent": $border-color-translucent,
+    "border-radius": $border-radius,
+    "border-radius-sm": $border-radius-sm,
+    "border-radius-lg": $border-radius-lg,
+    "border-radius-xl": $border-radius-xl,
+    "border-radius-2xl": $border-radius-2xl,
+    "border-radius-pill": $border-radius-pill,
+    "box-shadow": $box-shadow,
+    "box-shadow-sm": $box-shadow-sm,
+    "box-shadow-lg": $box-shadow-lg,
+    "box-shadow-inset": $box-shadow-inset,
+    "component-active-color": $component-active-color,
+    "component-active-bg": $component-active-bg,
+    "caret-width": $caret-width,
+    "caret-vertical-align": $caret-vertical-align,
+    "caret-spacing": $caret-spacing,
+    "transition-base": $transition-base,
+    "transition-fade": $transition-fade,
+    "transition-collapse": $transition-collapse,
+    "transition-collapse-width": $transition-collapse-width,
+    "aspect-ratios": $aspect-ratios,
+    "font-family-sans-serif": $font-family-sans-serif,
+    "font-family-monospace": $font-family-monospace,
+    "font-family-base": $font-family-base,
+    "font-family-code": $font-family-code,
+    "font-size-root": $font-size-root,
+    "font-size-base": $font-size-base,
+    "font-size-sm": $font-size-sm,
+    "font-size-lg": $font-size-lg,
+    "font-weight-lighter": $font-weight-lighter,
+    "font-weight-light": $font-weight-light,
+    "font-weight-normal": $font-weight-normal,
+    "font-weight-medium": $font-weight-medium,
+    "font-weight-semibold": $font-weight-semibold,
+    "font-weight-bold": $font-weight-bold,
+    "font-weight-bolder": $font-weight-bolder,
+    "font-weight-base": $font-weight-base,
+    "line-height-base": $line-height-base,
+    "line-height-sm": $line-height-sm,
+    "line-height-lg": $line-height-lg,
+    "h1-font-size": $h1-font-size,
+    "h2-font-size": $h2-font-size,
+    "h3-font-size": $h3-font-size,
     "h4-font-size": $h4-font-size,
     "h5-font-size": $h5-font-size,
     "h6-font-size": $h6-font-size,
@@ -1857,5 +1949,5 @@ $variables: (
     "form-switch-color-dark": $form-switch-color-dark,
     "form-switch-bg-image-dark": $form-switch-bg-image-dark,
     "accordion-button-icon-dark": $accordion-button-icon-dark,
-    "accordion-button-active-icon-dark": $accordion-button-active-icon-dark
+    "accordion-button-active-icon-dark": $accordion-button-active-icon-dark,
 );
