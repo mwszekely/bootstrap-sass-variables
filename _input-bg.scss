@@ -1,2 +1,2 @@
 @use "./dependencies/_input-bg.scss" as *;
-$input-bg: $body-bg !default;
+$input-bg: var(--#{$prefix}form-control-bg) !default;

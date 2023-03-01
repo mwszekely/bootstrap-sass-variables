@@ -1,3 +1,0 @@
-@use "../functions/tint-color" as *;
-@use "../dropdown-link-color" as *;
-@forward "../dropdown-link-hover-color" with ($dropdown-link-hover-color: tint-color($dropdown-link-color, 10%) !default);

@@ -1,2 +1,2 @@
 @use "./dependencies/_offcanvas-color.scss" as *;
-$offcanvas-color: $modal-content-color !default;
+$offcanvas-color: var(--#{$prefix}body-color) !default;

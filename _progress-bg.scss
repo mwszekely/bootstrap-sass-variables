@@ -1,2 +1,2 @@
 @use "./dependencies/_progress-bg.scss" as *;
-$progress-bg: $gray-200 !default;
+$progress-bg: var(--#{$prefix}secondary-bg) !default;

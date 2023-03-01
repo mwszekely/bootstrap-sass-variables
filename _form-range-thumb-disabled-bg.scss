@@ -1,2 +1,2 @@
 @use "./dependencies/_form-range-thumb-disabled-bg.scss" as *;
-$form-range-thumb-disabled-bg: $gray-500 !default;
+$form-range-thumb-disabled-bg: var(--#{$prefix}secondary-color) !default;

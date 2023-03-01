@@ -1,2 +1,2 @@
 @use "./dependencies/_input-color.scss" as *;
-$input-color: $body-color !default;
+$input-color: var(--#{$prefix}body-color) !default;

@@ -1,3 +1,0 @@
-@use "../white" as *;
-@use "../table-hover-bg-factor" as *;
-@forward "../table-hover-bg" with ($table-hover-bg: rgba($white, $table-hover-bg-factor) !default);

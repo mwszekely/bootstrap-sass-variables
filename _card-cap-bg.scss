@@ -1,2 +1,2 @@
 @use "./dependencies/_card-cap-bg.scss" as *;
-$card-cap-bg: rgba($black, .03) !default;
+$card-cap-bg: rgba(var(--#{$prefix}body-color-rgb), .03) !default;

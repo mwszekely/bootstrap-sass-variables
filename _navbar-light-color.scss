@@ -1,2 +1,2 @@
 @use "./dependencies/_navbar-light-color.scss" as *;
-$navbar-light-color: rgba($black, .55) !default;
+$navbar-light-color: rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;

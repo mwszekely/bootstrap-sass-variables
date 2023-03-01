@@ -1,2 +1,0 @@
-@use "../black" as *;
-@forward "../gradient" with ($gradient: linear-gradient(180deg, rgba($black, .15), rgba($black, 0)) !default);

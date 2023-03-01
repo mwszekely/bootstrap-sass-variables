@@ -1,2 +1,2 @@
 @use "./dependencies/_popover-bg.scss" as *;
-$popover-bg: $white !default;
+$popover-bg: var(--#{$prefix}body-bg) !default;

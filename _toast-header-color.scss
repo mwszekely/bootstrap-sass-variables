@@ -1,2 +1,2 @@
 @use "./dependencies/_toast-header-color.scss" as *;
-$toast-header-color: $gray-600 !default;
+$toast-header-color: var(--#{$prefix}secondary-color) !default;
