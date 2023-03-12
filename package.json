@@ -2,7 +2,9 @@
   "name": "bootstrap-sass-variables",
   "version": "0.0.1",
   "description": "Makes it easier to @use customized Bootstrap variables with no redundancies",
+  "packageManager": "pnpm@7.29.1",
   "scripts": {
+    "rebuild": "rm \"./pnpm-lock.yaml\" && rm -R \"./node_modules\" && pnpm install && pnpm run build",
     "build": "sass --load-path='./node_modules' ./demo-dark.scss ./demo-dark.css",
     "watch": "sass --load-path='./node_modules' ./demo-dark.scss ./demo-dark.css -w"
   },
