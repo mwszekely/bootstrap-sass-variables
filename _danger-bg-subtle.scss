@@ -1,2 +1,2 @@
 @use "./dependencies/_danger-bg-subtle.scss" as *;
-$danger-bg-subtle: $red-100 !default;
+$danger-bg-subtle: tint-color($danger, 80%) !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/_focus-ring-box-shadow.scss" as *;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;

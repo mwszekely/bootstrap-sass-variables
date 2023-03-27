@@ -1,2 +1,2 @@
 @use "./dependencies/_success-bg-subtle.scss" as *;
-$success-bg-subtle: $green-100 !default;
+$success-bg-subtle: tint-color($success, 80%) !default;

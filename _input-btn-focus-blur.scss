@@ -1,2 +1,2 @@
 @use "./dependencies/_input-btn-focus-blur.scss" as *;
-$input-btn-focus-blur: 0 !default;
+$input-btn-focus-blur: $focus-ring-blur !default;

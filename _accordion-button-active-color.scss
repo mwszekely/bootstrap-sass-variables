@@ -1,2 +1,2 @@
 @use "./dependencies/_accordion-button-active-color.scss" as *;
-$accordion-button-active-color: var(--#{$prefix}primary-text) !default;
+$accordion-button-active-color: var(--#{$prefix}primary-text-emphasis) !default;

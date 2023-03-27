@@ -1,2 +1,2 @@
 @use "./dependencies/_danger-text-emphasis-dark.scss" as *;
-$danger-text-emphasis-dark: $red-300 !default;
+$danger-text-emphasis-dark: tint-color($danger, 40%) !default;

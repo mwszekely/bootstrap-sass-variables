@@ -1,2 +1,2 @@
 @use "./dependencies/_primary-text-emphasis-dark.scss" as *;
-$primary-text-emphasis-dark: $blue-300 !default;
+$primary-text-emphasis-dark: tint-color($primary, 40%) !default;

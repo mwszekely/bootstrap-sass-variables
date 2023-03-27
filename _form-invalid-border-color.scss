@@ -1,0 +1,2 @@
+@use "./dependencies/_form-invalid-border-color.scss" as *;
+$form-invalid-border-color: $form-feedback-invalid-color !default;

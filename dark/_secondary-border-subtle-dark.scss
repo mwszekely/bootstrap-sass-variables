@@ -1,2 +1,2 @@
 @use "./dependencies/_secondary-border-subtle-dark.scss" as *;
-$secondary-border-subtle-dark: $gray-700 !default;
+$secondary-border-subtle-dark: shade-color($secondary, 40%) !default;

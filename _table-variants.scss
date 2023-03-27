@@ -1,2 +1,2 @@
 @use "./dependencies/_table-variants.scss" as *;
-$table-variants: ("primary": shift-color($primary, $table-bg-scale), "secondary": shift-color($secondary, $table-bg-scale), "success": shift-color($success, $table-bg-scale), "info": shift-color($info, $table-bg-scale), "warning": shift-color($warning, $table-bg-scale), "danger": shift-color($danger, $table-bg-scale), "light": $light, "dark": $dark,) !default;
+$table-variants: ("primary": shift-color($primary, $table-bg-scale), "secondary": shift-color($secondary, $table-bg-scale), "success": shift-color($success, $table-bg-scale), "info": shift-color($info, $table-bg-scale), "warning": shift-color($warning, $table-bg-scale), "danger": shift-color($danger, $table-bg-scale), "light": $light, "dark": $dark) !default;

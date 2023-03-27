@@ -135,14 +135,14 @@
 @use "./_light" as *;
 @use "./_dark" as *;
 @use "./_theme-colors" as *;
-@use "./_primary-text" as *;
-@use "./_secondary-text" as *;
-@use "./_success-text" as *;
-@use "./_info-text" as *;
-@use "./_warning-text" as *;
-@use "./_danger-text" as *;
-@use "./_light-text" as *;
-@use "./_dark-text" as *;
+@use "./_primary-text-emphasis" as *;
+@use "./_secondary-text-emphasis" as *;
+@use "./_success-text-emphasis" as *;
+@use "./_info-text-emphasis" as *;
+@use "./_warning-text-emphasis" as *;
+@use "./_danger-text-emphasis" as *;
+@use "./_light-text-emphasis" as *;
+@use "./_dark-text-emphasis" as *;
 @use "./_primary-bg-subtle" as *;
 @use "./_secondary-bg-subtle" as *;
 @use "./_success-bg-subtle" as *;
@@ -187,12 +187,11 @@
 @use "./_body-text-align" as *;
 @use "./_body-color" as *;
 @use "./_body-bg" as *;
-@use "./_body-emphasis-color" as *;
 @use "./_body-secondary-color" as *;
 @use "./_body-secondary-bg" as *;
 @use "./_body-tertiary-color" as *;
 @use "./_body-tertiary-bg" as *;
-@use "./_emphasis-color" as *;
+@use "./_body-emphasis-color" as *;
 @use "./_link-color" as *;
 @use "./_link-decoration" as *;
 @use "./_link-shade-percentage" as *;
@@ -200,6 +199,11 @@
 @use "./_link-hover-decoration" as *;
 @use "./_stretched-link-pseudo-element" as *;
 @use "./_stretched-link-z-index" as *;
+@use "./_icon-link-gap" as *;
+@use "./_icon-link-underline-offset" as *;
+@use "./_icon-link-icon-size" as *;
+@use "./_icon-link-icon-transition" as *;
+@use "./_icon-link-icon-transform" as *;
 @use "./_paragraph-margin-bottom" as *;
 @use "./_grid-breakpoints" as *;
 @use "./_container-max-widths" as *;
@@ -216,14 +220,20 @@
 @use "./_border-radius-sm" as *;
 @use "./_border-radius-lg" as *;
 @use "./_border-radius-xl" as *;
-@use "./_border-radius-2xl" as *;
+@use "./_border-radius-xxl" as *;
 @use "./_border-radius-pill" as *;
+@use "./_border-radius-2xl" as *;
 @use "./_box-shadow" as *;
 @use "./_box-shadow-sm" as *;
 @use "./_box-shadow-lg" as *;
 @use "./_box-shadow-inset" as *;
 @use "./_component-active-color" as *;
 @use "./_component-active-bg" as *;
+@use "./_focus-ring-width" as *;
+@use "./_focus-ring-opacity" as *;
+@use "./_focus-ring-color" as *;
+@use "./_focus-ring-blur" as *;
+@use "./_focus-ring-box-shadow" as *;
 @use "./_caret-width" as *;
 @use "./_caret-vertical-align" as *;
 @use "./_caret-spacing" as *;
@@ -337,6 +347,7 @@
 @use "./_input-btn-padding-x-lg" as *;
 @use "./_input-btn-font-size-lg" as *;
 @use "./_input-btn-border-width" as *;
+@use "./_btn-color" as *;
 @use "./_btn-padding-y" as *;
 @use "./_btn-padding-x" as *;
 @use "./_btn-font-family" as *;
@@ -539,6 +550,10 @@
 @use "./_form-feedback-icon-valid" as *;
 @use "./_form-feedback-icon-invalid-color" as *;
 @use "./_form-feedback-icon-invalid" as *;
+@use "./_form-valid-color" as *;
+@use "./_form-valid-border-color" as *;
+@use "./_form-invalid-color" as *;
+@use "./_form-invalid-border-color" as *;
 @use "./_form-validation-states" as *;
 @use "./_zindex-dropdown" as *;
 @use "./_zindex-sticky" as *;
@@ -559,6 +574,7 @@
 @use "./_nav-link-hover-color" as *;
 @use "./_nav-link-transition" as *;
 @use "./_nav-link-disabled-color" as *;
+@use "./_nav-link-focus-box-shadow" as *;
 @use "./_nav-tabs-border-color" as *;
 @use "./_nav-tabs-border-width" as *;
 @use "./_nav-tabs-border-radius" as *;
@@ -569,6 +585,9 @@
 @use "./_nav-pills-border-radius" as *;
 @use "./_nav-pills-link-active-color" as *;
 @use "./_nav-pills-link-active-bg" as *;
+@use "./_nav-underline-gap" as *;
+@use "./_nav-underline-border-width" as *;
+@use "./_nav-underline-link-active-color" as *;
 @use "./_navbar-padding-y" as *;
 @use "./_navbar-padding-x" as *;
 @use "./_navbar-nav-link-padding-x" as *;
@@ -587,6 +606,7 @@
 @use "./_navbar-light-hover-color" as *;
 @use "./_navbar-light-active-color" as *;
 @use "./_navbar-light-disabled-color" as *;
+@use "./_navbar-light-icon-color" as *;
 @use "./_navbar-light-toggler-icon-bg" as *;
 @use "./_navbar-light-toggler-border-color" as *;
 @use "./_navbar-light-brand-color" as *;
@@ -930,14 +950,14 @@
 @use "./_nested-kbd-font-weight" as *;
 @use "./_pre-color" as *;
 
-@use "./dark/_primary-text-dark" as *;
-@use "./dark/_secondary-text-dark" as *;
-@use "./dark/_success-text-dark" as *;
-@use "./dark/_info-text-dark" as *;
-@use "./dark/_warning-text-dark" as *;
-@use "./dark/_danger-text-dark" as *;
-@use "./dark/_light-text-dark" as *;
-@use "./dark/_dark-text-dark" as *;
+@use "./dark/_primary-text-emphasis-dark" as *;
+@use "./dark/_secondary-text-emphasis-dark" as *;
+@use "./dark/_success-text-emphasis-dark" as *;
+@use "./dark/_info-text-emphasis-dark" as *;
+@use "./dark/_warning-text-emphasis-dark" as *;
+@use "./dark/_danger-text-emphasis-dark" as *;
+@use "./dark/_light-text-emphasis-dark" as *;
+@use "./dark/_dark-text-emphasis-dark" as *;
 @use "./dark/_primary-bg-subtle-dark" as *;
 @use "./dark/_secondary-bg-subtle-dark" as *;
 @use "./dark/_success-bg-subtle-dark" as *;
@@ -956,12 +976,11 @@
 @use "./dark/_dark-border-subtle-dark" as *;
 @use "./dark/_body-color-dark" as *;
 @use "./dark/_body-bg-dark" as *;
-@use "./dark/_body-emphasis-color-dark" as *;
 @use "./dark/_body-secondary-color-dark" as *;
 @use "./dark/_body-secondary-bg-dark" as *;
 @use "./dark/_body-tertiary-color-dark" as *;
 @use "./dark/_body-tertiary-bg-dark" as *;
-@use "./dark/_emphasis-color-dark" as *;
+@use "./dark/_body-emphasis-color-dark" as *;
 @use "./dark/_border-color-dark" as *;
 @use "./dark/_border-color-translucent-dark" as *;
 @use "./dark/_headings-color-dark" as *;
@@ -972,6 +991,10 @@
 @use "./dark/_form-select-indicator-dark" as *;
 @use "./dark/_form-switch-color-dark" as *;
 @use "./dark/_form-switch-bg-image-dark" as *;
+@use "./dark/_form-valid-color-dark" as *;
+@use "./dark/_form-valid-border-color-dark" as *;
+@use "./dark/_form-invalid-color-dark" as *;
+@use "./dark/_form-invalid-border-color-dark" as *;
 @use "./dark/_accordion-button-icon-dark" as *;
 @use "./dark/_accordion-button-active-icon-dark" as *;
 
@@ -1111,14 +1134,14 @@ $variables: (
     "light": $light,
     "dark": $dark,
     "theme-colors": $theme-colors,
-    "primary-text": $primary-text,
-    "secondary-text": $secondary-text,
-    "success-text": $success-text,
-    "info-text": $info-text,
-    "warning-text": $warning-text,
-    "danger-text": $danger-text,
-    "light-text": $light-text,
-    "dark-text": $dark-text,
+    "primary-text-emphasis": $primary-text-emphasis,
+    "secondary-text-emphasis": $secondary-text-emphasis,
+    "success-text-emphasis": $success-text-emphasis,
+    "info-text-emphasis": $info-text-emphasis,
+    "warning-text-emphasis": $warning-text-emphasis,
+    "danger-text-emphasis": $danger-text-emphasis,
+    "light-text-emphasis": $light-text-emphasis,
+    "dark-text-emphasis": $dark-text-emphasis,
     "primary-bg-subtle": $primary-bg-subtle,
     "secondary-bg-subtle": $secondary-bg-subtle,
     "success-bg-subtle": $success-bg-subtle,
@@ -1163,12 +1186,11 @@ $variables: (
     "body-text-align": $body-text-align,
     "body-color": $body-color,
     "body-bg": $body-bg,
-    "body-emphasis-color": $body-emphasis-color,
     "body-secondary-color": $body-secondary-color,
     "body-secondary-bg": $body-secondary-bg,
     "body-tertiary-color": $body-tertiary-color,
     "body-tertiary-bg": $body-tertiary-bg,
-    "emphasis-color": $emphasis-color,
+    "body-emphasis-color": $body-emphasis-color,
     "link-color": $link-color,
     "link-decoration": $link-decoration,
     "link-shade-percentage": $link-shade-percentage,
@@ -1176,6 +1198,11 @@ $variables: (
     "link-hover-decoration": $link-hover-decoration,
     "stretched-link-pseudo-element": $stretched-link-pseudo-element,
     "stretched-link-z-index": $stretched-link-z-index,
+    "icon-link-gap": $icon-link-gap,
+    "icon-link-underline-offset": $icon-link-underline-offset,
+    "icon-link-icon-size": $icon-link-icon-size,
+    "icon-link-icon-transition": $icon-link-icon-transition,
+    "icon-link-icon-transform": $icon-link-icon-transform,
     "paragraph-margin-bottom": $paragraph-margin-bottom,
     "grid-breakpoints": $grid-breakpoints,
     "container-max-widths": $container-max-widths,
@@ -1192,14 +1219,20 @@ $variables: (
     "border-radius-sm": $border-radius-sm,
     "border-radius-lg": $border-radius-lg,
     "border-radius-xl": $border-radius-xl,
-    "border-radius-2xl": $border-radius-2xl,
+    "border-radius-xxl": $border-radius-xxl,
     "border-radius-pill": $border-radius-pill,
+    "border-radius-2xl": $border-radius-2xl,
     "box-shadow": $box-shadow,
     "box-shadow-sm": $box-shadow-sm,
     "box-shadow-lg": $box-shadow-lg,
     "box-shadow-inset": $box-shadow-inset,
     "component-active-color": $component-active-color,
     "component-active-bg": $component-active-bg,
+    "focus-ring-width": $focus-ring-width,
+    "focus-ring-opacity": $focus-ring-opacity,
+    "focus-ring-color": $focus-ring-color,
+    "focus-ring-blur": $focus-ring-blur,
+    "focus-ring-box-shadow": $focus-ring-box-shadow,
     "caret-width": $caret-width,
     "caret-vertical-align": $caret-vertical-align,
     "caret-spacing": $caret-spacing,
@@ -1313,6 +1346,7 @@ $variables: (
     "input-btn-padding-x-lg": $input-btn-padding-x-lg,
     "input-btn-font-size-lg": $input-btn-font-size-lg,
     "input-btn-border-width": $input-btn-border-width,
+    "btn-color": $btn-color,
     "btn-padding-y": $btn-padding-y,
     "btn-padding-x": $btn-padding-x,
     "btn-font-family": $btn-font-family,
@@ -1515,6 +1549,10 @@ $variables: (
     "form-feedback-icon-valid": $form-feedback-icon-valid,
     "form-feedback-icon-invalid-color": $form-feedback-icon-invalid-color,
     "form-feedback-icon-invalid": $form-feedback-icon-invalid,
+    "form-valid-color": $form-valid-color,
+    "form-valid-border-color": $form-valid-border-color,
+    "form-invalid-color": $form-invalid-color,
+    "form-invalid-border-color": $form-invalid-border-color,
     "form-validation-states": $form-validation-states,
     "zindex-dropdown": $zindex-dropdown,
     "zindex-sticky": $zindex-sticky,
@@ -1535,6 +1573,7 @@ $variables: (
     "nav-link-hover-color": $nav-link-hover-color,
     "nav-link-transition": $nav-link-transition,
     "nav-link-disabled-color": $nav-link-disabled-color,
+    "nav-link-focus-box-shadow": $nav-link-focus-box-shadow,
     "nav-tabs-border-color": $nav-tabs-border-color,
     "nav-tabs-border-width": $nav-tabs-border-width,
     "nav-tabs-border-radius": $nav-tabs-border-radius,
@@ -1545,6 +1584,9 @@ $variables: (
     "nav-pills-border-radius": $nav-pills-border-radius,
     "nav-pills-link-active-color": $nav-pills-link-active-color,
     "nav-pills-link-active-bg": $nav-pills-link-active-bg,
+    "nav-underline-gap": $nav-underline-gap,
+    "nav-underline-border-width": $nav-underline-border-width,
+    "nav-underline-link-active-color": $nav-underline-link-active-color,
     "navbar-padding-y": $navbar-padding-y,
     "navbar-padding-x": $navbar-padding-x,
     "navbar-nav-link-padding-x": $navbar-nav-link-padding-x,
@@ -1563,6 +1605,7 @@ $variables: (
     "navbar-light-hover-color": $navbar-light-hover-color,
     "navbar-light-active-color": $navbar-light-active-color,
     "navbar-light-disabled-color": $navbar-light-disabled-color,
+    "navbar-light-icon-color": $navbar-light-icon-color,
     "navbar-light-toggler-icon-bg": $navbar-light-toggler-icon-bg,
     "navbar-light-toggler-border-color": $navbar-light-toggler-border-color,
     "navbar-light-brand-color": $navbar-light-brand-color,
@@ -1906,14 +1949,14 @@ $variables: (
     "nested-kbd-font-weight": $nested-kbd-font-weight,
     "pre-color": $pre-color,
 
-    "primary-text-dark": $primary-text-dark,
-    "secondary-text-dark": $secondary-text-dark,
-    "success-text-dark": $success-text-dark,
-    "info-text-dark": $info-text-dark,
-    "warning-text-dark": $warning-text-dark,
-    "danger-text-dark": $danger-text-dark,
-    "light-text-dark": $light-text-dark,
-    "dark-text-dark": $dark-text-dark,
+    "primary-text-emphasis-dark": $primary-text-emphasis-dark,
+    "secondary-text-emphasis-dark": $secondary-text-emphasis-dark,
+    "success-text-emphasis-dark": $success-text-emphasis-dark,
+    "info-text-emphasis-dark": $info-text-emphasis-dark,
+    "warning-text-emphasis-dark": $warning-text-emphasis-dark,
+    "danger-text-emphasis-dark": $danger-text-emphasis-dark,
+    "light-text-emphasis-dark": $light-text-emphasis-dark,
+    "dark-text-emphasis-dark": $dark-text-emphasis-dark,
     "primary-bg-subtle-dark": $primary-bg-subtle-dark,
     "secondary-bg-subtle-dark": $secondary-bg-subtle-dark,
     "success-bg-subtle-dark": $success-bg-subtle-dark,
@@ -1932,12 +1975,11 @@ $variables: (
     "dark-border-subtle-dark": $dark-border-subtle-dark,
     "body-color-dark": $body-color-dark,
     "body-bg-dark": $body-bg-dark,
-    "body-emphasis-color-dark": $body-emphasis-color-dark,
     "body-secondary-color-dark": $body-secondary-color-dark,
     "body-secondary-bg-dark": $body-secondary-bg-dark,
     "body-tertiary-color-dark": $body-tertiary-color-dark,
     "body-tertiary-bg-dark": $body-tertiary-bg-dark,
-    "emphasis-color-dark": $emphasis-color-dark,
+    "body-emphasis-color-dark": $body-emphasis-color-dark,
     "border-color-dark": $border-color-dark,
     "border-color-translucent-dark": $border-color-translucent-dark,
     "headings-color-dark": $headings-color-dark,
@@ -1948,6 +1990,10 @@ $variables: (
     "form-select-indicator-dark": $form-select-indicator-dark,
     "form-switch-color-dark": $form-switch-color-dark,
     "form-switch-bg-image-dark": $form-switch-bg-image-dark,
+    "form-valid-color-dark": $form-valid-color-dark,
+    "form-valid-border-color-dark": $form-valid-border-color-dark,
+    "form-invalid-color-dark": $form-invalid-color-dark,
+    "form-invalid-border-color-dark": $form-invalid-border-color-dark,
     "accordion-button-icon-dark": $accordion-button-icon-dark,
-    "accordion-button-active-icon-dark": $accordion-button-active-icon-dark,
+    "accordion-button-active-icon-dark": $accordion-button-active-icon-dark    
 );

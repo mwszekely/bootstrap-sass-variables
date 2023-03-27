@@ -1,2 +1,2 @@
 @use "./dependencies/_primary-bg-subtle-dark.scss" as *;
-$primary-bg-subtle-dark: $blue-900 !default;
+$primary-bg-subtle-dark: shade-color($primary, 80%) !default;

@@ -1,2 +1,2 @@
 @use "./dependencies/_table-caption-color.scss" as *;
-$table-caption-color: $text-muted !default;
+$table-caption-color: var(--#{$prefix}secondary-color) !default;

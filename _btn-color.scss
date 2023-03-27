@@ -1,0 +1,2 @@
+@use "./dependencies/_btn-color.scss" as *;
+$btn-color: var(--#{$prefix}body-color) !default;

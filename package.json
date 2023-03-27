@@ -9,9 +9,9 @@
     "watch": "sass --load-path='./node_modules' ./demo-dark.scss ./demo-dark.css -w"
   },
   "peerDependencies": {
-    "bootstrap": "^5.3.0-alpha1"
+    "bootstrap": "^5.3.0-alpha2"
   },
   "devDependencies": {
-    "sass": "^1.58.3"
+    "sass": "^1.60.0"
   }
 }

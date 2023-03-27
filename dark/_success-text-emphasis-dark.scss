@@ -1,2 +1,2 @@
 @use "./dependencies/_success-text-emphasis-dark.scss" as *;
-$success-text-emphasis-dark: $green-300 !default;
+$success-text-emphasis-dark: tint-color($success, 40%) !default;

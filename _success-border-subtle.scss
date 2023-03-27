@@ -1,2 +1,2 @@
 @use "./dependencies/_success-border-subtle.scss" as *;
-$success-border-subtle: $green-200 !default;
+$success-border-subtle: tint-color($success, 60%) !default;

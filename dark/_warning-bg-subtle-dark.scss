@@ -1,2 +1,2 @@
 @use "./dependencies/_warning-bg-subtle-dark.scss" as *;
-$warning-bg-subtle-dark: $yellow-900 !default;
+$warning-bg-subtle-dark: shade-color($warning, 80%) !default;

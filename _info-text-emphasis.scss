@@ -1,0 +1,2 @@
+@use "./dependencies/_info-text-emphasis.scss" as *;
+$info-text-emphasis: shade-color($info, 60%) !default;

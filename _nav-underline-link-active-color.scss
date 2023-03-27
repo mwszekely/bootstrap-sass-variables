@@ -1,0 +1,2 @@
+@use "./dependencies/_nav-underline-link-active-color.scss" as *;
+$nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
