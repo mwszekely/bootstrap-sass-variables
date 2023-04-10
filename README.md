@@ -36,6 +36,7 @@ This library makes it much easier to `@use "bootstrap"` with a specific set of c
 // (...continued from the same file above...)
 
 // Load Bootstrap itself, configured to use our custom variables.
+// (All this file does is @forward "bootstrap/scss/bootstrap", but with every single variable defined)
 @use "bootstrap-sass-variables/bootstrap";
 
 
@@ -45,62 +46,22 @@ This library makes it much easier to `@use "bootstrap"` with a specific set of c
 // Just note that you won't get any of the mixins from Bootstrap this way.
 ````
 
-
-# Dark theme
-A full dark theme of the default Bootstrap theme is provided as an example. It changes as few variables as possible without modifying any actual color values; the only modifications are in order to, e.g., swap a component's use of `gray-800` to `gray-200`. The dark mode theme is as suitable for a base as the "default" Bootstrap theme, and can be customized in effectively the same way.
-
-For just the "default" dark theme:
-````scss
-// Default dark theme, no overrides
-@forward "bootstrap-sass-variables/theme-dark";
-@use "bootstrap-sass-variables/bootstrap";
-````
-
-To use the dark theme as a base for a new theme:
-
-````scss
-// Customize the default dark theme,
-// just like the default light theme can be customized
-
-// First, modify any default dark mode values.
-// $primary isn't modified by the dark theme, so you can change it normally.
-@forward "bootstrap-sass-variables/primary" with ($primary: fuchsia);
-
-// $body-bg is modified by the dark theme, so change its "dark" version:
-// (Sass will give you an error if you chose the "wrong" body-bg, so don't worry)
-@forward "bootstrap-sass-variables/dark/body-bg" with ($body-bg: yellow);
-
-// Now load the rest of the dark theme variables:
-@forward "bootstrap-sass-variables/theme-dark";
-
-// The safest place to put non-dark-mode overrides is here, to ensure
-// that any dependency issues based on dark mode values work out properly.
-// The $primary override won't cause an issue, but others do,
-// and this spot is always safe for that.
-
-// And finally, Bootstrap as a whole with all our custom variables,
-// including the light mode ones we haven't touched.
-@use "bootstrap-sass-variables/bootstrap";
-````
-
-
 # Caveats
-Watch your `@use` order! Any customization always needs to come **before any other use** of `@use` or `@forward` (don't worry, Sass will let you know if/where/how you get it wrong). Because customizations could themselves `@use` other variables (a lot rely on `$primary` or `$black`, for example), this web can become tangled quickly, and the more variables you put into one file the faster you'll find an unmanageable knot. This is why each variable is placed into its own file (see howto.md for their maintenance when Bootstrap adds/changes variables; it's not fully automated because hopefully Bootstrap gets better module support in version 6?).
+Watch your `@use` order! Any customization always needs to come **before any other use** of `@use` or `@forward` (don't worry, Sass will let you know if/where/how you get it wrong). Because customizations could themselves `@use` other variables (a lot rely on `$primary` or `$black`, for example), this web can become tangled quickly, and the more variables you put into one file the faster you'll find an unmanageable knot. This is why this library places each variable into its own file (see `howto.md` for their maintenance when Bootstrap adds/changes variables; it's not fully automated because hopefully Bootstrap gets better module support in version 6?).
 
 # Directory/files structure
 ````
 (NAME := the name of any given Bootstrap variable in _variables.scss)
 
 /bootstrap.scss             # @uses Bootstrap with defaults set to customized values
-/theme-dark.scss            # Changes default variables to use dark mode values
 /_<NAME>.scss               # Default variable values
-/dark/_<NAME>.scss          # Default variable values in dark mode
-/dependencies/_<NAME>.scss  # Utility for easier maintenance
+/dependencies/_<NAME>.scss  # Variable dependencies are in separate files for easier maintenance
+/dark/_<NAME>.scss          # Default variable values (in dark mode)
+/dark/dependencies/...      # Dark mode variables also have their own depenencies
 /variables-map.scss         # Provides a Sass map of all variables
 ````
 
 * `/bootstrap.scss`: `@forward`s the actual Bootstrap Sass file with all your customized variable values, if any. This is generally the final step after you've customized all your variables, or loaded files that do that for you.
-* `/theme-dark.scss`: Sets some defaults to make the default Boostrap theme dark instead of light by changing the Sass variables in `/_<NAME>.scss` to be overriden to the values in `/dark/_<NAME>.scss`. This *must* be `@use`d *before* `bootstrap` is, and any modifications to the dark theme must in turn be `@use`d before `theme-dark.scss`!
 * `/_<bootstrap variable name>.scss`: Customize a Bootstrap property by `@use`-ing a file with the same name and customizing that property.  E.G. `@use "prop-name" with ($prop-name: #fff);`. `theme-dark.scss` pre-`@use`s some of these to set them to "dark" values.
 * `/dark/_<bootstrap variable name>.scss`: A dark theme version of a given Bootstrap variable (only changes colors and related variables). If you'd like to easily customize the dark theme, you can customize these variables just like the root variables.
 * `/dependencies/_<bootstrap variable name>.scss`: *Not intended to be used directly.* `@forward`s the dependencies any given variable has. These exist for maintenance purposes; for new Bootstrap versions the variable files are programatically overwritten but the dependency files are left alone.
@@ -109,11 +70,8 @@ Watch your `@use` order! Any customization always needs to come **before any oth
 # FAQ
 
 ## No Custom CSS Properties/Custom CSS Variables?
-Nope, unfortunately. Not that it would be *impossible* to create 4 CSS properties for every color variable in Bootstrap, but the only way to support the Sass color math used in the library liberally would be to define separate R, G, B, and A CSS Properties for every single use of `tint-color` and `shade-color`, among others.
 
-By the time `color-mix` is supported by browsers, Bootstrap will probably have this problem solved anyway (or at least, again, better than the currently-required 4 properties per color).
-
-You're free to try, but I've already wasted plenty of time looking for workarounds and, again, Bootstrap is rapidly progressing in this area already.
+Nope, partially because Bootstrap is already rapidly progressing in this areay, but also because CSS variables don't play well with a lot of Bootstrap's usage of color math mixing functions. By the time `color-mix` is supported by browsers, Bootstrap will probably have this problem solved anyway (or at least, again, better than the currently-required 4 properties per color).
 
 ## Why are there so many files, like c'mon now
 
@@ -131,11 +89,11 @@ So, just for the basics, it's not possible to load a file twice except under ver
 
 // Example #3:
 @use "bootstrap" with ($white: black);
-@use "bootstrap";                       // Okay, this one's fine, if basically meaningless
+@use "bootstrap";                       // Okay, this one's fine, (though I'm sure the compiler is rolling its eyes at the redundancy)
 ````
-Which, yeah, this absolutely makes sense, because after we've loaded Bootstrap once, it's too late to go back and get a "do-over" with our second set of overrides. The CSS has already been generated, the mixins already captured.
+Which, yeah, this absolutely makes sense, because after we've loaded Bootstrap once, it's too late to go back and get a "do-over" with our second set of overrides. The CSS has already been generated, the mixins already captured, etc.
 
-But, uh, well, that being said, especially in Bootstrap, this is kind of a major problem for variables that rely on the value of previously-defined variables. There's no way to just `@use` a single variable out of a file:
+But..., uh, especially in Bootstrap, this is kind of a major problem for variables that rely on the value of previously-defined variables. There's no way to just `@use` a single variable out of a file:
 ````scss
 // Make body-bg a very light Boostrap blue:
 @use "bootstrap" as BS;
