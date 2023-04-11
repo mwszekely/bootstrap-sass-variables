@@ -1,2 +1,2 @@
-@use "./dependencies/_primary-text-emphasis.scss" as *;
+@use "./dependencies/primary-text-emphasis" as *;
 $primary-text-emphasis: shade-color($primary, 60%) !default;

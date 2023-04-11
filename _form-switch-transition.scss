@@ -1,2 +1,2 @@
-@use "./dependencies/_form-switch-transition.scss" as *;
+@use "./dependencies/form-switch-transition" as *;
 $form-switch-transition: background-position .15s ease-in-out !default;

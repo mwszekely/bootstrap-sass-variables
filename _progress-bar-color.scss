@@ -1,2 +1,2 @@
-@use "./dependencies/_progress-bar-color.scss" as *;
+@use "./dependencies/progress-bar-color" as *;
 $progress-bar-color: $white !default;

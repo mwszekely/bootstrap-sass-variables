@@ -1,4 +1,3 @@
-//@forward "./primary" with ($primary: fuchsia);
-//@forward "./dark/body-bg-dark" with ($body-bg-dark: #111);
-//@forward "./theme-dark";
+/* Note: These files (both the .scss and .css) are intentionally included in source control */
+@forward "./primary" with ($primary: fuchsia);
 @use "./bootstrap";

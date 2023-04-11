@@ -1,2 +1,2 @@
-@use "./dependencies/_warning.scss" as *;
+@use "./dependencies/warning" as *;
 $warning: $yellow !default;

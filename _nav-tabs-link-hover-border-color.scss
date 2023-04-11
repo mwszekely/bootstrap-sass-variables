@@ -1,2 +1,2 @@
-@use "./dependencies/_nav-tabs-link-hover-border-color.scss" as *;
+@use "./dependencies/nav-tabs-link-hover-border-color" as *;
 $nav-tabs-link-hover-border-color: var(--#{$prefix}secondary-bg) var(--#{$prefix}secondary-bg) $nav-tabs-border-color !default;

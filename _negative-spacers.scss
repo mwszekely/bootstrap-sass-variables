@@ -1,2 +1,2 @@
-@use "./dependencies/_negative-spacers.scss" as *;
+@use "./dependencies/negative-spacers" as *;
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

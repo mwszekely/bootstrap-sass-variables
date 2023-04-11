@@ -1,2 +1,2 @@
-@use "./dependencies/_spinner-animation-speed.scss" as *;
+@use "./dependencies/spinner-animation-speed" as *;
 $spinner-animation-speed: .75s !default;

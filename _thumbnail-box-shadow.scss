@@ -1,2 +1,2 @@
-@use "./dependencies/_thumbnail-box-shadow.scss" as *;
+@use "./dependencies/thumbnail-box-shadow" as *;
 $thumbnail-box-shadow: var(--#{$prefix}box-shadow-sm) !default;

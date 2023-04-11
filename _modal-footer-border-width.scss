@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-footer-border-width.scss" as *;
+@use "./dependencies/modal-footer-border-width" as *;
 $modal-footer-border-width: $modal-header-border-width !default;

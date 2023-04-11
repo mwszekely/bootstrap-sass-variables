@@ -1,2 +1,2 @@
-@use "./dependencies/_border-color.scss" as *;
+@use "./dependencies/border-color" as *;
 $border-color: $gray-300 !default;

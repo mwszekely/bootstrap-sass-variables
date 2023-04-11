@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-transitions.scss" as *;
+@use "./dependencies/enable-transitions" as *;
 $enable-transitions: true !default;

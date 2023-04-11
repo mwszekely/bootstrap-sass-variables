@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-button-focus-box-shadow.scss" as *;
+@use "./dependencies/accordion-button-focus-box-shadow" as *;
 $accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_toast-border-color.scss" as *;
+@use "./dependencies/toast-border-color" as *;
 $toast-border-color: var(--#{$prefix}border-color-translucent) !default;

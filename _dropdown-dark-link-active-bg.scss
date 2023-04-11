@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-dark-link-active-bg.scss" as *;
+@use "./dependencies/dropdown-dark-link-active-bg" as *;
 $dropdown-dark-link-active-bg: $dropdown-link-active-bg !default;

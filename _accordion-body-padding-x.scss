@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-body-padding-x.scss" as *;
+@use "./dependencies/accordion-body-padding-x" as *;
 $accordion-body-padding-x: $accordion-padding-x !default;

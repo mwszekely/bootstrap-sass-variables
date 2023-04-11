@@ -1,4 +1,4 @@
-@use "../variable-prefix" as *;
+@use "../variable-prefix.scss" as *;
 
 @function rgba-css-var($identifier, $target) {
     @if $identifier == "body" and $target == "bg" {

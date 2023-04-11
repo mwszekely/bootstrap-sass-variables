@@ -1,2 +1,2 @@
-@use "./dependencies/_table-cell-vertical-align.scss" as *;
+@use "./dependencies/table-cell-vertical-align" as *;
 $table-cell-vertical-align: top !default;

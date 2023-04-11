@@ -1,2 +1,2 @@
-@use "./dependencies/_table-striped-columns-order.scss" as *;
+@use "./dependencies/table-striped-columns-order" as *;
 $table-striped-columns-order: even !default;

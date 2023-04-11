@@ -1,2 +1,2 @@
-@use "./dependencies/_offcanvas-border-width.scss" as *;
+@use "./dependencies/offcanvas-border-width" as *;
 $offcanvas-border-width: $modal-content-border-width !default;

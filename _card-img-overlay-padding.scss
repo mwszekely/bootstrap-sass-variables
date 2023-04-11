@@ -1,2 +1,2 @@
-@use "./dependencies/_card-img-overlay-padding.scss" as *;
+@use "./dependencies/card-img-overlay-padding" as *;
 $card-img-overlay-padding: $spacer !default;

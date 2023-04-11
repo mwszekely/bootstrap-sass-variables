@@ -1,2 +1,2 @@
-@use "./dependencies/_font-family-code.scss" as *;
+@use "./dependencies/font-family-code" as *;
 $font-family-code: var(--#{$prefix}font-monospace) !default;

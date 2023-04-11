@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-transition.scss" as *;
+@use "./dependencies/modal-transition" as *;
 $modal-transition: transform .3s ease-out !default;

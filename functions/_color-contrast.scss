@@ -1,7 +1,7 @@
-@use "./contrast-ratio" as *;
-@use "../min-contrast-ratio" as *;
-@use "../color-contrast-light" as *;
-@use "../color-contrast-dark" as *;
+@use "./contrast-ratio.scss" as *;
+@use "../min-contrast-ratio.scss" as *;
+@use "../color-contrast-light.scss" as *;
+@use "../color-contrast-dark.scss" as *;
 
 @function color-contrast($background, $color-contrast-dark: $color-contrast-dark, $color-contrast-light: $color-contrast-light, $min-contrast-ratio: $min-contrast-ratio) {
   $foregrounds: $color-contrast-light, $color-contrast-dark, $white, $black;

@@ -1,2 +1,2 @@
-@use "./dependencies/_input-padding-y.scss" as *;
+@use "./dependencies/input-padding-y" as *;
 $input-padding-y: $input-btn-padding-y !default;

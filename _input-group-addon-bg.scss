@@ -1,2 +1,2 @@
-@use "./dependencies/_input-group-addon-bg.scss" as *;
+@use "./dependencies/input-group-addon-bg" as *;
 $input-group-addon-bg: var(--#{$prefix}tertiary-bg) !default;

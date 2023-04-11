@@ -1,2 +1,2 @@
-@use "./dependencies/_list-group-action-color.scss" as *;
+@use "./dependencies/list-group-action-color" as *;
 $list-group-action-color: var(--#{$prefix}secondary-color) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_nav-pills-link-active-bg.scss" as *;
+@use "./dependencies/nav-pills-link-active-bg" as *;
 $nav-pills-link-active-bg: $component-active-bg !default;

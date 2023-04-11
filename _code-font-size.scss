@@ -1,2 +1,2 @@
-@use "./dependencies/_code-font-size.scss" as *;
+@use "./dependencies/code-font-size" as *;
 $code-font-size: $small-font-size !default;

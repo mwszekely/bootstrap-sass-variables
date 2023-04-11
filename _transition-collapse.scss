@@ -1,2 +1,2 @@
-@use "./dependencies/_transition-collapse.scss" as *;
+@use "./dependencies/transition-collapse" as *;
 $transition-collapse: height .35s ease !default;

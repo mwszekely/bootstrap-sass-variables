@@ -1,2 +1,2 @@
-@use "./dependencies/_code-color-dark.scss" as *;
+@use "./dependencies/code-color-dark" as *;
 $code-color-dark: tint-color($code-color, 40%) !default;

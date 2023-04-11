@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-border-radius.scss" as *;
+@use "./dependencies/dropdown-border-radius" as *;
 $dropdown-border-radius: $border-radius !default;

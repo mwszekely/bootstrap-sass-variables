@@ -1,2 +1,2 @@
-@use "./dependencies/_table-border-color.scss" as *;
+@use "./dependencies/table-border-color" as *;
 $table-border-color: var(--#{$prefix}border-color) !default;

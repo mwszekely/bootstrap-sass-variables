@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-shadows.scss" as *;
+@use "./dependencies/enable-shadows" as *;
 $enable-shadows: false !default;

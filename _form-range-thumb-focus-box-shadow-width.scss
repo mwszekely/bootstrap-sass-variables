@@ -1,2 +1,2 @@
-@use "./dependencies/_form-range-thumb-focus-box-shadow-width.scss" as *;
+@use "./dependencies/form-range-thumb-focus-box-shadow-width" as *;
 $form-range-thumb-focus-box-shadow-width: $input-focus-width !default;

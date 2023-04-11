@@ -1,2 +1,2 @@
-@use "./dependencies/_link-color.scss" as *;
+@use "./dependencies/link-color" as *;
 $link-color: $primary !default;

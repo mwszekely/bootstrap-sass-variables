@@ -1,2 +1,2 @@
-@use "./dependencies/_cyan-700.scss" as *;
+@use "./dependencies/cyan-700" as *;
 $cyan-700: shade-color($cyan, 40%) !default;

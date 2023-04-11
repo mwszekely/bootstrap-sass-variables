@@ -1,2 +1,2 @@
-@use "./dependencies/_info-bg-subtle.scss" as *;
+@use "./dependencies/info-bg-subtle" as *;
 $info-bg-subtle: tint-color($info, 80%) !default;

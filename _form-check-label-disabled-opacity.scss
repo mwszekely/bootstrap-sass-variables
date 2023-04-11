@@ -1,2 +1,2 @@
-@use "./dependencies/_form-check-label-disabled-opacity.scss" as *;
+@use "./dependencies/form-check-label-disabled-opacity" as *;
 $form-check-label-disabled-opacity: $form-check-input-disabled-opacity !default;

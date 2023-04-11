@@ -1,6 +1,6 @@
-@use "./luminance" as *;
-@use "./opaque" as *;
-@use "./divide" as *;
+@use "./luminance.scss" as *;
+@use "./opaque.scss" as *;
+@use "./divide.scss" as *;
 
 @function contrast-ratio($background, $foreground: $color-contrast-light) {
     $l1: luminance($background);

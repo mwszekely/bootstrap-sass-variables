@@ -1,2 +1,2 @@
-@use "./dependencies/_lead-font-size.scss" as *;
+@use "./dependencies/lead-font-size" as *;
 $lead-font-size: $font-size-base * 1.25 !default;

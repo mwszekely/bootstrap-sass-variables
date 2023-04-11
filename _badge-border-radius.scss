@@ -1,2 +1,2 @@
-@use "./dependencies/_badge-border-radius.scss" as *;
+@use "./dependencies/badge-border-radius" as *;
 $badge-border-radius: $border-radius !default;

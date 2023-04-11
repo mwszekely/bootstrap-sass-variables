@@ -1,2 +1,2 @@
-@use "./dependencies/_form-check-input-checked-border-color.scss" as *;
+@use "./dependencies/form-check-input-checked-border-color" as *;
 $form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;

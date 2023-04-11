@@ -1,2 +1,2 @@
-@use "./dependencies/_list-group-active-border-color.scss" as *;
+@use "./dependencies/list-group-active-border-color" as *;
 $list-group-active-border-color: $list-group-active-bg !default;

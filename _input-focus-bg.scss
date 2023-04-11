@@ -1,2 +1,2 @@
-@use "./dependencies/_input-focus-bg.scss" as *;
+@use "./dependencies/input-focus-bg" as *;
 $input-focus-bg: $input-bg !default;

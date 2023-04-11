@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-container-classes.scss" as *;
+@use "./dependencies/enable-container-classes" as *;
 $enable-container-classes: true !default;

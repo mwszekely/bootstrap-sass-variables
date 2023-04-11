@@ -1,2 +1,2 @@
-@use "./dependencies/_body-color.scss" as *;
+@use "./dependencies/body-color" as *;
 $body-color: $gray-900 !default;

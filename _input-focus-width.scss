@@ -1,2 +1,2 @@
-@use "./dependencies/_input-focus-width.scss" as *;
+@use "./dependencies/input-focus-width" as *;
 $input-focus-width: $input-btn-focus-width !default;

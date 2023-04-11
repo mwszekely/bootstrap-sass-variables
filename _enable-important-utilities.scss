@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-important-utilities.scss" as *;
+@use "./dependencies/enable-important-utilities" as *;
 $enable-important-utilities: true !default;

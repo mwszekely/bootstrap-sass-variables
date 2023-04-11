@@ -1,2 +1,2 @@
-@use "./dependencies/_grid-row-columns.scss" as *;
+@use "./dependencies/grid-row-columns" as *;
 $grid-row-columns: 6 !default;

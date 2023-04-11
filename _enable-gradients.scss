@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-gradients.scss" as *;
+@use "./dependencies/enable-gradients" as *;
 $enable-gradients: false !default;

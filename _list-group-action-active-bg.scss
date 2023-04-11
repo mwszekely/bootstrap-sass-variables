@@ -1,2 +1,2 @@
-@use "./dependencies/_list-group-action-active-bg.scss" as *;
+@use "./dependencies/list-group-action-active-bg" as *;
 $list-group-action-active-bg: var(--#{$prefix}secondary-bg) !default;

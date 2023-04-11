@@ -1,2 +1,2 @@
-@use "./dependencies/_font-size-lg.scss" as *;
+@use "./dependencies/font-size-lg" as *;
 $font-size-lg: $font-size-base * 1.25 !default;

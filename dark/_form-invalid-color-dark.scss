@@ -1,2 +1,2 @@
-@use "./dependencies/_form-invalid-color-dark.scss" as *;
+@use "./dependencies/form-invalid-color-dark" as *;
 $form-invalid-color-dark: $red-300 !default;

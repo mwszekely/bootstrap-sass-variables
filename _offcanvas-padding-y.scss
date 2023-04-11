@@ -1,2 +1,2 @@
-@use "./dependencies/_offcanvas-padding-y.scss" as *;
+@use "./dependencies/offcanvas-padding-y" as *;
 $offcanvas-padding-y: $modal-inner-padding !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_hr-border-width.scss" as *;
+@use "./dependencies/hr-border-width" as *;
 $hr-border-width: var(--#{$prefix}border-width) !default;

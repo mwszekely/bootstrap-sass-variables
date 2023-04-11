@@ -1,2 +1,2 @@
-@use "./dependencies/_list-group-active-bg.scss" as *;
+@use "./dependencies/list-group-active-bg" as *;
 $list-group-active-bg: $component-active-bg !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_offcanvas-backdrop-bg.scss" as *;
+@use "./dependencies/offcanvas-backdrop-bg" as *;
 $offcanvas-backdrop-bg: $modal-backdrop-bg !default;

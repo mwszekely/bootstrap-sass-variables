@@ -1,2 +1,2 @@
-@use "./dependencies/_theme-colors-rgb.scss" as *;
+@use "./dependencies/theme-colors-rgb" as *;
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;

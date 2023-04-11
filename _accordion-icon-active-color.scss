@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-icon-active-color.scss" as *;
+@use "./dependencies/accordion-icon-active-color" as *;
 $accordion-icon-active-color: $primary-text-emphasis !default;

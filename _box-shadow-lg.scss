@@ -1,2 +1,2 @@
-@use "./dependencies/_box-shadow-lg.scss" as *;
+@use "./dependencies/box-shadow-lg" as *;
 $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;

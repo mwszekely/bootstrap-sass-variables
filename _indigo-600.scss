@@ -1,2 +1,2 @@
-@use "./dependencies/_indigo-600.scss" as *;
+@use "./dependencies/indigo-600" as *;
 $indigo-600: shade-color($indigo, 20%) !default;

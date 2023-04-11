@@ -1,2 +1,2 @@
-@use "./dependencies/_navbar-light-hover-color.scss" as *;
+@use "./dependencies/navbar-light-hover-color" as *;
 $navbar-light-hover-color: rgba(var(--#{$prefix}emphasis-color-rgb), .8) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_card-border-width.scss" as *;
+@use "./dependencies/card-border-width" as *;
 $card-border-width: var(--#{$prefix}border-width) !default;

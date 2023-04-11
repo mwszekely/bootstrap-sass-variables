@@ -1,2 +1,2 @@
-@use "./dependencies/_table-striped-color.scss" as *;
+@use "./dependencies/table-striped-color" as *;
 $table-striped-color: $table-color !default;

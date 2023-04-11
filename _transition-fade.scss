@@ -1,2 +1,2 @@
-@use "./dependencies/_transition-fade.scss" as *;
+@use "./dependencies/transition-fade" as *;
 $transition-fade: opacity .15s linear !default;

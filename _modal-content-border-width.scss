@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-content-border-width.scss" as *;
+@use "./dependencies/modal-content-border-width" as *;
 $modal-content-border-width: var(--#{$prefix}border-width) !default;

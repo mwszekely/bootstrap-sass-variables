@@ -1,2 +1,2 @@
-@use "./dependencies/_input-disabled-border-color.scss" as *;
+@use "./dependencies/input-disabled-border-color" as *;
 $input-disabled-border-color: null !default;

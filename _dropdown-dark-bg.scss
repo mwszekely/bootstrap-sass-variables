@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-dark-bg.scss" as *;
+@use "./dependencies/dropdown-dark-bg" as *;
 $dropdown-dark-bg: $gray-800 !default;

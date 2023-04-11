@@ -1,2 +1,2 @@
-@use "./dependencies/_form-text-font-size.scss" as *;
+@use "./dependencies/form-text-font-size" as *;
 $form-text-font-size: $small-font-size !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-color.scss" as *;
+@use "./dependencies/dropdown-color" as *;
 $dropdown-color: var(--#{$prefix}body-color) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_display-line-height.scss" as *;
+@use "./dependencies/display-line-height" as *;
 $display-line-height: $headings-line-height !default;

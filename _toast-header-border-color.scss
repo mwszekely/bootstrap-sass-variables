@@ -1,2 +1,2 @@
-@use "./dependencies/_toast-header-border-color.scss" as *;
+@use "./dependencies/toast-header-border-color" as *;
 $toast-header-border-color: $toast-border-color !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_pagination-font-size.scss" as *;
+@use "./dependencies/pagination-font-size" as *;
 $pagination-font-size: $font-size-base !default;

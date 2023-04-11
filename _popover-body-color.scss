@@ -1,2 +1,2 @@
-@use "./dependencies/_popover-body-color.scss" as *;
+@use "./dependencies/popover-body-color" as *;
 $popover-body-color: var(--#{$prefix}body-color) !default;

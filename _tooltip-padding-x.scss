@@ -1,2 +1,2 @@
-@use "./dependencies/_tooltip-padding-x.scss" as *;
+@use "./dependencies/tooltip-padding-x" as *;
 $tooltip-padding-x: $spacer * .5 !default;

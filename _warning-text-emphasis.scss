@@ -1,2 +1,2 @@
-@use "./dependencies/_warning-text-emphasis.scss" as *;
+@use "./dependencies/warning-text-emphasis" as *;
 $warning-text-emphasis: shade-color($warning, 60%) !default;

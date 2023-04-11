@@ -1,2 +1,2 @@
-@use "./dependencies/_nav-tabs-link-active-color.scss" as *;
+@use "./dependencies/nav-tabs-link-active-color" as *;
 $nav-tabs-link-active-color: var(--#{$prefix}emphasis-color) !default;

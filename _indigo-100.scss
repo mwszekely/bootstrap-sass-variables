@@ -1,2 +1,2 @@
-@use "./dependencies/_indigo-100.scss" as *;
+@use "./dependencies/indigo-100" as *;
 $indigo-100: tint-color($indigo, 80%) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_tooltip-border-radius.scss" as *;
+@use "./dependencies/tooltip-border-radius" as *;
 $tooltip-border-radius: var(--#{$prefix}border-radius) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_card-title-spacer-y.scss" as *;
+@use "./dependencies/card-title-spacer-y" as *;
 $card-title-spacer-y: $spacer * .5 !default;

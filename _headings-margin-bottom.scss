@@ -1,2 +1,2 @@
-@use "./dependencies/_headings-margin-bottom.scss" as *;
+@use "./dependencies/headings-margin-bottom" as *;
 $headings-margin-bottom: $spacer * .5 !default;

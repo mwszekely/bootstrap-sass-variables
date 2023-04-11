@@ -1,2 +1,2 @@
-@use "./dependencies/_transition-collapse-width.scss" as *;
+@use "./dependencies/transition-collapse-width" as *;
 $transition-collapse-width: width .35s ease !default;

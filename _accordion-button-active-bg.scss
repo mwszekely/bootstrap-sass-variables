@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-button-active-bg.scss" as *;
+@use "./dependencies/accordion-button-active-bg" as *;
 $accordion-button-active-bg: var(--#{$prefix}primary-bg-subtle) !default;

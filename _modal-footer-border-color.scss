@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-footer-border-color.scss" as *;
+@use "./dependencies/modal-footer-border-color" as *;
 $modal-footer-border-color: $modal-header-border-color !default;

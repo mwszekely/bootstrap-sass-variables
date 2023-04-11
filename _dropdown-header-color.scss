@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-header-color.scss" as *;
+@use "./dependencies/dropdown-header-color" as *;
 $dropdown-header-color: $gray-600 !default;

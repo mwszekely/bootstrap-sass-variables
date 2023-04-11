@@ -1,2 +1,2 @@
-@use "./dependencies/_success-text.scss" as *;
+@use "./dependencies/success-text" as *;
 $success-text: $green-600 !default;

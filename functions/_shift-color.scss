@@ -1,5 +1,5 @@
-@use "./shade-color" as *;
-@use "./tint-color" as *;
+@use "./shade-color.scss" as *;
+@use "./tint-color.scss" as *;
 
 @function shift-color($color, $weight) {
   @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));

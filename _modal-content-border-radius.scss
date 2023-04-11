@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-content-border-radius.scss" as *;
+@use "./dependencies/modal-content-border-radius" as *;
 $modal-content-border-radius: var(--#{$prefix}border-radius-lg) !default;

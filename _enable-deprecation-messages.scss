@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-deprecation-messages.scss" as *;
+@use "./dependencies/enable-deprecation-messages" as *;
 $enable-deprecation-messages: true !default;

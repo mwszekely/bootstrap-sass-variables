@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-reduced-motion.scss" as *;
+@use "./dependencies/enable-reduced-motion" as *;
 $enable-reduced-motion: true !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_popover-arrow-color.scss" as *;
+@use "./dependencies/popover-arrow-color" as *;
 $popover-arrow-color: $popover-bg !default;

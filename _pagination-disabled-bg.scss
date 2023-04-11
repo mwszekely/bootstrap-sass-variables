@@ -1,2 +1,2 @@
-@use "./dependencies/_pagination-disabled-bg.scss" as *;
+@use "./dependencies/pagination-disabled-bg" as *;
 $pagination-disabled-bg: var(--#{$prefix}secondary-bg) !default;

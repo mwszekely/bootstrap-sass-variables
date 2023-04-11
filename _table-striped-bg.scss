@@ -1,2 +1,2 @@
-@use "./dependencies/_table-striped-bg.scss" as *;
+@use "./dependencies/table-striped-bg" as *;
 $table-striped-bg: rgba($black, $table-striped-bg-factor) !default;

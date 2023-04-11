@@ -1,2 +1,2 @@
-@use "./dependencies/_color-mode-type.scss" as *;
+@use "./dependencies/color-mode-type" as *;
 $color-mode-type: data !default;

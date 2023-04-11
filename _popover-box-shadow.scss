@@ -1,2 +1,2 @@
-@use "./dependencies/_popover-box-shadow.scss" as *;
+@use "./dependencies/popover-box-shadow" as *;
 $popover-box-shadow: $box-shadow !default;

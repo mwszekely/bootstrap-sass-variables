@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-content-border-color.scss" as *;
+@use "./dependencies/modal-content-border-color" as *;
 $modal-content-border-color: var(--#{$prefix}border-color-translucent) !default;

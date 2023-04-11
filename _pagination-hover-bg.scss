@@ -1,2 +1,2 @@
-@use "./dependencies/_pagination-hover-bg.scss" as *;
+@use "./dependencies/pagination-hover-bg" as *;
 $pagination-hover-bg: var(--#{$prefix}tertiary-bg) !default;

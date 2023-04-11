@@ -1,2 +1,2 @@
-@use "./dependencies/_component-active-color.scss" as *;
+@use "./dependencies/component-active-color" as *;
 $component-active-color: $white !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_body-emphasis-color.scss" as *;
+@use "./dependencies/body-emphasis-color" as *;
 $body-emphasis-color: $black !default;

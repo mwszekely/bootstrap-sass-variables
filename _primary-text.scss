@@ -1,2 +1,2 @@
-@use "./dependencies/_primary-text.scss" as *;
+@use "./dependencies/primary-text" as *;
 $primary-text: $blue-600 !default;

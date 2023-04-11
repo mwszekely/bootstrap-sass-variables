@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-icon-transition.scss" as *;
+@use "./dependencies/accordion-icon-transition" as *;
 $accordion-icon-transition: transform .2s ease-in-out !default;

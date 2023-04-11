@@ -1,2 +1,2 @@
-@use "./dependencies/_form-switch-padding-start.scss" as *;
+@use "./dependencies/form-switch-padding-start" as *;
 $form-switch-padding-start: $form-switch-width + .5em !default;

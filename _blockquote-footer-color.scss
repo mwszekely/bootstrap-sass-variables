@@ -1,2 +1,2 @@
-@use "./dependencies/_blockquote-footer-color.scss" as *;
+@use "./dependencies/blockquote-footer-color" as *;
 $blockquote-footer-color: $gray-600 !default;

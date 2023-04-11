@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-link-disabled-color.scss" as *;
+@use "./dependencies/dropdown-link-disabled-color" as *;
 $dropdown-link-disabled-color: var(--#{$prefix}tertiary-color) !default;

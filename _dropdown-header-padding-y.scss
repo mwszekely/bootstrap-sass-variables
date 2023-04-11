@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-header-padding-y.scss" as *;
+@use "./dependencies/dropdown-header-padding-y" as *;
 $dropdown-header-padding-y: $dropdown-padding-y !default;

@@ -2,7 +2,7 @@
 
 Bootstrap isn't (currently) designed around the newer system of Sass modules, making it difficult in some ways to use, especially in regards to customizing `_variables.scss` (which is already a little bit tricky to customize with its intricate system of dependencies).
 
-This library makes it much easier to `@use "bootstrap"` with a specific set of customizations, without making it impossible for users further down the line to continue customizing (normally, SASS will only allow a `.scss` file to be customized once, which doesn't change here&mdash;it's just worked around).
+This library makes it much easier to `@use "bootstrap.scss"` with a specific set of customizations, without making it impossible for users further down the line to continue customizing (normally, SASS will only allow a `.scss` file to be customized once, which doesn't change here&mdash;it's just worked around).
 
 ## Step 1. Customize Bootstrap's variables
 ````scss
@@ -42,7 +42,7 @@ This library makes it much easier to `@use "bootstrap"` with a specific set of c
 
 // NOTE: You can instead do the following, if load-css is more your style:
 @use "bootstrap-sass-variables/variable-map" as *;            // Gives us $variables
-@include meta.load-css("node_modules/bootstrap/scss/bootstrap", $with: $variables);
+@include meta.load-css("bootstrap/scss/bootstrap", $with: $variables);
 // Just note that you won't get any of the mixins from Bootstrap this way.
 ````
 

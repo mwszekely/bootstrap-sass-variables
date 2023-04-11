@@ -1,2 +1,2 @@
-@use "./dependencies/_list-group-border-color.scss" as *;
+@use "./dependencies/list-group-border-color" as *;
 $list-group-border-color: var(--#{$prefix}border-color) !default;

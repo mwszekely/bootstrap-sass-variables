@@ -1,2 +1,2 @@
-@use "./dependencies/_enable-rfs.scss" as *;
+@use "./dependencies/enable-rfs" as *;
 $enable-rfs: true !default;

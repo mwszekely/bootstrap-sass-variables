@@ -1,2 +1,2 @@
-@use "./dependencies/_min-contrast-ratio.scss" as *;
+@use "./dependencies/min-contrast-ratio" as *;
 $min-contrast-ratio: 4.5 !default;

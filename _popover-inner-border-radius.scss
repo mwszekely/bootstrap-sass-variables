@@ -1,2 +1,2 @@
-@use "./dependencies/_popover-inner-border-radius.scss" as *;
+@use "./dependencies/popover-inner-border-radius" as *;
 $popover-inner-border-radius: calc($popover-border-radius - $popover-border-width) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_popover-border-width.scss" as *;
+@use "./dependencies/popover-border-width" as *;
 $popover-border-width: var(--#{$prefix}border-width) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_alert-link-font-weight.scss" as *;
+@use "./dependencies/alert-link-font-weight" as *;
 $alert-link-font-weight: $font-weight-bold !default;

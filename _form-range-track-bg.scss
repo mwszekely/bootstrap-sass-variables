@@ -1,2 +1,2 @@
-@use "./dependencies/_form-range-track-bg.scss" as *;
+@use "./dependencies/form-range-track-bg" as *;
 $form-range-track-bg: var(--#{$prefix}tertiary-bg) !default;

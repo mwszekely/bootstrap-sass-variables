@@ -1,2 +1,2 @@
-@use "./dependencies/_utilities-colors.scss" as *;
+@use "./dependencies/utilities-colors" as *;
 $utilities-colors: $theme-colors-rgb !default;

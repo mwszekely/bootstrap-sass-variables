@@ -1,2 +1,2 @@
-@use "./dependencies/_input-bg.scss" as *;
+@use "./dependencies/input-bg" as *;
 $input-bg: var(--#{$prefix}body-bg) !default;

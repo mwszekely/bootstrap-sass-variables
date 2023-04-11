@@ -1,2 +1,2 @@
-@use "./dependencies/_font-weight-base.scss" as *;
+@use "./dependencies/font-weight-base" as *;
 $font-weight-base: $font-weight-normal !default;

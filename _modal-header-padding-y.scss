@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-header-padding-y.scss" as *;
+@use "./dependencies/modal-header-padding-y" as *;
 $modal-header-padding-y: $modal-inner-padding !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_carousel-control-transition.scss" as *;
+@use "./dependencies/carousel-control-transition" as *;
 $carousel-control-transition: opacity .15s ease !default;

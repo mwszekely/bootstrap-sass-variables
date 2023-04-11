@@ -1,2 +1,2 @@
-@use "./dependencies/_gradient.scss" as *;
+@use "./dependencies/gradient" as *;
 $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;

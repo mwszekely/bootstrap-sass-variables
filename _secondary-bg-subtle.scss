@@ -1,2 +1,2 @@
-@use "./dependencies/_secondary-bg-subtle.scss" as *;
+@use "./dependencies/secondary-bg-subtle" as *;
 $secondary-bg-subtle: tint-color($secondary, 80%) !default;

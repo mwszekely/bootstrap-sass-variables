@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-min-width.scss" as *;
+@use "./dependencies/dropdown-min-width" as *;
 $dropdown-min-width: 10rem !default;

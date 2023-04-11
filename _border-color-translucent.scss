@@ -1,2 +1,2 @@
-@use "./dependencies/_border-color-translucent.scss" as *;
+@use "./dependencies/border-color-translucent" as *;
 $border-color-translucent: rgba($black, .175) !default;

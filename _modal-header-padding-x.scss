@@ -1,2 +1,2 @@
-@use "./dependencies/_modal-header-padding-x.scss" as *;
+@use "./dependencies/modal-header-padding-x" as *;
 $modal-header-padding-x: $modal-inner-padding !default;

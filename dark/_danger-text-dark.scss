@@ -1,2 +1,2 @@
-@use "./dependencies/_danger-text-dark.scss" as *;
+@use "./dependencies/danger-text-dark" as *;
 $danger-text-dark: $red-300 !default;

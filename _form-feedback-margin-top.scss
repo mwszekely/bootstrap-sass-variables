@@ -1,2 +1,2 @@
-@use "./dependencies/_form-feedback-margin-top.scss" as *;
+@use "./dependencies/form-feedback-margin-top" as *;
 $form-feedback-margin-top: $form-text-margin-top !default;

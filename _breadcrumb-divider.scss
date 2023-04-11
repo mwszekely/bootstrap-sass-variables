@@ -1,2 +1,2 @@
-@use "./dependencies/_breadcrumb-divider.scss" as *;
+@use "./dependencies/breadcrumb-divider" as *;
 $breadcrumb-divider: quote("/") !default;

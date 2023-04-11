@@ -1,2 +1,2 @@
-@use "./dependencies/_input-height.scss" as *;
+@use "./dependencies/input-height" as *;
 $input-height: add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false)) !default;

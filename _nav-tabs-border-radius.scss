@@ -1,2 +1,2 @@
-@use "./dependencies/_nav-tabs-border-radius.scss" as *;
+@use "./dependencies/nav-tabs-border-radius" as *;
 $nav-tabs-border-radius: var(--#{$prefix}border-radius) !default;

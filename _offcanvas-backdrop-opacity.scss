@@ -1,2 +1,2 @@
-@use "./dependencies/_offcanvas-backdrop-opacity.scss" as *;
+@use "./dependencies/offcanvas-backdrop-opacity" as *;
 $offcanvas-backdrop-opacity: $modal-backdrop-opacity !default;

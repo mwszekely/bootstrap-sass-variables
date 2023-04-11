@@ -1,2 +1,2 @@
-@use "./dependencies/_h1-font-size.scss" as *;
+@use "./dependencies/h1-font-size" as *;
 $h1-font-size: $font-size-base * 2.5 !default;

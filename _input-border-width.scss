@@ -1,2 +1,2 @@
-@use "./dependencies/_input-border-width.scss" as *;
+@use "./dependencies/input-border-width" as *;
 $input-border-width: $input-btn-border-width !default;

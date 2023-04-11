@@ -1,2 +1,2 @@
-@use "./dependencies/_initialism-font-size.scss" as *;
+@use "./dependencies/initialism-font-size" as *;
 $initialism-font-size: $small-font-size !default;

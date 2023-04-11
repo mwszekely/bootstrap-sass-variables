@@ -1,2 +1,2 @@
-@use "./dependencies/_orange-400.scss" as *;
+@use "./dependencies/orange-400" as *;
 $orange-400: tint-color($orange, 20%) !default;

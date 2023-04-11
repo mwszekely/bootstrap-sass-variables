@@ -1,2 +1,2 @@
-@use "./dependencies/_kbd-font-size.scss" as *;
+@use "./dependencies/kbd-font-size" as *;
 $kbd-font-size: $code-font-size !default;

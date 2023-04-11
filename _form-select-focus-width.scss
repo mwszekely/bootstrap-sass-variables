@@ -1,2 +1,2 @@
-@use "./dependencies/_form-select-focus-width.scss" as *;
+@use "./dependencies/form-select-focus-width" as *;
 $form-select-focus-width: $input-focus-width !default;

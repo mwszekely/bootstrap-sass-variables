@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-box-shadow.scss" as *;
+@use "./dependencies/dropdown-box-shadow" as *;
 $dropdown-box-shadow: $box-shadow !default;

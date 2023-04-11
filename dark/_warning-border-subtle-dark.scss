@@ -1,2 +1,2 @@
-@use "./dependencies/_warning-border-subtle-dark.scss" as *;
+@use "./dependencies/warning-border-subtle-dark" as *;
 $warning-border-subtle-dark: shade-color($warning, 40%) !default;

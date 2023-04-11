@@ -1,2 +1,2 @@
-@use "./dependencies/_input-placeholder-color.scss" as *;
+@use "./dependencies/input-placeholder-color" as *;
 $input-placeholder-color: var(--#{$prefix}secondary-color) !default;

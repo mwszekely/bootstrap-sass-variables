@@ -1,2 +1,2 @@
-@use "./dependencies/_purples.scss" as *;
+@use "./dependencies/purples" as *;
 $purples: ("purple-100": $purple-100, "purple-200": $purple-200, "purple-300": $purple-300, "purple-400": $purple-400, "purple-500": $purple-500, "purple-600": $purple-600, "purple-700": $purple-700, "purple-800": $purple-800, "purple-900": $purple-900) !default;

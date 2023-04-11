@@ -1,2 +1,2 @@
-@use "./dependencies/_body-tertiary-bg-dark.scss" as *;
+@use "./dependencies/body-tertiary-bg-dark" as *;
 $body-tertiary-bg-dark: mix($gray-800, $gray-900, 50%) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_zindex-modal-backdrop.scss" as *;
+@use "./dependencies/zindex-modal-backdrop" as *;
 $zindex-modal-backdrop: 1050 !default;

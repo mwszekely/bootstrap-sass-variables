@@ -1,2 +1,2 @@
-@use "./dependencies/_form-select-border-radius.scss" as *;
+@use "./dependencies/form-select-border-radius" as *;
 $form-select-border-radius: $input-border-radius !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_warning-text-dark.scss" as *;
+@use "./dependencies/warning-text-dark" as *;
 $warning-text-dark: $yellow-300 !default;

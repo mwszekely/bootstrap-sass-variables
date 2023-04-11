@@ -1,2 +1,2 @@
-@use "./dependencies/_offcanvas-bg-color.scss" as *;
+@use "./dependencies/offcanvas-bg-color" as *;
 $offcanvas-bg-color: var(--#{$prefix}body-bg) !default;

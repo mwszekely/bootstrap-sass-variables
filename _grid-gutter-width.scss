@@ -1,2 +1,2 @@
-@use "./dependencies/_grid-gutter-width.scss" as *;
+@use "./dependencies/grid-gutter-width" as *;
 $grid-gutter-width: 1.5rem !default;

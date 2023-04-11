@@ -1,2 +1,2 @@
-@use "./dependencies/_list-group-border-radius.scss" as *;
+@use "./dependencies/list-group-border-radius" as *;
 $list-group-border-radius: var(--#{$prefix}border-radius) !default;

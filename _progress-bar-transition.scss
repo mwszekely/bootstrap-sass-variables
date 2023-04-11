@@ -1,2 +1,2 @@
-@use "./dependencies/_progress-bar-transition.scss" as *;
+@use "./dependencies/progress-bar-transition" as *;
 $progress-bar-transition: width .6s ease !default;

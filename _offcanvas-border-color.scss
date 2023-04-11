@@ -1,2 +1,2 @@
-@use "./dependencies/_offcanvas-border-color.scss" as *;
+@use "./dependencies/offcanvas-border-color" as *;
 $offcanvas-border-color: $modal-content-border-color !default;

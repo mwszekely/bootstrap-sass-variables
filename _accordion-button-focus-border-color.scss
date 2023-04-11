@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-button-focus-border-color.scss" as *;
+@use "./dependencies/accordion-button-focus-border-color" as *;
 $accordion-button-focus-border-color: $input-focus-border-color !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-bg.scss" as *;
+@use "./dependencies/accordion-bg" as *;
 $accordion-bg: var(--#{$prefix}body-bg) !default;

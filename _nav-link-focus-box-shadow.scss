@@ -1,2 +1,2 @@
-@use "./dependencies/_nav-link-focus-box-shadow.scss" as *;
+@use "./dependencies/nav-link-focus-box-shadow" as *;
 $nav-link-focus-box-shadow: $focus-ring-box-shadow !default;

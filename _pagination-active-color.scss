@@ -1,2 +1,2 @@
-@use "./dependencies/_pagination-active-color.scss" as *;
+@use "./dependencies/pagination-active-color" as *;
 $pagination-active-color: $component-active-color !default;

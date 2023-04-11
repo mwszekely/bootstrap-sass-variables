@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-border-radius.scss" as *;
+@use "./dependencies/accordion-border-radius" as *;
 $accordion-border-radius: var(--#{$prefix}border-radius) !default;

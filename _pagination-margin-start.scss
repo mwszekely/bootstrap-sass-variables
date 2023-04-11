@@ -1,2 +1,2 @@
-@use "./dependencies/_pagination-margin-start.scss" as *;
+@use "./dependencies/pagination-margin-start" as *;
 $pagination-margin-start: calc($pagination-border-width * -1) !default;

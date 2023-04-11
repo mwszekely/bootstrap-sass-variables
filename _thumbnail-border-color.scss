@@ -1,2 +1,2 @@
-@use "./dependencies/_thumbnail-border-color.scss" as *;
+@use "./dependencies/thumbnail-border-color" as *;
 $thumbnail-border-color: var(--#{$prefix}border-color) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_btn-font-size.scss" as *;
+@use "./dependencies/btn-font-size" as *;
 $btn-font-size: $input-btn-font-size !default;

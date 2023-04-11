@@ -1,2 +1,2 @@
-@use "./dependencies/_form-switch-color.scss" as *;
+@use "./dependencies/form-switch-color" as *;
 $form-switch-color: rgba($black, .25) !default;

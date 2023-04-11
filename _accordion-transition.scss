@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-transition.scss" as *;
+@use "./dependencies/accordion-transition" as *;
 $accordion-transition: $btn-transition, border-radius .15s ease !default;

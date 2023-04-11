@@ -1,2 +1,2 @@
-@use "./dependencies/_card-border-color.scss" as *;
+@use "./dependencies/card-border-color" as *;
 $card-border-color: var(--#{$prefix}border-color-translucent) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_input-height-border.scss" as *;
+@use "./dependencies/input-height-border" as *;
 $input-height-border: calc($input-border-width * 2) !default;

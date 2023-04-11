@@ -1,2 +1,2 @@
-@use "./dependencies/_input-border-color.scss" as *;
+@use "./dependencies/input-border-color" as *;
 $input-border-color: var(--#{$prefix}border-color) !default;

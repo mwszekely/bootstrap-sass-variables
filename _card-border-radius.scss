@@ -1,2 +1,2 @@
-@use "./dependencies/_card-border-radius.scss" as *;
+@use "./dependencies/card-border-radius" as *;
 $card-border-radius: var(--#{$prefix}border-radius) !default;

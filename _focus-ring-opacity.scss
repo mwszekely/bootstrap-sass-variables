@@ -1,2 +1,2 @@
-@use "./dependencies/_focus-ring-opacity.scss" as *;
+@use "./dependencies/focus-ring-opacity" as *;
 $focus-ring-opacity: .25 !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_input-group-addon-color.scss" as *;
+@use "./dependencies/input-group-addon-color" as *;
 $input-group-addon-color: $input-color !default;

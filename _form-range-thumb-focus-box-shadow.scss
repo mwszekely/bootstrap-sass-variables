@@ -1,2 +1,2 @@
-@use "./dependencies/_form-range-thumb-focus-box-shadow.scss" as *;
+@use "./dependencies/form-range-thumb-focus-box-shadow" as *;
 $form-range-thumb-focus-box-shadow: 0 0 0 1px $body-bg, $input-focus-box-shadow !default;

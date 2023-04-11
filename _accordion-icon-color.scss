@@ -1,2 +1,2 @@
-@use "./dependencies/_accordion-icon-color.scss" as *;
+@use "./dependencies/accordion-icon-color" as *;
 $accordion-icon-color: $body-color !default;

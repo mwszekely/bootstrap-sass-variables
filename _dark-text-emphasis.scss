@@ -1,2 +1,2 @@
-@use "./dependencies/_dark-text-emphasis.scss" as *;
+@use "./dependencies/dark-text-emphasis" as *;
 $dark-text-emphasis: $gray-700 !default;

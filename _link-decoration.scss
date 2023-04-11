@@ -1,2 +1,2 @@
-@use "./dependencies/_link-decoration.scss" as *;
+@use "./dependencies/link-decoration" as *;
 $link-decoration: underline !default;

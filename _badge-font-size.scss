@@ -1,2 +1,2 @@
-@use "./dependencies/_badge-font-size.scss" as *;
+@use "./dependencies/badge-font-size" as *;
 $badge-font-size: .75em !default;

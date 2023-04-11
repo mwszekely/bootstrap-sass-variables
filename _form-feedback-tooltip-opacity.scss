@@ -1,2 +1,2 @@
-@use "./dependencies/_form-feedback-tooltip-opacity.scss" as *;
+@use "./dependencies/form-feedback-tooltip-opacity" as *;
 $form-feedback-tooltip-opacity: $tooltip-opacity !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_input-disabled-bg.scss" as *;
+@use "./dependencies/input-disabled-bg" as *;
 $input-disabled-bg: var(--#{$prefix}secondary-bg) !default;

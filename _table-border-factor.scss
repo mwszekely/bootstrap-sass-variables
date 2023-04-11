@@ -1,2 +1,2 @@
-@use "./dependencies/_table-border-factor.scss" as *;
+@use "./dependencies/table-border-factor" as *;
 $table-border-factor: .1 !default;

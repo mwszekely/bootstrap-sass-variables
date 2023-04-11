@@ -1,2 +1,2 @@
-@use "./dependencies/_secondary-text-emphasis.scss" as *;
+@use "./dependencies/secondary-text-emphasis" as *;
 $secondary-text-emphasis: shade-color($secondary, 60%) !default;

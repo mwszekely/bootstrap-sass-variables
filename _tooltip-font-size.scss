@@ -1,2 +1,2 @@
-@use "./dependencies/_tooltip-font-size.scss" as *;
+@use "./dependencies/tooltip-font-size" as *;
 $tooltip-font-size: $font-size-sm !default;

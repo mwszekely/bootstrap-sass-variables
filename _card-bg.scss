@@ -1,2 +1,2 @@
-@use "./dependencies/_card-bg.scss" as *;
+@use "./dependencies/card-bg" as *;
 $card-bg: var(--#{$prefix}body-bg) !default;

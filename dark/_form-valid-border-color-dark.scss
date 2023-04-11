@@ -1,2 +1,2 @@
-@use "./dependencies/_form-valid-border-color-dark.scss" as *;
+@use "./dependencies/form-valid-border-color-dark" as *;
 $form-valid-border-color-dark: $green-300 !default;

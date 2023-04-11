@@ -1,2 +1,2 @@
-@use "./dependencies/_form-select-padding-y-sm.scss" as *;
+@use "./dependencies/form-select-padding-y-sm" as *;
 $form-select-padding-y-sm: $input-padding-y-sm !default;

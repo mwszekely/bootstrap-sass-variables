@@ -1,2 +1,2 @@
-@use "./dependencies/_form-floating-label-disabled-color.scss" as *;
+@use "./dependencies/form-floating-label-disabled-color" as *;
 $form-floating-label-disabled-color: $gray-600 !default;

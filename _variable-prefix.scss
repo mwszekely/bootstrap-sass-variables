@@ -1,2 +1,2 @@
-@use "./dependencies/_variable-prefix.scss" as *;
+@use "./dependencies/variable-prefix" as *;
 $variable-prefix: bs- !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_red-700.scss" as *;
+@use "./dependencies/red-700" as *;
 $red-700: shade-color($red, 40%) !default;

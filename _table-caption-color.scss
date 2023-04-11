@@ -1,2 +1,2 @@
-@use "./dependencies/_table-caption-color.scss" as *;
+@use "./dependencies/table-caption-color" as *;
 $table-caption-color: var(--#{$prefix}secondary-color) !default;

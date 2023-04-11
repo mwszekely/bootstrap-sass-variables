@@ -1,2 +1,2 @@
-@use "./dependencies/_form-select-disabled-bg.scss" as *;
+@use "./dependencies/form-select-disabled-bg" as *;
 $form-select-disabled-bg: $input-disabled-bg !default;

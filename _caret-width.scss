@@ -1,2 +1,2 @@
-@use "./dependencies/_caret-width.scss" as *;
+@use "./dependencies/caret-width" as *;
 $caret-width: .3em !default;

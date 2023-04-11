@@ -1,2 +1,2 @@
-@use "./dependencies/_dropdown-divider-bg.scss" as *;
+@use "./dependencies/dropdown-divider-bg" as *;
 $dropdown-divider-bg: $dropdown-border-color !default;

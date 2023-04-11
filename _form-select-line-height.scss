@@ -1,2 +1,2 @@
-@use "./dependencies/_form-select-line-height.scss" as *;
+@use "./dependencies/form-select-line-height" as *;
 $form-select-line-height: $input-line-height !default;

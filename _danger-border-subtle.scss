@@ -1,2 +1,2 @@
-@use "./dependencies/_danger-border-subtle.scss" as *;
+@use "./dependencies/danger-border-subtle" as *;
 $danger-border-subtle: tint-color($danger, 60%) !default;

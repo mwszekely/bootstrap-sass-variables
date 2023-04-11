@@ -1,2 +1,2 @@
-@use "./dependencies/_toast-max-width.scss" as *;
+@use "./dependencies/toast-max-width" as *;
 $toast-max-width: 350px !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_container-padding-x.scss" as *;
+@use "./dependencies/container-padding-x" as *;
 $container-padding-x: $grid-gutter-width !default;

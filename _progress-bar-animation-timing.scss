@@ -1,2 +1,2 @@
-@use "./dependencies/_progress-bar-animation-timing.scss" as *;
+@use "./dependencies/progress-bar-animation-timing" as *;
 $progress-bar-animation-timing: 1s linear infinite !default;

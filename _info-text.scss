@@ -1,2 +1,2 @@
-@use "./dependencies/_info-text.scss" as *;
+@use "./dependencies/info-text" as *;
 $info-text: $cyan-700 !default;

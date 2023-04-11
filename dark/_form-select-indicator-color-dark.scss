@@ -1,2 +1,2 @@
-@use "./dependencies/_form-select-indicator-color-dark.scss" as *;
+@use "./dependencies/form-select-indicator-color-dark" as *;
 $form-select-indicator-color-dark: $body-color-dark !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/_alert-padding-y.scss" as *;
+@use "./dependencies/alert-padding-y" as *;
 $alert-padding-y: $spacer !default;

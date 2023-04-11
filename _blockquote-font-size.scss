@@ -1,2 +1,2 @@
-@use "./dependencies/_blockquote-font-size.scss" as *;
+@use "./dependencies/blockquote-font-size" as *;
 $blockquote-font-size: $font-size-base * 1.25 !default;

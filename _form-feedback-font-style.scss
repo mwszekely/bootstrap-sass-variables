@@ -1,2 +1,2 @@
-@use "./dependencies/_form-feedback-font-style.scss" as *;
+@use "./dependencies/form-feedback-font-style" as *;
 $form-feedback-font-style: $form-text-font-style !default;

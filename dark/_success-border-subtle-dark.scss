@@ -1,2 +1,2 @@
-@use "./dependencies/_success-border-subtle-dark.scss" as *;
+@use "./dependencies/success-border-subtle-dark" as *;
 $success-border-subtle-dark: shade-color($success, 40%) !default;

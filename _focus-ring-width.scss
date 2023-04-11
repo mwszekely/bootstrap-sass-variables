@@ -1,2 +1,2 @@
-@use "./dependencies/_focus-ring-width.scss" as *;
+@use "./dependencies/focus-ring-width" as *;
 $focus-ring-width: .25rem !default;

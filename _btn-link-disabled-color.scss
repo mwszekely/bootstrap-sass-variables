@@ -1,2 +1,2 @@
-@use "./dependencies/_btn-link-disabled-color.scss" as *;
+@use "./dependencies/btn-link-disabled-color" as *;
 $btn-link-disabled-color: $gray-600 !default;
