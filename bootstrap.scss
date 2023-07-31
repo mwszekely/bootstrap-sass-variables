@@ -297,6 +297,7 @@
 @use "./hr-border-color" as *;
 @use "./hr-border-width" as *;
 @use "./hr-opacity" as *;
+@use "./vr-border-width" as *;
 @use "./legend-margin-bottom" as *;
 @use "./legend-font-size" as *;
 @use "./legend-font-weight" as *;
@@ -616,6 +617,7 @@
 @use "./navbar-dark-hover-color" as *;
 @use "./navbar-dark-active-color" as *;
 @use "./navbar-dark-disabled-color" as *;
+@use "./navbar-dark-icon-color" as *;
 @use "./navbar-dark-toggler-icon-bg" as *;
 @use "./navbar-dark-toggler-border-color" as *;
 @use "./navbar-dark-brand-color" as *;
@@ -829,9 +831,6 @@
 @use "./alert-border-radius" as *;
 @use "./alert-link-font-weight" as *;
 @use "./alert-border-width" as *;
-@use "./alert-bg-scale" as *;
-@use "./alert-border-scale" as *;
-@use "./alert-color-scale" as *;
 @use "./alert-dismissible-padding-r" as *;
 @use "./alert-bg-scale" as *;
 @use "./alert-border-scale" as *;
@@ -996,6 +995,8 @@
 @use "./dark/form-valid-border-color-dark" as *;
 @use "./dark/form-invalid-color-dark" as *;
 @use "./dark/form-invalid-border-color-dark" as *;
+@use "./dark/accordion-icon-color-dark" as *;
+@use "./dark/accordion-icon-active-color-dark" as *;
 @use "./dark/accordion-button-icon-dark" as *;
 @use "./dark/accordion-button-active-icon-dark" as *;
 
@@ -1296,6 +1297,7 @@
     $hr-border-color: $hr-border-color !default,
     $hr-border-width: $hr-border-width !default,
     $hr-opacity: $hr-opacity !default,
+    $vr-border-width: $vr-border-width !default,
     $legend-margin-bottom: $legend-margin-bottom !default,
     $legend-font-size: $legend-font-size !default,
     $legend-font-weight: $legend-font-weight !default,
@@ -1615,6 +1617,7 @@
     $navbar-dark-hover-color: $navbar-dark-hover-color !default,
     $navbar-dark-active-color: $navbar-dark-active-color !default,
     $navbar-dark-disabled-color: $navbar-dark-disabled-color !default,
+    $navbar-dark-icon-color: $navbar-dark-icon-color !default,
     $navbar-dark-toggler-icon-bg: $navbar-dark-toggler-icon-bg !default,
     $navbar-dark-toggler-border-color: $navbar-dark-toggler-border-color !default,
     $navbar-dark-brand-color: $navbar-dark-brand-color !default,
@@ -1828,10 +1831,10 @@
     $alert-border-radius: $alert-border-radius !default,
     $alert-link-font-weight: $alert-link-font-weight !default,
     $alert-border-width: $alert-border-width !default,
+    $alert-dismissible-padding-r: $alert-dismissible-padding-r !default,
     $alert-bg-scale: $alert-bg-scale !default,
     $alert-border-scale: $alert-border-scale !default,
     $alert-color-scale: $alert-color-scale !default,
-    $alert-dismissible-padding-r: $alert-dismissible-padding-r !default,
     $progress-height: $progress-height !default,
     $progress-font-size: $progress-font-size !default,
     $progress-bg: $progress-bg !default,
@@ -1992,6 +1995,8 @@
     $form-valid-border-color-dark: $form-valid-border-color-dark !default,
     $form-invalid-color-dark: $form-invalid-color-dark !default,
     $form-invalid-border-color-dark: $form-invalid-border-color-dark !default,
+    $accordion-icon-color-dark: $accordion-icon-color-dark !default,
+    $accordion-icon-active-color-dark: $accordion-icon-active-color-dark !default,
     $accordion-button-icon-dark: $accordion-button-icon-dark !default,
-    $accordion-button-active-icon-dark: $accordion-button-active-icon-dark !default    
+    $accordion-button-active-icon-dark: $accordion-button-active-icon-dark !default 
 );

@@ -1,2 +1,2 @@
 @use "./dependencies/btn-border-radius" as *;
-$btn-border-radius: $border-radius !default;
+$btn-border-radius: var(--#{$prefix}border-radius) !default;

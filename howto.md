@@ -8,18 +8,18 @@ You should now have a list of properties, one property per line.  Transform it i
 
 1. To generate the shell command to create all the files in root, replace with this:
 
-   `echo $'@use "./dependencies/_$1.scss" as *;\n$$$1: $2 !default;' > './_$1.scss' && touch './dependencies/_$1.scss' &&`
+   `echo $'@use "./dependencies/$1" as *;\n$$$1: $2 !default;' > './_$1.scss' && touch './dependencies/_$1.scss' &&`
 
    and
 
-   `echo $'@use "./dependencies/_$1.scss" as *;\n$$$1: $2 !default;' > './dark/_$1.scss' && touch './dark/dependencies/_$1.scss' &&` for dark mode
+   `echo $'@use "./dependencies/$1" as *;\n$$$1: $2 !default;' > './dark/_$1.scss' && touch './dark/dependencies/_$1.scss' &&` for dark mode
    
    (It obviously can't put the dependencies in the dependency files, it just ensures they exist. You'll need to add whatever contents will satisfy the build errors)
 
 
 2. To create the list of `@use` rules in the files that use them, replace with these:
 
-   `@use "./_$1" as *;` and `@use "./dark/_$1" as *;`
+   `@use "./$1" as *;` and `@use "./dark/$1" as *;`
 
 3. Replace with this to create the `with` part of the `@forward` rule:
 

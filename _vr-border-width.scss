@@ -1,0 +1,2 @@
+@use "./dependencies/vr-border-width" as *;
+$vr-border-width: var(--#{$prefix}border-width) !default;

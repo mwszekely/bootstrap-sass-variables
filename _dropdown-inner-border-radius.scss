@@ -1,2 +1,2 @@
 @use "./dependencies/dropdown-inner-border-radius" as *;
-$dropdown-inner-border-radius: calc($dropdown-border-radius - $dropdown-border-width) !default;
+$dropdown-inner-border-radius: calc(#{$dropdown-border-radius} - #{$dropdown-border-width}) !default;

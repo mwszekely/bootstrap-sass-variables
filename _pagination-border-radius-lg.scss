@@ -1,2 +1,2 @@
 @use "./dependencies/pagination-border-radius-lg" as *;
-$pagination-border-radius-lg: $border-radius-lg !default;
+$pagination-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;

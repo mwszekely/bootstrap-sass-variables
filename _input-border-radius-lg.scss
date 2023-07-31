@@ -1,2 +1,2 @@
 @use "./dependencies/input-border-radius-lg" as *;
-$input-border-radius-lg: $border-radius-lg !default;
+$input-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;

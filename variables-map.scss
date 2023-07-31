@@ -296,6 +296,7 @@
 @use "./hr-border-color" as *;
 @use "./hr-border-width" as *;
 @use "./hr-opacity" as *;
+@use "./vr-border-width" as *;
 @use "./legend-margin-bottom" as *;
 @use "./legend-font-size" as *;
 @use "./legend-font-weight" as *;
@@ -615,6 +616,7 @@
 @use "./navbar-dark-hover-color" as *;
 @use "./navbar-dark-active-color" as *;
 @use "./navbar-dark-disabled-color" as *;
+@use "./navbar-dark-icon-color" as *;
 @use "./navbar-dark-toggler-icon-bg" as *;
 @use "./navbar-dark-toggler-border-color" as *;
 @use "./navbar-dark-brand-color" as *;
@@ -828,9 +830,6 @@
 @use "./alert-border-radius" as *;
 @use "./alert-link-font-weight" as *;
 @use "./alert-border-width" as *;
-@use "./alert-bg-scale" as *;
-@use "./alert-border-scale" as *;
-@use "./alert-color-scale" as *;
 @use "./alert-dismissible-padding-r" as *;
 @use "./alert-bg-scale" as *;
 @use "./alert-border-scale" as *;
@@ -995,6 +994,8 @@
 @use "./dark/form-valid-border-color-dark" as *;
 @use "./dark/form-invalid-color-dark" as *;
 @use "./dark/form-invalid-border-color-dark" as *;
+@use "./dark/accordion-icon-color-dark" as *;
+@use "./dark/accordion-icon-active-color-dark" as *;
 @use "./dark/accordion-button-icon-dark" as *;
 @use "./dark/accordion-button-active-icon-dark" as *;
 
@@ -1295,6 +1296,7 @@ $variables: (
     "hr-border-color": $hr-border-color,
     "hr-border-width": $hr-border-width,
     "hr-opacity": $hr-opacity,
+    "vr-border-width": $vr-border-width,
     "legend-margin-bottom": $legend-margin-bottom,
     "legend-font-size": $legend-font-size,
     "legend-font-weight": $legend-font-weight,
@@ -1614,6 +1616,7 @@ $variables: (
     "navbar-dark-hover-color": $navbar-dark-hover-color,
     "navbar-dark-active-color": $navbar-dark-active-color,
     "navbar-dark-disabled-color": $navbar-dark-disabled-color,
+    "navbar-dark-icon-color": $navbar-dark-icon-color,
     "navbar-dark-toggler-icon-bg": $navbar-dark-toggler-icon-bg,
     "navbar-dark-toggler-border-color": $navbar-dark-toggler-border-color,
     "navbar-dark-brand-color": $navbar-dark-brand-color,
@@ -1827,9 +1830,6 @@ $variables: (
     "alert-border-radius": $alert-border-radius,
     "alert-link-font-weight": $alert-link-font-weight,
     "alert-border-width": $alert-border-width,
-    "alert-bg-scale": $alert-bg-scale,
-    "alert-border-scale": $alert-border-scale,
-    "alert-color-scale": $alert-color-scale,
     "alert-dismissible-padding-r": $alert-dismissible-padding-r,
     "alert-bg-scale": $alert-bg-scale,
     "alert-border-scale": $alert-border-scale,
@@ -1994,6 +1994,9 @@ $variables: (
     "form-valid-border-color-dark": $form-valid-border-color-dark,
     "form-invalid-color-dark": $form-invalid-color-dark,
     "form-invalid-border-color-dark": $form-invalid-border-color-dark,
+    "accordion-icon-color-dark": $accordion-icon-color-dark,
+    "accordion-icon-active-color-dark": $accordion-icon-active-color-dark,
     "accordion-button-icon-dark": $accordion-button-icon-dark,
-    "accordion-button-active-icon-dark": $accordion-button-active-icon-dark    
+    "accordion-button-active-icon-dark": $accordion-button-active-icon-dark,
+
 );
