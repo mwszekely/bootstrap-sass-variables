@@ -1000,7 +1000,7 @@
 @use "./dark/accordion-button-icon-dark" as *;
 @use "./dark/accordion-button-active-icon-dark" as *;
 
-@forward "bootstrap/scss/bootstrap.scss" with (
+@forward "scss/bootstrap.scss" with (
     $white: $white !default,
     $gray-100: $gray-100 !default,
     $gray-200: $gray-200 !default,
