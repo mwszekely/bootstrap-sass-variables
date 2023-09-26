@@ -1,2 +1,0 @@
-@use "./dependencies/utilities-text-colors" as *;
-$utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text") !default;

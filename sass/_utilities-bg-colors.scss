@@ -1,2 +1,0 @@
-@use "./dependencies/utilities-bg-colors" as *;
-$utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !default;

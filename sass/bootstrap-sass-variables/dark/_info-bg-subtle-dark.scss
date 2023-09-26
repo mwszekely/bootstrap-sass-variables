@@ -1,0 +1,2 @@
+@use "./dependencies/_info-bg-subtle-dark.scss" as *;
+$info-bg-subtle-dark: shade-color($info, 80%) !default;

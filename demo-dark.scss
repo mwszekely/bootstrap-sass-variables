@@ -1,3 +1,3 @@
 /* Note: These files (both the .scss and .css) are intentionally included in source control */
-@forward "./sass/primary" with ($primary: fuchsia);
-@use "./sass/bootstrap";
+@forward "bootstrap-sass-variables/primary" with ($primary: fuchsia);
+@use "bootstrap-sass-variables/bootstrap";

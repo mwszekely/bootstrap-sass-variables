@@ -1,0 +1,2 @@
+@use "./dependencies/_link-color-dark.scss" as *;
+$link-color-dark: tint-color($primary, 40%) !default;

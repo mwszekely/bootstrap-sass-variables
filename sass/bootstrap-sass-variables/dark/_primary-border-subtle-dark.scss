@@ -1,0 +1,2 @@
+@use "./dependencies/_primary-border-subtle-dark.scss" as *;
+$primary-border-subtle-dark: shade-color($primary, 40%) !default;

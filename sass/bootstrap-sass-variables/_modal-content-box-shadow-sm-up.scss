@@ -1,0 +1,2 @@
+@use "./dependencies/modal-content-box-shadow-sm-up" as *;
+$modal-content-box-shadow-sm-up: var(--#{$prefix}box-shadow) !default;

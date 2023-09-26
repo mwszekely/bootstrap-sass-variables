@@ -1,0 +1,2 @@
+@use "./dependencies/_body-secondary-color-dark.scss" as *;
+$body-secondary-color-dark: rgba($body-color-dark, .75) !default;

@@ -1,2 +1,0 @@
-@use "./dependencies/utilities-bg" as *;
-$utilities-bg: map-merge($utilities-colors, ("black": to-rgb($black), "white": to-rgb($white), "body": to-rgb($body-bg)  )) !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/table-active-bg" as *;
+$table-active-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-active-bg-factor) !default;

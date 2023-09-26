@@ -1,0 +1,2 @@
+@use "./dependencies/dropdown-box-shadow" as *;
+$dropdown-box-shadow: var(--#{$prefix}box-shadow) !default;

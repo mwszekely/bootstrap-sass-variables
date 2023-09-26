@@ -1,0 +1,2 @@
+@use "./dependencies/_link-hover-color-dark.scss" as *;
+$link-hover-color-dark: shift-color($link-color-dark, -$link-shade-percentage) !default;

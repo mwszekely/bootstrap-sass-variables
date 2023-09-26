@@ -1,0 +1,2 @@
+@use "./dependencies/input-box-shadow" as *;
+$input-box-shadow: var(--#{$prefix}box-shadow-inset) !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/form-range-track-box-shadow" as *;
+$form-range-track-box-shadow: var(--#{$prefix}box-shadow-inset) !default;

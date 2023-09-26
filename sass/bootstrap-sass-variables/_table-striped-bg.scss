@@ -1,0 +1,2 @@
+@use "./dependencies/table-striped-bg" as *;
+$table-striped-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-striped-bg-factor) !default;

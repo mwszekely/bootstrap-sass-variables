@@ -1,0 +1,2 @@
+@use "./dependencies/_info-border-subtle-dark.scss" as *;
+$info-border-subtle-dark: shade-color($info, 40%) !default;

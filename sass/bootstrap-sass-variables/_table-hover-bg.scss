@@ -1,0 +1,2 @@
+@use "./dependencies/table-hover-bg" as *;
+$table-hover-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-hover-bg-factor) !default;

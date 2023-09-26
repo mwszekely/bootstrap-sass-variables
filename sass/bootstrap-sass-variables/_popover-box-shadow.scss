@@ -1,0 +1,2 @@
+@use "./dependencies/popover-box-shadow" as *;
+$popover-box-shadow: var(--#{$prefix}box-shadow) !default;

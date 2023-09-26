@@ -1,0 +1,2 @@
+@use "./dependencies/form-select-box-shadow" as *;
+$form-select-box-shadow: var(--#{$prefix}box-shadow-inset) !default;

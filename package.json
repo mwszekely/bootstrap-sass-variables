@@ -4,9 +4,9 @@
   "description": "Makes it easier to @use customized Bootstrap variables with no redundancies",
   "packageManager": "pnpm@8.5.1",
   "scripts": {
-    "rebuild": "rm \"./pnpm-lock.yaml\" && rm --load-path \".\"  && pnpm install && pnpm run build",
-    "build": "sass --load-path=\".\" --load-path=\"./node_modules/bootstrap\" ./demo-dark.scss ./demo-dark.css",
-    "watch": "sass --load-path=\".\" --load-path=\"./node_modules/bootstrap\" ./demo-dark.scss ./demo-dark.css -w"
+    "rebuild": "rm \"./pnpm-lock.yaml\" && rm --load-path \"./sass\"  && pnpm install && pnpm run build",
+    "build": "sass --load-path=\"./sass\" --load-path=\"./node_modules/bootstrap\" ./demo-dark.scss ./demo-dark.css",
+    "watch": "sass --load-path=\"./sass\" --load-path=\"./node_modules/bootstrap\" ./demo-dark.scss ./demo-dark.css -w"
   },
   "peerDependencies": {
     "bootstrap": "^5.3.1"

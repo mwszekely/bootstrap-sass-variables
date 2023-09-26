@@ -1,0 +1,2 @@
+@use "./dependencies/table-bg" as *;
+$table-bg: var(--#{$prefix}body-bg) !default;

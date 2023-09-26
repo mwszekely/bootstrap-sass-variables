@@ -1,0 +1,2 @@
+@use "./dependencies/_danger-border-subtle-dark.scss" as *;
+$danger-border-subtle-dark: shade-color($danger, 40%) !default;

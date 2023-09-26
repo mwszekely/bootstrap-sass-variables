@@ -1,0 +1,2 @@
+@use "./dependencies/_success-bg-subtle-dark.scss" as *;
+$success-bg-subtle-dark: shade-color($success, 80%) !default;

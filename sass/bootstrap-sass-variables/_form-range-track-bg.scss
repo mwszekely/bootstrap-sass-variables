@@ -1,0 +1,2 @@
+@use "./dependencies/form-range-track-bg" as *;
+$form-range-track-bg: var(--#{$prefix}secondary-bg) !default;
