@@ -1,2 +1,2 @@
-@use "./dependencies/modal-scale-transform" as *;
+@use "./dependencies/_modal-scale-transform.scss" as *;
 $modal-scale-transform: scale(1.02) !default;

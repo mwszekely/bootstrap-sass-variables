@@ -1,2 +1,2 @@
-@use "./dependencies/pagination-disabled-border-color" as *;
+@use "./dependencies/_pagination-disabled-border-color.scss" as *;
 $pagination-disabled-border-color: var(--#{$prefix}border-color) !default;

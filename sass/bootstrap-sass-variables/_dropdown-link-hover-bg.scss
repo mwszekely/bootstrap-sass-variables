@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-link-hover-bg" as *;
+@use "./dependencies/_dropdown-link-hover-bg.scss" as *;
 $dropdown-link-hover-bg: var(--#{$prefix}tertiary-bg) !default;

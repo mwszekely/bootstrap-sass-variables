@@ -1,2 +1,2 @@
-@use "./dependencies/focus-ring-color" as *;
+@use "./dependencies/_focus-ring-color.scss" as *;
 $focus-ring-color: rgba($primary, $focus-ring-opacity) !default;

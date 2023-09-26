@@ -1,2 +1,2 @@
-@use "./dependencies/tooltip-max-width" as *;
+@use "./dependencies/_tooltip-max-width.scss" as *;
 $tooltip-max-width: 200px !default;

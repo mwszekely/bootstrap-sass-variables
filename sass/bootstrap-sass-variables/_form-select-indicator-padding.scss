@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-indicator-padding" as *;
+@use "./dependencies/_form-select-indicator-padding.scss" as *;
 $form-select-indicator-padding: $form-select-padding-x * 3 !default;

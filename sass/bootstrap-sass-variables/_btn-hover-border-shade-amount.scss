@@ -1,2 +1,2 @@
-@use "./dependencies/btn-hover-border-shade-amount" as *;
+@use "./dependencies/_btn-hover-border-shade-amount.scss" as *;
 $btn-hover-border-shade-amount: 20% !default;

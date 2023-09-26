@@ -1,2 +1,2 @@
-@use "./dependencies/btn-link-focus-shadow-rgb" as *;
+@use "./dependencies/_btn-link-focus-shadow-rgb.scss" as *;
 $btn-link-focus-shadow-rgb: to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/btn-close-focus-shadow" as *;
+@use "./dependencies/_btn-close-focus-shadow.scss" as *;
 $btn-close-focus-shadow: $focus-ring-box-shadow !default;

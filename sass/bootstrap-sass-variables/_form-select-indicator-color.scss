@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-indicator-color" as *;
+@use "./dependencies/_form-select-indicator-color.scss" as *;
 $form-select-indicator-color: $gray-800 !default;

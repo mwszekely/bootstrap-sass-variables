@@ -1,2 +1,2 @@
-@use "./dependencies/blues" as *;
+@use "./dependencies/_blues.scss" as *;
 $blues: ("blue-100": $blue-100, "blue-200": $blue-200, "blue-300": $blue-300, "blue-400": $blue-400, "blue-500": $blue-500, "blue-600": $blue-600, "blue-700": $blue-700, "blue-800": $blue-800, "blue-900": $blue-900) !default;

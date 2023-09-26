@@ -1,2 +1,2 @@
-@use "./dependencies/input-focus-border-color" as *;
+@use "./dependencies/_input-focus-border-color.scss" as *;
 $input-focus-border-color: tint-color($component-active-bg, 50%) !default;

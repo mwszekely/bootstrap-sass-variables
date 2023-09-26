@@ -1,2 +1,2 @@
-@use "./dependencies/form-file-button-hover-bg" as *;
+@use "./dependencies/_form-file-button-hover-bg.scss" as *;
 $form-file-button-hover-bg: var(--#{$prefix}secondary-bg) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-transition" as *;
+@use "./dependencies/_form-select-transition.scss" as *;
 $form-select-transition: $input-transition !default;

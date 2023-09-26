@@ -1,2 +1,2 @@
-@use "./dependencies/teal-300" as *;
+@use "./dependencies/_teal-300.scss" as *;
 $teal-300: tint-color($teal, 40%) !default;

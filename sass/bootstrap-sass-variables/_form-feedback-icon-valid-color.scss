@@ -1,2 +1,2 @@
-@use "./dependencies/form-feedback-icon-valid-color" as *;
+@use "./dependencies/_form-feedback-icon-valid-color.scss" as *;
 $form-feedback-icon-valid-color: $form-feedback-valid-color !default;

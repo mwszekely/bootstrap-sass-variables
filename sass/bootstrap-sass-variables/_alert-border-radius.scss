@@ -1,2 +1,2 @@
-@use "./dependencies/alert-border-radius" as *;
+@use "./dependencies/_alert-border-radius.scss" as *;
 $alert-border-radius: var(--#{$prefix}border-radius) !default;

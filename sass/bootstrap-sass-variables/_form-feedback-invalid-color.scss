@@ -1,2 +1,2 @@
-@use "./dependencies/form-feedback-invalid-color" as *;
+@use "./dependencies/_form-feedback-invalid-color.scss" as *;
 $form-feedback-invalid-color: $danger !default;

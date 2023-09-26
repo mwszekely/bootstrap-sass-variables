@@ -1,2 +1,2 @@
-@use "./dependencies/popover-arrow-outer-color" as *;
+@use "./dependencies/_popover-arrow-outer-color.scss" as *;
 $popover-arrow-outer-color: var(--#{$prefix}border-color-translucent) !default;

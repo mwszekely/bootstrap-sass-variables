@@ -1,2 +1,2 @@
-@use "./dependencies/offcanvas-title-line-height" as *;
+@use "./dependencies/_offcanvas-title-line-height.scss" as *;
 $offcanvas-title-line-height: $modal-title-line-height !default;

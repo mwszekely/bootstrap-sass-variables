@@ -1,2 +1,2 @@
-@use "./dependencies/blockquote-footer-font-size" as *;
+@use "./dependencies/_blockquote-footer-font-size.scss" as *;
 $blockquote-footer-font-size: $small-font-size !default;

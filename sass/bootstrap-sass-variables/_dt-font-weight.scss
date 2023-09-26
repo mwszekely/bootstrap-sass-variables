@@ -1,2 +1,2 @@
-@use "./dependencies/dt-font-weight" as *;
+@use "./dependencies/_dt-font-weight.scss" as *;
 $dt-font-weight: $font-weight-bold !default;

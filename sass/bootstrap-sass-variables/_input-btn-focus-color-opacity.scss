@@ -1,2 +1,2 @@
-@use "./dependencies/input-btn-focus-color-opacity" as *;
+@use "./dependencies/_input-btn-focus-color-opacity.scss" as *;
 $input-btn-focus-color-opacity: $focus-ring-opacity !default;

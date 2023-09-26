@@ -1,2 +1,2 @@
-@use "./dependencies/form-file-button-color" as *;
+@use "./dependencies/_form-file-button-color.scss" as *;
 $form-file-button-color: $input-color !default;

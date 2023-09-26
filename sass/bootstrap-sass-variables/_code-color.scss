@@ -1,2 +1,2 @@
-@use "./dependencies/code-color" as *;
+@use "./dependencies/_code-color.scss" as *;
 $code-color: $pink !default;

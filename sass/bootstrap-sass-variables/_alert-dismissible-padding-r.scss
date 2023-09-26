@@ -1,2 +1,2 @@
-@use "./dependencies/alert-dismissible-padding-r" as *;
+@use "./dependencies/_alert-dismissible-padding-r.scss" as *;
 $alert-dismissible-padding-r: $alert-padding-x * 3 !default;

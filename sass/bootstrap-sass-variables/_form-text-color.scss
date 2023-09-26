@@ -1,2 +1,2 @@
-@use "./dependencies/form-text-color" as *;
+@use "./dependencies/_form-text-color.scss" as *;
 $form-text-color: var(--#{$prefix}secondary-color) !default;

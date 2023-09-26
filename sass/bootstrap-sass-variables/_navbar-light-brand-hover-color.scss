@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-light-brand-hover-color" as *;
+@use "./dependencies/_navbar-light-brand-hover-color.scss" as *;
 $navbar-light-brand-hover-color: $navbar-light-active-color !default;

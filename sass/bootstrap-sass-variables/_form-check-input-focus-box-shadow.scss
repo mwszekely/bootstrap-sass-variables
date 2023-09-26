@@ -1,2 +1,2 @@
-@use "./dependencies/form-check-input-focus-box-shadow" as *;
+@use "./dependencies/_form-check-input-focus-box-shadow.scss" as *;
 $form-check-input-focus-box-shadow: $focus-ring-box-shadow !default;

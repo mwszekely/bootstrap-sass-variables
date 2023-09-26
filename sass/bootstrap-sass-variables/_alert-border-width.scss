@@ -1,2 +1,2 @@
-@use "./dependencies/alert-border-width" as *;
+@use "./dependencies/_alert-border-width.scss" as *;
 $alert-border-width: var(--#{$prefix}border-width) !default;

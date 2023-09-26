@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-toggler-focus-width" as *;
+@use "./dependencies/_navbar-toggler-focus-width.scss" as *;
 $navbar-toggler-focus-width: $btn-focus-width !default;

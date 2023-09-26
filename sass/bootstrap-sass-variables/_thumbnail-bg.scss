@@ -1,2 +1,2 @@
-@use "./dependencies/thumbnail-bg" as *;
+@use "./dependencies/_thumbnail-bg.scss" as *;
 $thumbnail-bg: var(--#{$prefix}body-bg) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/modal-content-bg" as *;
+@use "./dependencies/_modal-content-bg.scss" as *;
 $modal-content-bg: var(--#{$prefix}body-bg) !default;

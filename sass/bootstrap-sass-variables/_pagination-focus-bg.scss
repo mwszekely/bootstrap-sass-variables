@@ -1,2 +1,2 @@
-@use "./dependencies/pagination-focus-bg" as *;
+@use "./dependencies/_pagination-focus-bg.scss" as *;
 $pagination-focus-bg: var(--#{$prefix}secondary-bg) !default;

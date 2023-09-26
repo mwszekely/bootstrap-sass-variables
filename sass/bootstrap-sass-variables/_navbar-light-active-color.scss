@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-light-active-color" as *;
+@use "./dependencies/_navbar-light-active-color.scss" as *;
 $navbar-light-active-color: rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;

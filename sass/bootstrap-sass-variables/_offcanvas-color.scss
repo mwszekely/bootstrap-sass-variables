@@ -1,2 +1,2 @@
-@use "./dependencies/offcanvas-color" as *;
+@use "./dependencies/_offcanvas-color.scss" as *;
 $offcanvas-color: var(--#{$prefix}body-color) !default;

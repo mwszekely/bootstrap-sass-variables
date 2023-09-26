@@ -1,2 +1,2 @@
-@use "./dependencies/nav-tabs-link-active-bg" as *;
+@use "./dependencies/_nav-tabs-link-active-bg.scss" as *;
 $nav-tabs-link-active-bg: var(--#{$prefix}body-bg) !default;

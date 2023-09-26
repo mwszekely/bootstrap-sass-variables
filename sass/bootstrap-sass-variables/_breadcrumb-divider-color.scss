@@ -1,2 +1,2 @@
-@use "./dependencies/breadcrumb-divider-color" as *;
+@use "./dependencies/_breadcrumb-divider-color.scss" as *;
 $breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;

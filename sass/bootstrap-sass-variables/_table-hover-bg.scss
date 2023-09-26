@@ -1,2 +1,2 @@
-@use "./dependencies/table-hover-bg" as *;
+@use "./dependencies/_table-hover-bg.scss" as *;
 $table-hover-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-hover-bg-factor) !default;

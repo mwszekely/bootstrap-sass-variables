@@ -1,2 +1,2 @@
-@use "./dependencies/caret-vertical-align" as *;
+@use "./dependencies/_caret-vertical-align.scss" as *;
 $caret-vertical-align: $caret-width * .85 !default;

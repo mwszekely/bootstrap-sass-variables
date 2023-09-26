@@ -1,2 +1,2 @@
-@use "./dependencies/table-group-separator-color" as *;
+@use "./dependencies/_table-group-separator-color.scss" as *;
 $table-group-separator-color: currentcolor !default;

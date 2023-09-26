@@ -1,2 +1,2 @@
-@use "./dependencies/headings-color" as *;
+@use "./dependencies/_headings-color.scss" as *;
 $headings-color: inherit !default;

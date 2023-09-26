@@ -1,2 +1,2 @@
-@use "./dependencies/transition-base" as *;
+@use "./dependencies/_transition-base.scss" as *;
 $transition-base: all .2s ease-in-out !default;

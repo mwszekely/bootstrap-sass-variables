@@ -1,2 +1,2 @@
-@use "./dependencies/card-cap-padding-x" as *;
+@use "./dependencies/_card-cap-padding-x.scss" as *;
 $card-cap-padding-x: $card-spacer-x !default;

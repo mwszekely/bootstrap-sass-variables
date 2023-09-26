@@ -1,2 +1,2 @@
-@use "./dependencies/popover-border-radius" as *;
+@use "./dependencies/_popover-border-radius.scss" as *;
 $popover-border-radius: var(--#{$prefix}border-radius-lg) !default;

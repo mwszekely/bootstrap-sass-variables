@@ -1,2 +1,2 @@
-@use "./dependencies/success-text-emphasis" as *;
+@use "./dependencies/_success-text-emphasis.scss" as *;
 $success-text-emphasis: shade-color($success, 60%) !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/btn-close-padding-y" as *;
+@use "./dependencies/_btn-close-padding-y.scss" as *;
 $btn-close-padding-y: $btn-close-padding-x !default;

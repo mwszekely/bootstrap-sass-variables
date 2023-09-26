@@ -1,2 +1,2 @@
-@use "./dependencies/form-check-input-border" as *;
+@use "./dependencies/_form-check-input-border.scss" as *;
 $form-check-input-border: var(--#{$prefix}border-width) solid var(--#{$prefix}border-color) !default;

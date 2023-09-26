@@ -1,2 +1,2 @@
-@use "./dependencies/pagination-border-radius" as *;
+@use "./dependencies/_pagination-border-radius.scss" as *;
 $pagination-border-radius: var(--#{$prefix}border-radius) !default;

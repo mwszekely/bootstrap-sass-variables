@@ -1,2 +1,2 @@
-@use "./dependencies/table-hover-bg-factor" as *;
+@use "./dependencies/_table-hover-bg-factor.scss" as *;
 $table-hover-bg-factor: .075 !default;

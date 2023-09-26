@@ -1,2 +1,2 @@
-@use "./dependencies/table-active-color" as *;
+@use "./dependencies/_table-active-color.scss" as *;
 $table-active-color: $table-color !default;

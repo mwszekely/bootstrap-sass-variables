@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-box-shadow" as *;
+@use "./dependencies/_form-select-box-shadow.scss" as *;
 $form-select-box-shadow: var(--#{$prefix}box-shadow-inset) !default;

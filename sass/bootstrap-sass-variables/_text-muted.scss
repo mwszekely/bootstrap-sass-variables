@@ -1,2 +1,2 @@
-@use "./dependencies/text-muted" as *;
+@use "./dependencies/_text-muted.scss" as *;
 $text-muted: var(--#{$prefix}secondary-color) !default;

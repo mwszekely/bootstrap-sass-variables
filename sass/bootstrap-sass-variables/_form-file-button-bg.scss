@@ -1,2 +1,2 @@
-@use "./dependencies/form-file-button-bg" as *;
+@use "./dependencies/_form-file-button-bg.scss" as *;
 $form-file-button-bg: var(--#{$prefix}tertiary-bg) !default;

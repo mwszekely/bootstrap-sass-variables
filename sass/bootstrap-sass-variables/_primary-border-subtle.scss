@@ -1,2 +1,2 @@
-@use "./dependencies/primary-border-subtle" as *;
+@use "./dependencies/_primary-border-subtle.scss" as *;
 $primary-border-subtle: tint-color($primary, 60%) !default;

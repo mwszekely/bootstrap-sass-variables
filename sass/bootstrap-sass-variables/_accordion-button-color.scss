@@ -1,2 +1,2 @@
-@use "./dependencies/accordion-button-color" as *;
+@use "./dependencies/_accordion-button-color.scss" as *;
 $accordion-button-color: var(--#{$prefix}body-color) !default;

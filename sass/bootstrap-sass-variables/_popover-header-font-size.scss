@@ -1,2 +1,2 @@
-@use "./dependencies/popover-header-font-size" as *;
+@use "./dependencies/_popover-header-font-size.scss" as *;
 $popover-header-font-size: $font-size-base !default;

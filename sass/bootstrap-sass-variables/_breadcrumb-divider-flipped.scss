@@ -1,2 +1,2 @@
-@use "./dependencies/breadcrumb-divider-flipped" as *;
+@use "./dependencies/_breadcrumb-divider-flipped.scss" as *;
 $breadcrumb-divider-flipped: $breadcrumb-divider !default;

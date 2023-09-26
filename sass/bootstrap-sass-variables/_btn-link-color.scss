@@ -1,2 +1,2 @@
-@use "./dependencies/btn-link-color" as *;
+@use "./dependencies/_btn-link-color.scss" as *;
 $btn-link-color: var(--#{$prefix}link-color) !default;

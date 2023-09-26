@@ -1,2 +1,2 @@
-@use "./dependencies/table-border-width" as *;
+@use "./dependencies/_table-border-width.scss" as *;
 $table-border-width: var(--#{$prefix}border-width) !default;

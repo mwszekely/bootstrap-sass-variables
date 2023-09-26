@@ -1,2 +1,2 @@
-@use "./dependencies/popover-body-padding-x" as *;
+@use "./dependencies/_popover-body-padding-x.scss" as *;
 $popover-body-padding-x: $spacer !default;

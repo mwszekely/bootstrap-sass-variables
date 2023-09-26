@@ -1,2 +1,2 @@
-@use "./dependencies/btn-border-radius" as *;
+@use "./dependencies/_btn-border-radius.scss" as *;
 $btn-border-radius: var(--#{$prefix}border-radius) !default;

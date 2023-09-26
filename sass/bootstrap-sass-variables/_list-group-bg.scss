@@ -1,2 +1,2 @@
-@use "./dependencies/list-group-bg" as *;
+@use "./dependencies/_list-group-bg.scss" as *;
 $list-group-bg: var(--#{$prefix}body-bg) !default;

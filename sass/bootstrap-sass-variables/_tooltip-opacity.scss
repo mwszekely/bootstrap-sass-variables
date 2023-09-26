@@ -1,2 +1,2 @@
-@use "./dependencies/tooltip-opacity" as *;
+@use "./dependencies/_tooltip-opacity.scss" as *;
 $tooltip-opacity: .9 !default;

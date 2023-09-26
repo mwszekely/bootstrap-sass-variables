@@ -1,2 +1,2 @@
-@use "./dependencies/list-group-hover-bg" as *;
+@use "./dependencies/_list-group-hover-bg.scss" as *;
 $list-group-hover-bg: var(--#{$prefix}tertiary-bg) !default;

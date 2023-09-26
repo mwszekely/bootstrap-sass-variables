@@ -1,2 +1,2 @@
-@use "./dependencies/font-weight-bolder" as *;
+@use "./dependencies/_font-weight-bolder.scss" as *;
 $font-weight-bolder: bolder !default;

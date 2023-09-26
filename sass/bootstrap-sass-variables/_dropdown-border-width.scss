@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-border-width" as *;
+@use "./dependencies/_dropdown-border-width.scss" as *;
 $dropdown-border-width: var(--#{$prefix}border-width) !default;

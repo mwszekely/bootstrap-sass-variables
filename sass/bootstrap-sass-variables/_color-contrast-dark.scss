@@ -1,2 +1,2 @@
-@use "./dependencies/color-contrast-dark" as *;
+@use "./dependencies/_color-contrast-dark.scss" as *;
 $color-contrast-dark: $black !default;

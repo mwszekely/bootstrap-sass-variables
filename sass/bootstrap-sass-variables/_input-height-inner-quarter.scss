@@ -1,2 +1,2 @@
-@use "./dependencies/input-height-inner-quarter" as *;
+@use "./dependencies/_input-height-inner-quarter.scss" as *;
 $input-height-inner-quarter: add($input-line-height * .25em, $input-padding-y * .5) !default;

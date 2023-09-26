@@ -1,2 +1,2 @@
-@use "./dependencies/mark-bg" as *;
+@use "./dependencies/_mark-bg.scss" as *;
 $mark-bg: $yellow-100 !default;

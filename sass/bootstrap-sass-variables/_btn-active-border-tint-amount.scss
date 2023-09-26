@@ -1,2 +1,2 @@
-@use "./dependencies/btn-active-border-tint-amount" as *;
+@use "./dependencies/_btn-active-border-tint-amount.scss" as *;
 $btn-active-border-tint-amount: 10% !default;

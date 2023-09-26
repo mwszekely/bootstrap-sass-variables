@@ -1,2 +1,2 @@
-@use "./dependencies/list-group-active-color" as *;
+@use "./dependencies/_list-group-active-color.scss" as *;
 $list-group-active-color: $component-active-color !default;

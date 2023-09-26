@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-bg" as *;
+@use "./dependencies/_dropdown-bg.scss" as *;
 $dropdown-bg: var(--#{$prefix}body-bg) !default;

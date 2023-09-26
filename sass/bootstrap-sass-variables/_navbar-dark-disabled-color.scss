@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-dark-disabled-color" as *;
+@use "./dependencies/_navbar-dark-disabled-color.scss" as *;
 $navbar-dark-disabled-color: rgba($white, .25) !default;

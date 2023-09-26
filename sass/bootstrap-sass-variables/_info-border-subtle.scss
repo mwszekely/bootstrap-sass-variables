@@ -1,2 +1,2 @@
-@use "./dependencies/info-border-subtle" as *;
+@use "./dependencies/_info-border-subtle.scss" as *;
 $info-border-subtle: tint-color($info, 60%) !default;

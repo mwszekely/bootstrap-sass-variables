@@ -1,2 +1,2 @@
-@use "./dependencies/badge-font-weight" as *;
+@use "./dependencies/_badge-font-weight.scss" as *;
 $badge-font-weight: $font-weight-bold !default;

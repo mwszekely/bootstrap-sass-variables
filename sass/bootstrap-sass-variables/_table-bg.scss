@@ -1,2 +1,2 @@
-@use "./dependencies/table-bg" as *;
+@use "./dependencies/_table-bg.scss" as *;
 $table-bg: var(--#{$prefix}body-bg) !default;

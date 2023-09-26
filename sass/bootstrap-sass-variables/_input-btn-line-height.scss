@@ -1,2 +1,2 @@
-@use "./dependencies/input-btn-line-height" as *;
+@use "./dependencies/_input-btn-line-height.scss" as *;
 $input-btn-line-height: $line-height-base !default;

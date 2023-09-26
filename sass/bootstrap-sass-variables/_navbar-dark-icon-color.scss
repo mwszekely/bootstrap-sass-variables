@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-dark-icon-color" as *;
+@use "./dependencies/_navbar-dark-icon-color.scss" as *;
 $navbar-dark-icon-color: $navbar-dark-color !default;

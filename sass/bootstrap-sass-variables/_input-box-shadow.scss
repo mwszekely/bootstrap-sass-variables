@@ -1,2 +1,2 @@
-@use "./dependencies/input-box-shadow" as *;
+@use "./dependencies/_input-box-shadow.scss" as *;
 $input-box-shadow: var(--#{$prefix}box-shadow-inset) !default;

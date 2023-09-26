@@ -1,2 +1,2 @@
-@use "./dependencies/modal-content-box-shadow-xs" as *;
+@use "./dependencies/_modal-content-box-shadow-xs.scss" as *;
 $modal-content-box-shadow-xs: var(--#{$prefix}box-shadow-sm) !default;

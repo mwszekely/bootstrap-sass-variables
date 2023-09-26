@@ -1,2 +1,2 @@
-@use "./dependencies/pagination-border-width" as *;
+@use "./dependencies/_pagination-border-width.scss" as *;
 $pagination-border-width: var(--#{$prefix}border-width) !default;

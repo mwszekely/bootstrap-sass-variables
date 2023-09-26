@@ -1,2 +1,2 @@
-@use "./dependencies/modal-header-border-color" as *;
+@use "./dependencies/_modal-header-border-color.scss" as *;
 $modal-header-border-color: var(--#{$prefix}border-color) !default;

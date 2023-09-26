@@ -1,2 +1,2 @@
-@use "./dependencies/nav-tabs-border-width" as *;
+@use "./dependencies/_nav-tabs-border-width.scss" as *;
 $nav-tabs-border-width: var(--#{$prefix}border-width) !default;

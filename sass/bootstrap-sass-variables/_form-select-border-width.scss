@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-border-width" as *;
+@use "./dependencies/_form-select-border-width.scss" as *;
 $form-select-border-width: $input-border-width !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/nav-tabs-border-color" as *;
+@use "./dependencies/_nav-tabs-border-color.scss" as *;
 $nav-tabs-border-color: var(--#{$prefix}border-color) !default;

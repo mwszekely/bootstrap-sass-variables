@@ -1,2 +1,2 @@
-@use "./dependencies/input-plaintext-color" as *;
+@use "./dependencies/_input-plaintext-color.scss" as *;
 $input-plaintext-color: var(--#{$prefix}body-color) !default;

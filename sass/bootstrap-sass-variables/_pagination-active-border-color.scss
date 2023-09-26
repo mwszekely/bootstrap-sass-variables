@@ -1,2 +1,2 @@
-@use "./dependencies/pagination-active-border-color" as *;
+@use "./dependencies/_pagination-active-border-color.scss" as *;
 $pagination-active-border-color: $component-active-bg !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/list-group-border-width" as *;
+@use "./dependencies/_list-group-border-width.scss" as *;
 $list-group-border-width: var(--#{$prefix}border-width) !default;

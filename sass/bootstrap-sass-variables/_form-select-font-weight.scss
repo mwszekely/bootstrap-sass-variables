@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-font-weight" as *;
+@use "./dependencies/_form-select-font-weight.scss" as *;
 $form-select-font-weight: $input-font-weight !default;

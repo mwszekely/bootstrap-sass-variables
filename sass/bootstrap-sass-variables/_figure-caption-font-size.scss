@@ -1,2 +1,2 @@
-@use "./dependencies/figure-caption-font-size" as *;
+@use "./dependencies/_figure-caption-font-size.scss" as *;
 $figure-caption-font-size: $small-font-size !default;

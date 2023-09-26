@@ -1,2 +1,2 @@
-@use "./dependencies/modal-content-inner-border-radius" as *;
+@use "./dependencies/_modal-content-inner-border-radius.scss" as *;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;

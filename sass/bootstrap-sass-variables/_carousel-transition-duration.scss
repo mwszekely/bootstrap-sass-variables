@@ -1,2 +1,2 @@
-@use "./dependencies/carousel-transition-duration" as *;
+@use "./dependencies/_carousel-transition-duration.scss" as *;
 $carousel-transition-duration: .6s !default;

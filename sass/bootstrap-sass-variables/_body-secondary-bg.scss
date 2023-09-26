@@ -1,2 +1,2 @@
-@use "./dependencies/body-secondary-bg" as *;
+@use "./dependencies/_body-secondary-bg.scss" as *;
 $body-secondary-bg: $gray-200 !default;

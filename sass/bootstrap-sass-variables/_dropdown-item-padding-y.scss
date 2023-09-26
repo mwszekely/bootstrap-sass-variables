@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-item-padding-y" as *;
+@use "./dependencies/_dropdown-item-padding-y.scss" as *;
 $dropdown-item-padding-y: $spacer * .25 !default;

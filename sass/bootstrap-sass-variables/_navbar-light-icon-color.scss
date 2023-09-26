@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-light-icon-color" as *;
+@use "./dependencies/_navbar-light-icon-color.scss" as *;
 $navbar-light-icon-color: rgba($body-color, .75) !default;

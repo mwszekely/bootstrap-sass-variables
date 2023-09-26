@@ -1,2 +1,2 @@
-@use "./dependencies/offcanvas-transition-duration" as *;
+@use "./dependencies/_offcanvas-transition-duration.scss" as *;
 $offcanvas-transition-duration: .3s !default;

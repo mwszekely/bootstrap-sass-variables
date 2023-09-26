@@ -1,2 +1,2 @@
-@use "./dependencies/form-feedback-tooltip-padding-x" as *;
+@use "./dependencies/_form-feedback-tooltip-padding-x.scss" as *;
 $form-feedback-tooltip-padding-x: $tooltip-padding-x !default;

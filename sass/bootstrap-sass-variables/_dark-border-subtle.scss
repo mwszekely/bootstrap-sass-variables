@@ -1,2 +1,2 @@
-@use "./dependencies/dark-border-subtle" as *;
+@use "./dependencies/_dark-border-subtle.scss" as *;
 $dark-border-subtle: $gray-500 !default;

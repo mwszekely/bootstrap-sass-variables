@@ -1,2 +1,2 @@
-@use "./dependencies/border-style" as *;
+@use "./dependencies/_border-style.scss" as *;
 $border-style: solid !default;

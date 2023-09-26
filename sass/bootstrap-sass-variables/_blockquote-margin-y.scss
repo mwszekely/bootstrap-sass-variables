@@ -1,2 +1,2 @@
-@use "./dependencies/blockquote-margin-y" as *;
+@use "./dependencies/_blockquote-margin-y.scss" as *;
 $blockquote-margin-y: $spacer !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-dark-hover-color" as *;
+@use "./dependencies/_navbar-dark-hover-color.scss" as *;
 $navbar-dark-hover-color: rgba($white, .75) !default;

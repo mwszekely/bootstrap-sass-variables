@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-light-toggler-border-color" as *;
+@use "./dependencies/_navbar-light-toggler-border-color.scss" as *;
 $navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .15) !default;

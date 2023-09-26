@@ -1,2 +1,2 @@
-@use "./dependencies/nav-pills-border-radius" as *;
+@use "./dependencies/_nav-pills-border-radius.scss" as *;
 $nav-pills-border-radius: var(--#{$prefix}border-radius) !default;

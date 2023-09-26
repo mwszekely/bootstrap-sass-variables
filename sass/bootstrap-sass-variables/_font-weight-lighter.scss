@@ -1,2 +1,2 @@
-@use "./dependencies/font-weight-lighter" as *;
+@use "./dependencies/_font-weight-lighter.scss" as *;
 $font-weight-lighter: lighter !default;

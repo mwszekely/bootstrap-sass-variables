@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-dark-link-disabled-color" as *;
+@use "./dependencies/_dropdown-dark-link-disabled-color.scss" as *;
 $dropdown-dark-link-disabled-color: $gray-500 !default;

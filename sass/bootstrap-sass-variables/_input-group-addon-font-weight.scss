@@ -1,2 +1,2 @@
-@use "./dependencies/input-group-addon-font-weight" as *;
+@use "./dependencies/_input-group-addon-font-weight.scss" as *;
 $input-group-addon-font-weight: $input-font-weight !default;

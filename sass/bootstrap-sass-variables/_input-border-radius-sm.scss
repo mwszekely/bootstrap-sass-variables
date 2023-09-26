@@ -1,2 +1,2 @@
-@use "./dependencies/input-border-radius-sm" as *;
+@use "./dependencies/_input-border-radius-sm.scss" as *;
 $input-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;

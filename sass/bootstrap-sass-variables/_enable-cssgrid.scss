@@ -1,2 +1,2 @@
-@use "./dependencies/enable-cssgrid" as *;
+@use "./dependencies/_enable-cssgrid.scss" as *;
 $enable-cssgrid: false !default;

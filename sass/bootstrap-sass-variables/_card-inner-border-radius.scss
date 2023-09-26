@@ -1,2 +1,2 @@
-@use "./dependencies/card-inner-border-radius" as *;
+@use "./dependencies/_card-inner-border-radius.scss" as *;
 $card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;

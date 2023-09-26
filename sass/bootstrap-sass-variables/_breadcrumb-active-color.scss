@@ -1,2 +1,2 @@
-@use "./dependencies/breadcrumb-active-color" as *;
+@use "./dependencies/_breadcrumb-active-color.scss" as *;
 $breadcrumb-active-color: var(--#{$prefix}secondary-color) !default;

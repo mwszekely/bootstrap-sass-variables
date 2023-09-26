@@ -1,2 +1,2 @@
-@use "./dependencies/spinner-height" as *;
+@use "./dependencies/_spinner-height.scss" as *;
 $spinner-height: $spinner-width !default;

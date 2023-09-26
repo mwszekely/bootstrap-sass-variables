@@ -1,2 +1,2 @@
-@use "./dependencies/tooltip-bg" as *;
+@use "./dependencies/_tooltip-bg.scss" as *;
 $tooltip-bg: var(--#{$prefix}emphasis-color) !default;

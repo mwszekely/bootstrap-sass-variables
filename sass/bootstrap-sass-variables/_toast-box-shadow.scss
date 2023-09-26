@@ -1,2 +1,2 @@
-@use "./dependencies/toast-box-shadow" as *;
+@use "./dependencies/_toast-box-shadow.scss" as *;
 $toast-box-shadow: var(--#{$prefix}box-shadow) !default;

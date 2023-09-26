@@ -1,2 +1,2 @@
-@use "./dependencies/form-select-border-color" as *;
+@use "./dependencies/_form-select-border-color.scss" as *;
 $form-select-border-color: $input-border-color !default;

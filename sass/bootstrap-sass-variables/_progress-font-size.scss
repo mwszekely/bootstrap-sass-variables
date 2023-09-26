@@ -1,2 +1,2 @@
-@use "./dependencies/progress-font-size" as *;
+@use "./dependencies/_progress-font-size.scss" as *;
 $progress-font-size: $font-size-base * .75 !default;

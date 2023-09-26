@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-border-color" as *;
+@use "./dependencies/_dropdown-border-color.scss" as *;
 $dropdown-border-color: var(--#{$prefix}border-color-translucent) !default;

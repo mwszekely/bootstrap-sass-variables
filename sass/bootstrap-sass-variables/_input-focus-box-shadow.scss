@@ -1,2 +1,2 @@
-@use "./dependencies/input-focus-box-shadow" as *;
+@use "./dependencies/_input-focus-box-shadow.scss" as *;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;

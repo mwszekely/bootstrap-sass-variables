@@ -1,2 +1,2 @@
-@use "./dependencies/modal-backdrop-bg" as *;
+@use "./dependencies/_modal-backdrop-bg.scss" as *;
 $modal-backdrop-bg: $black !default;

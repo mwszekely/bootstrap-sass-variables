@@ -1,2 +1,2 @@
-@use "./dependencies/thumbnail-padding" as *;
+@use "./dependencies/_thumbnail-padding.scss" as *;
 $thumbnail-padding: .25rem !default;

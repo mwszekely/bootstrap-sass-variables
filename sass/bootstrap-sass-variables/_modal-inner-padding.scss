@@ -1,2 +1,2 @@
-@use "./dependencies/modal-inner-padding" as *;
+@use "./dependencies/_modal-inner-padding.scss" as *;
 $modal-inner-padding: $spacer !default;

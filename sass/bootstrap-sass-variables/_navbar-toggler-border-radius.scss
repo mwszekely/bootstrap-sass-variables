@@ -1,2 +1,2 @@
-@use "./dependencies/navbar-toggler-border-radius" as *;
+@use "./dependencies/_navbar-toggler-border-radius.scss" as *;
 $navbar-toggler-border-radius: $btn-border-radius !default;

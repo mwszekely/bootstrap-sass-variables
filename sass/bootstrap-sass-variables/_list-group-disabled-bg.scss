@@ -1,2 +1,2 @@
-@use "./dependencies/list-group-disabled-bg" as *;
+@use "./dependencies/_list-group-disabled-bg.scss" as *;
 $list-group-disabled-bg: $list-group-bg !default;

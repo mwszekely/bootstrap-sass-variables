@@ -1,2 +1,2 @@
-@use "./dependencies/dropdown-dark-link-hover-color" as *;
+@use "./dependencies/_dropdown-dark-link-hover-color.scss" as *;
 $dropdown-dark-link-hover-color: $white !default;

@@ -1,2 +1,2 @@
-@use "./dependencies/thumbnail-border-radius" as *;
+@use "./dependencies/_thumbnail-border-radius.scss" as *;
 $thumbnail-border-radius: var(--#{$prefix}border-radius) !default;

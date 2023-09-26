@@ -1,2 +1,2 @@
-@use "./dependencies/pagination-focus-box-shadow" as *;
+@use "./dependencies/_pagination-focus-box-shadow.scss" as *;
 $pagination-focus-box-shadow: $focus-ring-box-shadow !default;

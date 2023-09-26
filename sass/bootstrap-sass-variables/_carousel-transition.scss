@@ -1,2 +1,2 @@
-@use "./dependencies/carousel-transition" as *;
+@use "./dependencies/_carousel-transition.scss" as *;
 $carousel-transition: transform $carousel-transition-duration ease-in-out !default;

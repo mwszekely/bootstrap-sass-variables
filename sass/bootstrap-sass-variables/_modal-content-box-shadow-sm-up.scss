@@ -1,2 +1,2 @@
-@use "./dependencies/modal-content-box-shadow-sm-up" as *;
+@use "./dependencies/_modal-content-box-shadow-sm-up.scss" as *;
 $modal-content-box-shadow-sm-up: var(--#{$prefix}box-shadow) !default;

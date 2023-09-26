@@ -1,2 +1,2 @@
-@use "./dependencies/modal-title-line-height" as *;
+@use "./dependencies/_modal-title-line-height.scss" as *;
 $modal-title-line-height: $line-height-base !default;

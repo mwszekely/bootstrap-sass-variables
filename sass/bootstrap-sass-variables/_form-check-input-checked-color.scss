@@ -1,2 +1,2 @@
-@use "./dependencies/form-check-input-checked-color" as *;
+@use "./dependencies/_form-check-input-checked-color.scss" as *;
 $form-check-input-checked-color: $component-active-color !default;
