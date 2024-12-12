@@ -1,3 +1,4 @@
+@use "sass:color" as *;
 @function shade-color($color, $weight) {
   @return mix(black, $color, $weight);
 }

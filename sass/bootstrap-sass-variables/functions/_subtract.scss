@@ -1,3 +1,6 @@
+@use "sass:math" as *;
+@use "sass:meta" as *;
+@use "sass:string" as *;
 @function subtract($value1, $value2, $return-calc: true) {
   @if $value1 == null and $value2 == null {
     @return null;
@@ -11,7 +14,7 @@
     @return $value1;
   }
 
-  @if type-of($value1) == number and type-of($value2) == number and comparable($value1, $value2) {
+  @if type-of($value1) == number and type-of($value2) == number and compatible($value1, $value2) {
     @return $value1 - $value2;
   }
 

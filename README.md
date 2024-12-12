@@ -89,7 +89,7 @@ So, just for the basics, it's not possible to load a file twice except under ver
 
 // Example #3:
 @use "bootstrap" with ($white: black);
-@use "bootstrap";                       // Okay, this one's fine, (though I'm sure the compiler is rolling its eyes at the redundancy)
+@use "bootstrap";                       // Okay, this one's fine, it just does nothing
 ````
 Which, yeah, this absolutely makes sense, because after we've loaded Bootstrap once, it's too late to go back and get a "do-over" with our second set of overrides. The CSS has already been generated, the mixins already captured, etc.
 

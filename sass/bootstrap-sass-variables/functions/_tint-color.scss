@@ -1,3 +1,4 @@
+@use "sass:color" as *;
 @function tint-color($color, $weight) {
   @return mix(white, $color, $weight);
 }

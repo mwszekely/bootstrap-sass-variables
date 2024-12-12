@@ -2,7 +2,7 @@ This file contains instructions for recreating the thousands of _[VARIABLE].scss
 
 First, take Bootstrap's `_variables.scss` and `variables-dark.scss` files and remove all blank lines, comments, and @include statements (e.g. with the regexes `((((^| )//)|(@include)).*)|(^(//.*)?$\n)` repeatedly for empty lines). Also, fix the various map properties so that they fit on one line (replace `\n((?:\))|(?:\s+.*(?:,|(?:\n\)))))` with `$1` repeatedly), and fix `form-validation-states` manually if necessary. Also replace extra spaces (`\s+` with ` `, `\( ` with `(`, and ` \)` with `)`).
 
-Then, find and replace all apostrophes to escape them for use in the terminal by replacing `'` with `\'` (both `_variables.scss` files only contain apostrophes within quoted strings, so this is safe).
+Then, find and replace all apostrophes to escape them for use in the terminal by replacing `'` with `\'` (both `_variables.scss` files only contain apostrophes within quoted strings, so this is safe). While at it, also replace whitespace edgecases: `  ` to ` `, `( ` to `(`.
 
 You should now have a list of properties, one property per line.  Transform it into other things (either shell commands or pieces of other files) with the following regexes.  Start by searching for `^\$([a-z0-9\-]+):(?:\s)*(.*)( !default;)` and then:
 
