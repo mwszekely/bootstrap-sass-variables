@@ -9,7 +9,7 @@
     "watch": "sass --quiet-deps --load-path=\"./sass\" --load-path=\"./node_modules/bootstrap\" ./demo-dark.scss ./demo-dark.css -w"
   },
   "peerDependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.6"
   },
   "devDependencies": {
     "sass": "^1.82.0"
